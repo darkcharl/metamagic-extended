@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="8" build="606"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <!-- Original Metamagic List Overrides -->
+                <!-- Level 3 -->
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Expanded,Metamagic_Extended,Metamagic_Heightened,Metamagic_Quickened,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Twinned"/>
+                    <attribute id="UUID" type="guid" value="c3506532-36eb-4d18-823e-497a537a9619"/>
+                </node>
+                <!-- Level 1 -->
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Expanded,Metamagic_Extended,Metamagic_Seeking,Metamagic_Twinned"/>
+                    <attribute id="UUID" type="guid" value="49704931-e47b-4ce6-abc6-dfa7ba640752"/>
+                </node>
+
+                <!-- Metamagic Exploits -->
+                <!-- Level 1 -->
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Metamagic_Quickened_Exploit"/>
+                    <attribute id="UUID" type="guid" value="c1ffc407-93ff-4f94-b95c-99f108caefad"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

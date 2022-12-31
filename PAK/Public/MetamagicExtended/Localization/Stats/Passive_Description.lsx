@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="8" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="TranslatedStringKeys">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="UUID" type="FixedString" value="Passive_Metamagic_Detached_Description" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Content" type="TranslatedString" handle="d20581ce-251e-4a55-b257-827230aa563d" version="7" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="UUID" type="FixedString" value="Passive_Metamagic_Expanded_Description" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Content" type="TranslatedString" handle="49bc3eca-28fc-48a8-a031-67d16e1323cc" version="7" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="UUID" type="FixedString" value="Passive_Metamagic_Seeking_Description" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Content" type="TranslatedString" handle="a18df986-9ac8-4974-97b9-d1cf872daa08" version="7" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="UUID" type="FixedString" value="Passive_Metamagic_TransmutedAcid_Description" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Content" type="TranslatedString" handle="83d90ed6-d47b-4147-9db8-a82ec01139e4" version="7" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="d18a0b55-dede-47dc-9b24-568b960bc55e" version="7" />
+					<attribute id="UUID" type="FixedString" value="Passive_Exploit_Quickened_Description" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
