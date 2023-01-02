@@ -128,6 +128,13 @@
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedSpell"/>
+                    <attribute id="U1" type="float" value="0.46875"/>
+                    <attribute id="U2" type="float" value="0.5"/>
+                    <attribute id="V1" type="float" value="0.0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
 
                 <!-- Exploits -->
                 <node id="IconUV">
@@ -232,6 +239,13 @@
                     <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedThunderExploit"/>
                     <attribute id="U1" type="float" value="0.4375"/>
                     <attribute id="U2" type="float" value="0.46875"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedExploit"/>
+                    <attribute id="U1" type="float" value="0.46875"/>
+                    <attribute id="U2" type="float" value="0.5"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
