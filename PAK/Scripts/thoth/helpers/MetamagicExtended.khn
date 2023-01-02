@@ -8,9 +8,8 @@ function ConcentrationSpellCheck()
     return HasSpellFlag(SpellFlags.Concentration) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
 end
 
-function AreaRadiusSpellCheck()
-    local result = GetSpellAreaRadius() > 0
-	return ConditionResult(result)
+function AreaSpellCheck()
+    return AreaRadiusGreaterThan(0) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities()) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.CreateExplosion)
 end
 
 function SpellAttackCheck()
