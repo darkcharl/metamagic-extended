@@ -16,6 +16,85 @@ function SpellAttackCheck()
     return RangedSpellAttackCheck() | MeleeSpellAttackCheck()
 end
 
+function EnergySpellCheck()
+    return SpellDamageTypeIs(DamageType.Acid) | SpellDamageTypeIs(DamageType.Cold) | SpellDamageTypeIs(DamageType.Fire) | SpellDamageTypeIs(DamageType.Lightning) | SpellDamageTypeIs(DamageType.Thunder)
+end
+
+function NonAcidSpellCheck()
+    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Acid)
+end
+
+function NonColdSpellCheck()
+    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Cold)
+end
+
+function NonFireSpellCheck()
+    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Fire)
+end
+
+function NonLightningSpellCheck()
+    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Lightning)
+end
+
+function NonThunderSpellCheck()
+    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Thunder)
+end
+
+function IsSpellTransmutedImplemented()
+    local result = SpellId('Target_ShockingGrasp')
+    or SpellId('Target_Shatter')
+    or SpellId('Target_Shatter_3')
+    or SpellId('Zone_BurningHands')
+    or SpellId('Zone_BurningHands_2')
+    or SpellId('Zone_BurningHands_3')
+    or SpellId('Zone_Thunderwave')
+    or SpellId('Zone_Thunderwave_2')
+    or SpellId('Zone_Thunderwave_3')
+    or SpellId('Projectile_AcidArrow')
+    or SpellId('Projectile_AcidArrow_3')
+    or SpellId('Projectile_AcidSplash')
+    or SpellId('Projectile_Fireball')
+    or SpellId('Projectile_FireBolt')
+    or SpellId('Projectile_RayOfFrost')
+    or SpellId('Projectile_ScorchingRay')
+    or SpellId('Projectile_WitchBolt')
+    or SpellId('Projectile_WitchBolt_2')
+    or SpellId('Projectile_WitchBolt_3')
+    return ConditionResult(result)
+end
+
+function IsSpellTransmutedAcid()
+    return HasStatus('METAMAGIC_TRANSMUTED_ACID', context.Source)
+end
+
+function IsSpellTransmutedCold()
+    return HasStatus('METAMAGIC_TRANSMUTED_COLD', context.Source)
+end
+
+function IsSpellTransmutedFire()
+    return HasStatus('METAMAGIC_TRANSMUTED_FIRE', context.Source)
+end
+
+function IsSpellTransmutedLightning()
+    return HasStatus('METAMAGIC_TRANSMUTED_LIGHTNING', context.Source)
+end
+
+function IsSpellTransmutedThunder()
+    return HasStatus('METAMAGIC_TRANSMUTED_THUNDER', context.Source)
+end
+
+function IsSpellTransmuted()
+    return IsSpellTransmutedAcid() | IsSpellTransmutedCold() | IsSpellTransmutedFire() | IsSpellTransmutedLightning() | IsSpellTransmutedThunder()
+end
+
+function HasTransmutedSpell()
+    return HasStatus('METAMAGIC_TRANSMUTED_SPELL', context.Source) | IsSpellTransmuted()
+end
+
+function HasPotentCantrip()
+    return HasPassive('PotentCantrip',context.Source)
+end
+
 function IsSpellAttack()
     result = context.HitDescription.AttackType == AttackType.RangedSpellAttack
     or context.HitDescription.AttackType == AttackType.MeleeSpellAttack
