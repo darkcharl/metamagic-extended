@@ -1,22 +1,22 @@
 <contentList date="12/31/2022 14:00">
     <content contentuid="374dfb86-1e77-420b-a32c-1fd1ec49c852" version="1">Metamagic: Detached Spell</content>
-    <content contentuid="d20581ce-251e-4a55-b257-827230aa563d" version="1">Removes concentration requirement.&lt;br&gt;&lt;br&gt;Costs 1 Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
+    <content contentuid="d20581ce-251e-4a55-b257-827230aa563d" version="1">Removes concentration requirement.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
     <content contentuid="7457fe7a-af4d-43e6-8a12-41f4eea1f85c" version="1">Metamagic: Expanded Spell</content>
-    <content contentuid="49bc3eca-28fc-48a8-a031-67d16e1323cc" version="1">Doubles the radius of area spells.&lt;br&gt;&lt;br&gt;Costs 1 Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
+    <content contentuid="49bc3eca-28fc-48a8-a031-67d16e1323cc" version="1">Doubles the radius of area spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
     <content contentuid="e29c98b4-2cdd-4cf4-8025-fc4e74ed108c" version="1">Metamagic: Seeking Spell</content>
-    <content contentuid="a18df986-9ac8-4974-97b9-d1cf872daa08" version="1">Gives &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs 2 Sorcery Points.</content>
+    <content contentuid="a18df986-9ac8-4974-97b9-d1cf872daa08" version="1">Gives &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Points.</content>
     <content contentuid="8e49e811-bdea-43a4-8403-5de1c2b0b472" version="1">Metamagic: Transmuted Spell (Acid)</content>
-    <content contentuid="83d90ed6-d47b-4147-9db8-a82ec01139e4" version="1">Changes elemental damage type to Acid.&lt;br&gt;&lt;br&gt;Costs 1 Sorcery Point.</content>
+    <content contentuid="83d90ed6-d47b-4147-9db8-a82ec01139e4" version="1">Changes elemental damage type to Acid.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point.</content>
     <content contentuid="0b1d1b16-47b7-4566-b88c-a9c5ef6cfb8b" version="1">Metamagic: Transmuted Spell (Cold)</content>
-    <content contentuid="c756f128-9fdd-47f5-a382-bc0fdd852812" version="1">Changes elemental damage type to Cold.&lt;br&gt;&lt;br&gt;Costs 1 Sorcery Point.</content>
+    <content contentuid="c756f128-9fdd-47f5-a382-bc0fdd852812" version="1">Changes elemental damage type to Cold.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point.</content>
     <content contentuid="84e6b92b-685b-4a5b-a470-02bbea6be1ee" version="1">Metamagic: Transmuted Spell (Fire)</content>
-    <content contentuid="d5bdcd71-ae65-4112-84fe-77591f36b975" version="1">Changes elemental damage type to Fire.&lt;br&gt;&lt;br&gt;Costs 1 Sorcery Point.</content>
+    <content contentuid="d5bdcd71-ae65-4112-84fe-77591f36b975" version="1">Changes elemental damage type to Fire.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point.</content>
     <content contentuid="c8fac092-54ca-4c84-8d06-13fd79840be4" version="1">Metamagic: Transmuted Spell (Lightning)</content>
-    <content contentuid="f859c45b-d00a-4961-a506-ac6d40716115" version="1">Changes elemental damage type to Lightning.&lt;br&gt;&lt;br&gt;Costs 1 Sorcery Point.</content>
+    <content contentuid="f859c45b-d00a-4961-a506-ac6d40716115" version="1">Changes elemental damage type to Lightning.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point.</content>
     <content contentuid="e6ddfccb-af42-4a74-8a51-3ce8ab7cd09b" version="1">Metamagic: Transmuted Spell (Thunder)</content>
-    <content contentuid="b337bd0d-d116-40c3-80cf-709943a24366" version="1">Changes elemental damage type to Thunder.&lt;br&gt;&lt;br&gt;Costs 1 Sorcery Point.</content>
+    <content contentuid="b337bd0d-d116-40c3-80cf-709943a24366" version="1">Changes elemental damage type to Thunder.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point.</content>
     <content contentuid="c7388b6c-7b7b-40aa-ab55-a8b2ed92339c" version="1">Metamagic: Transmuted Spell</content>
-    <content contentuid="9ee7aa0d-4c68-4b71-9c95-43fadc5fa475" version="1">Enables changing the damage type of elemental Spells.&lt;br&gt;&lt;br&gt;Costs 1 Sorcery Point.</content>
+    <content contentuid="9ee7aa0d-4c68-4b71-9c95-43fadc5fa475" version="1">Enables changing the damage type of elemental Spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point.</content>
     <content contentuid="b15e99d6-d7ce-456e-a02e-f20c0727d8c5" version="1">Exploit: Quickened Spell</content>
-    <content contentuid="d18a0b55-dede-47dc-9b24-568b960bc55e" version="1">Exploited spells channel raw Weave through the body of the caster to quicken spells.&lt;br&gt;&lt;br&gt;The process consumes less Sorcery Points but hurt the invoker, causing [1] per Spell Level.</content>
+    <content contentuid="d18a0b55-dede-47dc-9b24-568b960bc55e" version="1">Exploited spells channel raw Weave through the body of the caster to quicken spells.&lt;br&gt;&lt;br&gt;The process consumes [1] Sorcery Point but hurt the invoker, causing [2] per Spell Level.</content>
 </contentList>
