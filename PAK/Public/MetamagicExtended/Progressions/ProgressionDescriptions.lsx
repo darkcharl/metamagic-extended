@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="8" build="609"/>
+    <region id="ProgressionDescriptions">
+        <node id="root">
+            <children>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Detached"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="2c9f67cd-c0d3-4764-b4bd-6160fdf08475"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Expanded"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="14c67e3a-d9b2-4811-92e6-546bc1d8bfb4"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Seeking"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="470cc458-7e2b-4c59-a19b-cc24e700a03e"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Transmuted"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="7361c554-6b44-42fa-b768-9594ea6240aa"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value=""/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="e8f3328d-4e85-46f8-ac75-23690a04c521"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Exploit_Quickened"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="e550e298-42e7-4023-a7b5-337399e8791b"/>
+                </node>
+        </node>
+    </region>
+</save>
