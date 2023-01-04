@@ -19,7 +19,7 @@
                 <!-- Metamagic Exploits -->
                 <!-- Level 1 -->
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Metamagic_Quickened_Exploit"/>
+                    <attribute id="Passives" type="LSString" value="Exploit_Quickened"/>
                     <attribute id="UUID" type="guid" value="c1ffc407-93ff-4f94-b95c-99f108caefad"/>
                 </node>
             </children>
