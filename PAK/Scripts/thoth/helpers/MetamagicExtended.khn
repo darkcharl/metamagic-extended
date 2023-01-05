@@ -40,6 +40,10 @@ function NonThunderSpellCheck()
     return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Thunder)
 end
 
+function IsSpellExpanded()
+    return HasStatus('METAMAGIC_EXPANDED_SPELL', context.Source)
+end
+
 function IsSpellTransmutedImplemented()
     local result = SpellId('Target_ShockingGrasp')
     or SpellId('Target_Shatter')
