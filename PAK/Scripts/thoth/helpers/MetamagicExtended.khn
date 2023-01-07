@@ -4,40 +4,44 @@ function MeleeSpellAttackCheck()
     return HasStringInSpellRoll('AttackType.MeleeSpellAttack') & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
 end
 
-function ConcentrationSpellCheck()
+function DetachedSpellCheck()
     return HasSpellFlag(SpellFlags.Concentration) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
 end
 
-function AreaSpellCheck()
+function EmpoweredSpellCheck()
+    return HasSpellFlag(SpellFlags.Harmful) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
+end
+
+function ExpandedSpellCheck()
     return AreaRadiusGreaterThan(0) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities()) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.CreateExplosion)
 end
 
-function SpellAttackCheck()
+function SeekingSpellCheck()
     return RangedSpellAttackCheck() | MeleeSpellAttackCheck()
 end
 
-function EnergySpellCheck()
+function TransmutedSpellCheck()
     return SpellDamageTypeIs(DamageType.Acid) | SpellDamageTypeIs(DamageType.Cold) | SpellDamageTypeIs(DamageType.Fire) | SpellDamageTypeIs(DamageType.Lightning) | SpellDamageTypeIs(DamageType.Thunder)
 end
 
 function NonAcidSpellCheck()
-    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Acid)
+    return TransmutedSpellCheck() & ~SpellDamageTypeIs(DamageType.Acid)
 end
 
 function NonColdSpellCheck()
-    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Cold)
+    return TransmutedSpellCheck() & ~SpellDamageTypeIs(DamageType.Cold)
 end
 
 function NonFireSpellCheck()
-    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Fire)
+    return TransmutedSpellCheck() & ~SpellDamageTypeIs(DamageType.Fire)
 end
 
 function NonLightningSpellCheck()
-    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Lightning)
+    return TransmutedSpellCheck() & ~SpellDamageTypeIs(DamageType.Lightning)
 end
 
 function NonThunderSpellCheck()
-    return EnergySpellCheck() & ~SpellDamageTypeIs(DamageType.Thunder)
+    return TransmutedSpellCheck() & ~SpellDamageTypeIs(DamageType.Thunder)
 end
 
 function IsSpellExpanded()

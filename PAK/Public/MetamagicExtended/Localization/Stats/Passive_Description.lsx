@@ -12,6 +12,13 @@
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
 				<node id="TranslatedStringKey">
+					<attribute id="UUID" type="FixedString" value="Passive_Metamagic_Empowered_Description" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Content" type="TranslatedString" handle="18f6a18a-086e-492f-8ba7-f8fc342ecc6a" version="7" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
 					<attribute id="UUID" type="FixedString" value="Passive_Metamagic_Expanded_Description" />
 					<attribute id="Speaker" type="FixedString" value="" />
 					<attribute id="ExtraData" type="LSString" value="" />

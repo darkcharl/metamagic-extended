@@ -7,12 +7,12 @@
                 <!-- Original Metamagic List Overrides -->
                 <!-- Level 3 -->
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Expanded,Metamagic_Extended,Metamagic_Heightened,Metamagic_Quickened,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Transmuted,Metamagic_Twinned"/>
+                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Empowered,Metamagic_Expanded,Metamagic_Extended,Metamagic_Heightened,Metamagic_Quickened,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Transmuted,Metamagic_Twinned"/>
                     <attribute id="UUID" type="guid" value="c3506532-36eb-4d18-823e-497a537a9619"/>
                 </node>
                 <!-- Level 1 -->
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Expanded,Metamagic_Extended,Metamagic_Seeking,Metamagic_Transmuted,Metamagic_Twinned"/>
+                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Empowered,Metamagic_Expanded,Metamagic_Extended,Metamagic_Seeking,Metamagic_Transmuted,Metamagic_Twinned"/>
                     <attribute id="UUID" type="guid" value="49704931-e47b-4ce6-abc6-dfa7ba640752"/>
                 </node>
 
