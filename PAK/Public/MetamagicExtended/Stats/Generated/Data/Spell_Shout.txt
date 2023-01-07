@@ -1,7 +1,7 @@
 new entry "Shout_WitchBolt_Activate"
 type "SpellData"
 data "SpellType" "Shout"
-data "SpellProperties" "SetStatusDuration(SELF,WITCH_BOLT_OWNER,2); IF(IsSpellTransmutedAcid()):DealDamage(1d12,Acid); IF(IsSpellTransmutedCold()):DealDamage(1d12,Cold); IF(IsSpellTransmutedFire()):DealDamage(1d12,Fire); IF(not IsSpellTransmuted() or IsSpellTransmutedLightning()):DealDamage(1d12,Lightning); IF(IsSpellTransmutedThunder()):DealDamage(1d12,Thunder)"
+data "SpellProperties" "SetStatusDuration(SELF,WITCH_BOLT_OWNER,2); IF(Transmuted('Acid')):DealDamage(1d12,Acid); IF(Transmuted('Cold')):DealDamage(1d12,Cold); IF(Transmuted('Fire')):DealDamage(1d12,Fire); IF(Transmuted('Poison')):DealDamage(1d12,Poison); IF(Transmuted('Lightning', true)):DealDamage(1d12,Lightning); IF(Transmuted('Thunder')):DealDamage(1d12,Thunder)"
 data "AreaRadius" "18"
 data "TargetConditions" "HasStatus('WITCH_BOLT',context.Target,context.Source) and not Self()"
 data "Icon" "Spell_Evocation_ActivateWitchBolt"
