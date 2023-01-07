@@ -54,6 +54,13 @@
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
 				<node id="TranslatedStringKey">
+					<attribute id="UUID" type="FixedString" value="Passive_Metamagic_TransmutedPoison_DisplayName" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Content" type="TranslatedString" handle="6076ae0a-0a98-47b9-8c00-a4e9d5ab879b" version="5" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
 					<attribute id="UUID" type="FixedString" value="Passive_Metamagic_TransmutedLightning_DisplayName" />
 					<attribute id="Speaker" type="FixedString" value="" />
 					<attribute id="ExtraData" type="LSString" value="" />
