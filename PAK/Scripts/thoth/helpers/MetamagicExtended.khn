@@ -4,8 +4,24 @@ function MeleeSpellAttackCheck()
     return HasStringInSpellRoll('AttackType.MeleeSpellAttack') & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
 end
 
-function DetachedSpellCheck()
+function ConcentrationSpellCheck()
     return HasSpellFlag(SpellFlags.Concentration) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
+end
+
+function DetachedSpellCheck()
+    return SpellId('Target_CrownOfMadness') 
+    | SpellId('Target_CloudOfDaggers') 
+    | SpellId('Target_DancingLights') 
+    | SpellId('Target_Darkness') 
+    | SpellId('Target_Fly') 
+    | SpellId('Target_FogCloud') 
+    | SpellId('Target_GaseousForm') 
+    | SpellId('Target_Haste') 
+    | SpellId('Target_HideousLaughter') 
+    | SpellId('Target_HoldPerson')
+    | SpellId('Target_Invisibility')
+    | SpellId('Target_MageHand')
+    | SpellId('Target_Levitate')
 end
 
 function EmpoweredSpellCheck()
@@ -46,29 +62,6 @@ end
 
 function IsSpellExpanded()
     return HasStatus('METAMAGIC_EXPANDED_SPELL', context.Source)
-end
-
-function IsSpellTransmutedImplemented()
-    local result = SpellId('Target_ShockingGrasp')
-    or SpellId('Target_Shatter')
-    or SpellId('Target_Shatter_3')
-    or SpellId('Zone_BurningHands')
-    or SpellId('Zone_BurningHands_2')
-    or SpellId('Zone_BurningHands_3')
-    or SpellId('Zone_Thunderwave')
-    or SpellId('Zone_Thunderwave_2')
-    or SpellId('Zone_Thunderwave_3')
-    or SpellId('Projectile_AcidArrow')
-    or SpellId('Projectile_AcidArrow_3')
-    or SpellId('Projectile_AcidSplash')
-    or SpellId('Projectile_Fireball')
-    or SpellId('Projectile_FireBolt')
-    or SpellId('Projectile_RayOfFrost')
-    or SpellId('Projectile_ScorchingRay')
-    or SpellId('Projectile_WitchBolt')
-    or SpellId('Projectile_WitchBolt_2')
-    or SpellId('Projectile_WitchBolt_3')
-    return ConditionResult(result)
 end
 
 function IsSpellTransmutedAcid()
@@ -123,12 +116,21 @@ function Transmuted(element, default)
     return false
 end
 
+function HasDetachedSpell()
+    return HasStatus('METAMAGIC_DETACHED_SPELL', context.Source)
+end
+
 function HasTransmutedSpell()
     return HasStatus('METAMAGIC_TRANSMUTED_SPELL', context.Source) | IsSpellTransmuted()
 end
 
 function HasPotentCantrip()
     return HasPassive('PotentCantrip',context.Source)
+end
+
+function HasSpell(spell_id)
+    spell_id = spell_id or ''
+    return SpellId(spell_id)
 end
 
 function IsSpellAttack()
