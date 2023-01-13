@@ -5,8 +5,8 @@ Baldur's Gate 3 mod which extends available Metamagic options.
 # Metamagic
 
 - Detached Spell: eliminates concentration requirement for 1 Sorcery Point per Spell Level
+- Empowered Spell: 1,2 and 3 spell damage rolls get rerolled for a mere 1 Sorcery Point
 - Expanded Spell: doubles spell effect area for 1 Sorcery Point per Spell Level
-- Heightened Spell: spell attack rolls get advantage for a mere 1 Sorcery Point
 - Seeking Spell: provides advantage on spells with Attack Roll for 1 Sorcery Point
 - Transmuted Spell: changes spell damage type to specified for 1 Sorcery Point
 
