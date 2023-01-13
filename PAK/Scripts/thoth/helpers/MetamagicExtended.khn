@@ -22,6 +22,7 @@ function DetachedSpellCheck()
     | SpellId('Target_Invisibility')
     | SpellId('Target_MageHand')
     | SpellId('Target_Levitate')
+    | SpellId('Zone_Fear') 
 end
 
 function EmpoweredSpellCheck()
@@ -29,7 +30,16 @@ function EmpoweredSpellCheck()
 end
 
 function ExpandedSpellCheck()
-    return AreaRadiusGreaterThan(0) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities()) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.CreateExplosion)
+    return (AreaRadiusGreaterThan(0)
+        | SpellId('Zone_BurningHands')
+        | SpellId('Zone_ColorSpray')
+        | SpellId('Zone_Fear')
+        | SpellId('Zone_GustOfWind')
+        | SpellId('Zone_Thunderwave')
+    )
+    & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities()) 
+    & (SpellTypeIs(SpellType.Target) | SpellTypeIs(SpellType.Zone))
+    & ~HasFunctor(StatsFunctorType.CreateExplosion) 
 end
 
 function SeekingSpellCheck()
