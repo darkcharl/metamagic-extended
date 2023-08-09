@@ -6,6 +6,42 @@ function IsChromaticOrbSpells()
     | SpellId('Projectile_ChromaticOrb_Thunder')
 end
 
+function IsDefaultSpellDamageType(default)
+    return ConditionResult(default) & ~IsSpellTransmuted()
+end
+
+function IsSpellTransmutedAcid()
+    return HasStatus('METAMAGIC_TRANSMUTED_ACID', context.Source)
+end
+
+function IsSpellTransmutedCold()
+    return HasStatus('METAMAGIC_TRANSMUTED_COLD', context.Source)
+end
+
+function IsSpellTransmutedFire()
+    return HasStatus('METAMAGIC_TRANSMUTED_FIRE', context.Source)
+end
+
+function IsSpellTransmutedPoison()
+    return HasStatus('METAMAGIC_TRANSMUTED_POISON', context.Source)
+end
+
+function IsSpellTransmutedLightning()
+    return HasStatus('METAMAGIC_TRANSMUTED_LIGHTNING', context.Source)
+end
+
+function IsSpellTransmutedThunder()
+    return HasStatus('METAMAGIC_TRANSMUTED_THUNDER', context.Source)
+end
+
+function IsSpellTransmuted()
+    return IsSpellTransmutedAcid() | IsSpellTransmutedCold() | IsSpellTransmutedFire() | IsSpellTransmutedPoison() | IsSpellTransmutedLightning() | IsSpellTransmutedThunder()
+end
+
+function DetachedSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasSpellFlag(SpellFlags.Concentration)
+end
+
 function EmpoweredSpellCheck2()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) | IsChromaticOrbSpells()
 end
@@ -14,3 +50,26 @@ function SeekingSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll()
 end
 
+function TransmutedSpellCheck()
+    return SpellDamageTypeIs(DamageType.Acid) | SpellDamageTypeIs(DamageType.Cold) | SpellDamageTypeIs(DamageType.Fire) | SpellDamageTypeIs(DamageType.Poison) | SpellDamageTypeIs(DamageType.Lightning) | SpellDamageTypeIs(DamageType.Thunder)
+end
+
+function Transmuted(element, default)
+    default = default or false
+    
+    if (element == "Acid") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedAcid()
+    elseif (element == "Cold") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedCold()
+    elseif (element == "Fire") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedFire()
+    elseif (element == "Poison") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedPoison()
+    elseif (element == "Lightning") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedLightning()
+    elseif (element == "Thunder") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedThunder()
+    end
+
+    return false
+end
