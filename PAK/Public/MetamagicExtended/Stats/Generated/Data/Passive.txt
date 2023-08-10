@@ -21,7 +21,7 @@ data "Description" "18f6a18a-086e-492f-8ba7-f8fc342ecc6a;1"
 data "DescriptionParams" "1"
 data "Icon" "Skill_Sorcerer_Passive_Metamagic_EmpoweredSpell"
 data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic"
-data "Boosts" "Reroll(Damage,20,false);UnlockSpellVariant(EmpoweredSpellCheck(),ModifyUseCosts(Add,SorceryPoint,1,0),ModifyTooltipDescription(),ModifyIconGlow())"
+data "Boosts" "Reroll(Damage,20,false);UnlockSpellVariant(EmpoweredSpellCheck2(),ModifyUseCosts(Add,SorceryPoint,1,0),ModifyTooltipDescription(),ModifyIconGlow())"
 data "ToggleOnEffect" "VFX_Spells_Cast_Sorcerer_Metamagic_Empowered_HeadFX_01:Dummy_HeadFX"
 data "ToggleOffContext" "OnCastResolved"
 
