@@ -3,7 +3,7 @@
     <content contentuid="374dfb86-1e77-420b-a32c-1fd1ec49c852" version="1">Metamagic: Detached Spell</content>
     <content contentuid="d20581ce-251e-4a55-b257-827230aa563d" version="1">Removes concentration requirement.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
     <content contentuid="bfef4598-bd6d-4323-a650-3d4c080bde78" version="1">Metamagic: Empowered Spell</content>
-    <content contentuid="18f6a18a-086e-492f-8ba7-f8fc342ecc6a" version="1">Rerolls spell damage die rolls that are 1, 2 or 3 to increase the chances of high damage rolls.&lt;br&gt;&lt;br&gt;Regardless of the outcome, the new rolls will be used.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+    <content contentuid="18f6a18a-086e-492f-8ba7-f8fc342ecc6a" version="1">Boosts damage by rolling each spell damage die twice and keeping the larger.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
     <content contentuid="h13be03aagfbfdg40b5g94c8g792f43b18f9d" version="2">Metamagic: Empowered Spell</content>
     <content contentuid="h579a28c1gd57ag4fddga371g4f4f852fb089" version="8">Increase the cost of spells that deal direct damage by [1] Sorcery Point to roll their damage with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;You can use Empowered Spell in combination with other Metamagic.</content>
     <content contentuid="7457fe7a-af4d-43e6-8a12-41f4eea1f85c" version="1">Metamagic: Expanded Spell</content>
