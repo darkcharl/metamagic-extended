@@ -6,6 +6,48 @@ function IsChromaticOrbSpells()
     | SpellId('Projectile_ChromaticOrb_Thunder')
 end
 
+function IsDefaultSpellDamageType(default)
+    return ConditionResult(default) & ~IsSpellTransmuted()
+end
+
+function IsIgnoredMetaSpells()
+    return SpellId('Target_CallLightning') | SpellId('Target_Hex') 
+    | SpellId('Projectile_WitchBolt') 
+    | SpellId('Zone_Sunbeam')
+end
+
+function IsSpellTransmutedAcid()
+    return HasStatus('METAMAGIC_TRANSMUTED_ACID', context.Source)
+end
+
+function IsSpellTransmutedCold()
+    return HasStatus('METAMAGIC_TRANSMUTED_COLD', context.Source)
+end
+
+function IsSpellTransmutedFire()
+    return HasStatus('METAMAGIC_TRANSMUTED_FIRE', context.Source)
+end
+
+function IsSpellTransmutedPoison()
+    return HasStatus('METAMAGIC_TRANSMUTED_POISON', context.Source)
+end
+
+function IsSpellTransmutedLightning()
+    return HasStatus('METAMAGIC_TRANSMUTED_LIGHTNING', context.Source)
+end
+
+function IsSpellTransmutedThunder()
+    return HasStatus('METAMAGIC_TRANSMUTED_THUNDER', context.Source)
+end
+
+function IsSpellTransmuted()
+    return IsSpellTransmutedAcid() | IsSpellTransmutedCold() | IsSpellTransmutedFire() | IsSpellTransmutedPoison() | IsSpellTransmutedLightning() | IsSpellTransmutedThunder()
+end
+
+function DetachedSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & (HasSpellFlag(SpellFlags.Concentration) | HasUseCosts('Detachment_Charge')) & ~IsIgnoredMetaSpells()
+end
+
 function EmpoweredSpellCheck2()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) | IsChromaticOrbSpells()
 end
