@@ -9,7 +9,7 @@ for f in $(ls -f orig/{Shared,SharedDev,Gustav,GustavDev}/*.txt); do
   echo -e " *** Processing: $f ***\n" 
   ./prep.py $f
   echo "------------------------------------------------------------------------------------"
-  sleep 1
+  #sleep 1
 done
 
 # Combine into single file for packaging

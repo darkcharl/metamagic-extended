@@ -9,7 +9,8 @@ import sys
 
 mod_name = "MetamagicExtended"
 
-spell_index = set()
+detached_index = set()
+transmuted_index = set()
 
 spells_ignored = [
     '.*_DEPRECATED_.*',
@@ -39,7 +40,9 @@ spells_ignored = [
     'Zone_Sunbeam.*',
     '.*_(LOW|MAG|SHA|WYR)_.*',
     '.*_Activate',
+    '.*_AI',
     '.*_Djinni',
+    '.*_Dragon',
     '.*_Dryad',
     '.*_Githyanki',
     '.*_Gnoll',
@@ -49,17 +52,23 @@ spells_ignored = [
     '.*_Mindflayer',
     '.*_Recast',
     '.*_Red[Cc]ap',
+    '.*_Skeletal',
     '.*_Throw',
+    '.*_Trap',
     '.*_WoodWoad',
 ]
 
 
 class Spell(object):
-    def __init__(self, name, raw, debug=False):
+    def __init__(self, name, raw, leveled=False):
         self.name = name
+        self._base_name = ""
         self.data = {}
         self.using = ""
         self._raw = raw
+        self._instrumented = False
+        self._leveled = leveled
+        self._level = -1
         self._supported_elements = [
             "Acid",
             "Cold",
@@ -71,6 +80,12 @@ class Spell(object):
             'Projectile_ChromaticOrb.*',
             'Projectile_GlyphOfWarding.*',
         ]
+
+        m = re.match(r'(?P<base_name>.*)_(?P<level>[0-9])', self.name)
+        if m:
+            self._leveled = True
+            self._base_name = m.group('base_name')
+            self._level = m.group('level')
 
         for line in self._raw:
             m = re.match(r'data "(?P<key>[^"]+)" "(?P<value>[^"]+)"', line)
@@ -138,42 +153,58 @@ class Spell(object):
     def base(self, postfix='Base'):
         """ Adds a base variant of the spell to container """
         base_spell = self.get_child(postfix)
-        base_spell.using = self.name
 
         """ Containerize """
-        if self.data.get('RootSpellID'):
-            base_spell.set_item('RootSpellID', f"{self.name}_{postfix}")
+        root_spell_id = self.data.get('RootSpellID', None)
+        if self.is_leveled():
+            root_spell_id = f"{self._base_name}_{postfix}"
+            base_spell.set_item('RootSpellID', root_spell_id)
+            base_spell.set_item('SpellContainerID', self.name)
+            base_spell.set_item('ContainerSpells', "")
+            base_spell.using = self.name
         else:
             base_spell.set_item('ContainerSpells', "")
             base_spell.set_item('SpellContainerID', self.name)
+            base_spell.using = self.name
 
         return base_spell
 
     def detach(self, postfix='Detached'):
+        self._instrumented = True
         detached_spell = self.get_child(postfix)
-        detached_spell.using = self.name
 
-        """ Detach """
-        detached_spell.set_item('SpellFlags', self.data['SpellFlags'])
-        detached_spell.remove_item('SpellFlags', 'IsConcentration')
+        """ Explicitly unset to avoid inheritance """
+        detached_spell.set_item('ContainerSpells', "")
+        detached_spell.data.pop('SpellFlags', None)
 
         """ Containerize """
-        if self.data.get('RootSpellID'):
-            detached_spell.set_item('RootSpellID', f"{self.name}_{postfix}")
-        else:
-            detached_spell.set_item('ContainerSpells', "")
+        if self.is_leveled():
+            """ Derivative, leveled spell """
+            root_spell_id = f"{self._base_name}_{postfix}"
+            detached_spell.set_item('RootSpellID', root_spell_id)
             detached_spell.set_item('SpellContainerID', self.name)
+            detached_spell.using = self.name
+            detached_spell.remove_item('SpellFlags', 'IsLinkedSpellContainer')
+            detached_spell.set_item('PowerLevel', self._level)
+        else:
+            """ We are acting on the main spell """
+            detached_spell.set_item('SpellFlags', self.data['SpellFlags'])
+            detached_spell.remove_item('SpellFlags', 'IsConcentration')
+            detached_spell.set_item('SpellContainerID', self.name)
+            detached_spell.using = self.name
 
         """ Make conditional """
-        level = self.data.get('Level', 1)
-        detached_spell.set_item('UseCosts', self.data['UseCosts'])
+        detached_spell.set_item('UseCosts', self.data.get('UseCosts', ''))
         detached_spell.add_item(
-            'UseCosts', f'Detachment_Charge:1'
+            'UseCosts', f'DetachmentCharge:1'
         )
 
         return detached_spell
 
-    def is_concentration(self):
+    def is_detachable(self):
+        if self._base_name and self._base_name in detached_index:
+            return True
+
         if not self.is_spell():
             return False
 
@@ -186,7 +217,16 @@ class Spell(object):
 
         return False
 
+    def is_instrumented(self):
+        return self._instrumented
+
+    def is_leveled(self):
+        return self._leveled
+
     def is_spell(self):
+        if self.is_leveled():
+            return True
+
         flags = self.data.get('SpellFlags', None)
         if not flags:
             return False
@@ -194,6 +234,9 @@ class Spell(object):
         return "IsSpell" in flags.split(';')
 
     def is_transmutable(self):
+        if self._base_name and self._base_name in transmuted_index:
+            return True
+
         if not self.is_spell():
             return False
 
@@ -202,6 +245,10 @@ class Spell(object):
         if re.match(f'({exceptions_re})', self.name):
             return False
 
+        # for property in ['SpellSuccess', 'SpellFail']:
+        #    v = self.data.get(property, None)
+        #    m = re.find()
+
         if self.data.get('DamageType', None) in self._supported_elements:
             return True
 
@@ -209,6 +256,9 @@ class Spell(object):
 
     def get_child(self, postfix):
         spell_name = f"{self.name}_{postfix}"
+        if self.is_leveled():
+            spell_name = f"{self._base_name}_{postfix}_{self._level}"
+
         spell_type = self.data['SpellType']
 
         raw = '\n'.join([
@@ -225,10 +275,16 @@ class Spell(object):
 
     def transmute(self):
         transmuted_spells = []
+        self._instrumented = True
 
         for element in self._supported_elements:
             transmuted_spell = self.get_child(element)
-            transmuted_spell.using = self.name
+
+            # orig_elem = self.data.get('DamageType', None)
+            # if orig_elem and orig_elem == element:
+            #    """ Don't transmute default element """
+            #    continue
+
             transmuted_spell.set_item('DamageType', element)
 
             """ Replace element in relevant data fields """
@@ -238,25 +294,33 @@ class Spell(object):
             replace_re = r'DealDamage(\1,{}\3)'.format(element)
 
             for field in ['DescriptionParams', 'TooltipDamageList', 'SpellFail', 'SpellProperties', 'SpellSuccess']:
-                found = self.data.get(field, None)
+                found = self.data.get(field, '')
                 if found:
                     found = re.sub(damage_re, replace_re, found)
-                transmuted_spell.data[field] = found
+                    transmuted_spell.data[field] = found
+
+            """ Explicitly unset to avoid inheritance """
+            transmuted_spell.set_item('ContainerSpells', "")
+            transmuted_spell.data.pop('SpellFlags', "")
 
             """ Containerize """
-            if self.data.get('RootSpellID'):
-                transmuted_spell.set_item(
-                    'RootSpellID', f"{self.name}_{element}")
-            else:
-                transmuted_spell.set_item('ContainerSpells', "")
+            if self.is_leveled():
+                root_spell_id = f"{self._base_name}_{element}"
+                transmuted_spell.set_item('RootSpellID', root_spell_id)
                 transmuted_spell.set_item('SpellContainerID', self.name)
+                transmuted_spell.remove_item(
+                    'SpellFlags', 'IsLinkedSpellContainer')
+                transmuted_spell.using = self.name
+                transmuted_spell.set_item('PowerLevel', self._level)
+            else:
+                transmuted_spell.set_item('SpellContainerID', self.name)
+                transmuted_spell.using = self.name
 
             """ Transmuted variant cost and condition """
-            if self.data['DamageType'] != element:
-                transmuted_spell.set_item('UseCosts', self.data['UseCosts'])
-                transmuted_spell.add_item(
-                    'UseCosts', 'Transmutation_Charge:1'
-                )
+            transmuted_spell.set_item('UseCosts', self.data['UseCosts'])
+            transmuted_spell.add_item(
+                'UseCosts', 'TransmutationCharge:1'
+            )
 
             transmuted_spells.append(transmuted_spell)
 
@@ -264,7 +328,7 @@ class Spell(object):
 
     def remove_item(self, param, value):
         """ Remove a unique value from a parameter """
-        found = self.data.get(param, None)
+        found = self.data.get(param, '')
         if found:
             values = set(found.split(';'))
             values.remove(value)
@@ -313,11 +377,13 @@ def parse(source):
                 continue
 
             """ Obtain spell name """
-            m = re.match(r'new entry "(?P<name>[^"]+)"', lines[0])
+            m = re.match(
+                r'new entry "(?P<name>[^"]+)"', lines[0])
             if not m:
                 print(f"parsing issue in block")
                 continue
             name = m.group('name')
+            is_leveled = name.split('_')[-1].isnumeric()
 
             """ Skip ignored spells """
             spells_ignored_re = "({})".format('|'.join(spells_ignored))
@@ -333,10 +399,11 @@ def parse(source):
                     is_spell = 'IsSpell' in set(m.group('flags').split(';'))
                     break
 
-            if not is_spell:
+            if is_spell or is_leveled:
+                spells[name] = Spell(name, lines, is_leveled)
                 continue
 
-            spells[name] = Spell(name, lines)
+            print(f"[-] skipping non-spell {name}")
 
     return spells
 
@@ -351,19 +418,12 @@ def modify_spells(source):
         meta_spells = []
         target = f"modded/Spell_{name}.txt"
 
-        if spell.is_concentration():
+        if spell.is_detachable():
             print(f"[C] {name}")
 
-            """ Register in index """
-            if re.match(r'.*_[0-9]', name):
-                """ Skip levelled spells """
-                continue
-            spell_index.add(name)
-
-            """ Unmodified variant """
-            base_spell = spell.base()
-            spell.register_container_spell(base_spell)
-            meta_spells.append(base_spell)
+            """ Register non-leveled spell in index """
+            if not spell.is_leveled():
+                detached_index.add(name)
 
             """ Detached variant """
             detached_spell = spell.detach()
@@ -374,35 +434,49 @@ def modify_spells(source):
         if spell.is_transmutable():
             print(f"[T] {name}")
 
-            """ Register in index """
-            if re.match(r'.*_[0-9]', name):
-                """ Skip levelled spells """
-                continue
-            spell_index.add(name)
+            """ Register non-leveled spell in index """
+            if not spell.is_leveled():
+                transmuted_index.add(name)
 
             """ Transmuted variant, one for each element """
             for transmuted_spell in spell.transmute():
                 spell.register_container_spell(transmuted_spell)
                 meta_spells.append(transmuted_spell)
 
+        """ Create unmodified variant """
+        if spell.is_instrumented():
+            base_spell = spell.base()
+            spell.register_container_spell(base_spell)
+            meta_spells.append(base_spell)
+
         """ Write modified spells to file """
         if len(meta_spells) > 0:
             with open(target, "w") as f:
+                if spell.is_leveled():
+                    spell.data.pop('SpellFlags', '')
                 f.write("{}\n\n".format(spell))
                 for meta_spell in meta_spells:
                     f.write("{}\n\n".format(meta_spell))
 
 
+def read_index(filename):
+    with open(filename, "r") as idx:
+        spell_index = set(idx.read().split('\n'))
+    return spell_index
+
+
+def write_index(filename, index):
+    with open(filename, "w") as idx:
+        idx.write('\n'.join(sorted(index)))
+
+
 if __name__ == "__main__":
     source = get_options(sys.argv)
     """ Read spell index """
-    with open("spells.idx", "r") as idx:
-        """ Read spell index """
-        spell_index = set(idx.read().split('\n'))
-        orig_size = len(spell_index)
+    detached_index = read_index("detached.idx")
+    transmuted_index = read_index("transmuted.idx")
 
     modify_spells(source)
 
-    if len(spell_index) != orig_size:
-        with open("spells.idx", "w") as idx:
-            idx.write('\n'.join(sorted(spell_index)))
+    write_index("detached.idx", detached_index)
+    write_index("transmuted.idx", transmuted_index)

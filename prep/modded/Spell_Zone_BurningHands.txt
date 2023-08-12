@@ -40,7 +40,7 @@ data "PrepareEffect" "fab371de-227d-4fde-aad6-868ae34c36da"
 data "CastEffect" "5438d3f5-6041-432d-9708-be99fac223ae"
 data "TargetEffect" "a4786ee9-eb7c-4d0d-aaa9-9a637d9eaeaf"
 data "DamageType" "Fire"
-data "ContainerSpells" "Zone_BurningHands_Acid;Zone_BurningHands_Cold;Zone_BurningHands_Fire;Zone_BurningHands_Lightning;Zone_BurningHands_Thunder"
+data "ContainerSpells" "Zone_BurningHands_Acid;Zone_BurningHands_Base;Zone_BurningHands_Cold;Zone_BurningHands_Fire;Zone_BurningHands_Lightning;Zone_BurningHands_Thunder"
 
 new entry "Zone_BurningHands_Acid"
 type "SpellData"
@@ -54,7 +54,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;Transmutation_Charge:1"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
 
 new entry "Zone_BurningHands_Cold"
 type "SpellData"
@@ -68,7 +68,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;Transmutation_Charge:1"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
 
 new entry "Zone_BurningHands_Fire"
 type "SpellData"
@@ -82,6 +82,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
 
 new entry "Zone_BurningHands_Lightning"
 type "SpellData"
@@ -95,7 +96,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;Transmutation_Charge:1"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
 
 new entry "Zone_BurningHands_Thunder"
 type "SpellData"
@@ -109,5 +110,12 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;Transmutation_Charge:1"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+
+new entry "Zone_BurningHands_Base"
+type "SpellData"
+data "SpellType" "Zone"
+using "Zone_BurningHands"
+data "ContainerSpells" ""
+data "SpellContainerID" "Zone_BurningHands"
 
