@@ -24,7 +24,7 @@ data "CycleConditions" "Enemy() and not Dead()"
 data "UseCosts" "ActionPoint:1"
 data "SpellAnimation" "3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;cd5e5d4a-38e1-4d4d-b346-3fbc1e4c3c90,,;141f48d9-9615-496a-8737-9240f0dba60d,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,,"
 data "VerbalIntent" "Damage"
-data "SpellFlags" "RangeIgnoreVerticalThreshold;IsSpell;HasHighGroundRangeExtension;IsHarmful;HasSomaticComponent;IsLinkedSpellContainer;HasVerbalComponent"
+data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsHarmful;IsLinkedSpellContainer;IsSpell;RangeIgnoreVerticalThreshold"
 data "PrepareEffect" "ee97e6e4-90a1-4181-b7fa-f6fe8b2af2d0"
 data "CastEffect" "f3d3763c-1cbb-4d7a-94da-d9f703b7d67a"
 data "DamageType" "Cold"
@@ -42,7 +42,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Acid,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "Transmutation_Charge:1;ActionPoint:1"
+data "UseCosts" "ActionPoint:1;Transmutation_Charge:1"
 
 new entry "Projectile_RayOfFrost_Cold"
 type "SpellData"
@@ -69,7 +69,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Fire,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "Transmutation_Charge:1;ActionPoint:1"
+data "UseCosts" "ActionPoint:1;Transmutation_Charge:1"
 
 new entry "Projectile_RayOfFrost_Lightning"
 type "SpellData"
@@ -83,7 +83,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Lightning,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "Transmutation_Charge:1;ActionPoint:1"
+data "UseCosts" "ActionPoint:1;Transmutation_Charge:1"
 
 new entry "Projectile_RayOfFrost_Thunder"
 type "SpellData"
@@ -97,5 +97,5 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Thunder,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "Transmutation_Charge:1;ActionPoint:1"
+data "UseCosts" "ActionPoint:1;Transmutation_Charge:1"
 

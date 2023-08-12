@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-""" Script to modify contents of character file """
+""" Script to create meta spell variants """
 
 import copy
 import os
@@ -8,6 +8,8 @@ import re
 import sys
 
 mod_name = "MetamagicExtended"
+
+spell_index = set()
 
 spells_ignored = [
     '.*_DEPRECATED_.*',
@@ -49,7 +51,6 @@ spells_ignored = [
     '.*_Red[Cc]ap',
     '.*_Throw',
     '.*_WoodWoad',
-    '.*_[0-9]',
 ]
 
 
@@ -121,7 +122,7 @@ class Spell(object):
         if found:
             values = set(found.split(';'))
         values.add(value)
-        self.data[param] = ';'.join(values)
+        self.data[param] = ';'.join(sorted(values))
 
     def append_string(self, param, s):
         """ Appends string to parameter """
@@ -134,19 +135,22 @@ class Spell(object):
     def damage_type(self):
         return self.data['DamageType']
 
-    def base(self):
+    def base(self, postfix='Base'):
         """ Adds a base variant of the spell to container """
-        base_spell = self.get_child('Base')
+        base_spell = self.get_child(postfix)
         base_spell.using = self.name
 
         """ Containerize """
-        base_spell.set_item('ContainerSpells', "")
-        base_spell.set_item('SpellContainerID', self.name)
+        if self.data.get('RootSpellID'):
+            base_spell.set_item('RootSpellID', f"{self.name}_{postfix}")
+        else:
+            base_spell.set_item('ContainerSpells', "")
+            base_spell.set_item('SpellContainerID', self.name)
 
         return base_spell
 
-    def detach(self):
-        detached_spell = self.get_child('Detached')
+    def detach(self, postfix='Detached'):
+        detached_spell = self.get_child(postfix)
         detached_spell.using = self.name
 
         """ Detach """
@@ -154,8 +158,11 @@ class Spell(object):
         detached_spell.remove_item('SpellFlags', 'IsConcentration')
 
         """ Containerize """
-        detached_spell.set_item('ContainerSpells', "")
-        detached_spell.set_item('SpellContainerID', self.name)
+        if self.data.get('RootSpellID'):
+            detached_spell.set_item('RootSpellID', f"{self.name}_{postfix}")
+        else:
+            detached_spell.set_item('ContainerSpells', "")
+            detached_spell.set_item('SpellContainerID', self.name)
 
         """ Make conditional """
         level = self.data.get('Level', 1)
@@ -237,8 +244,12 @@ class Spell(object):
                 transmuted_spell.data[field] = found
 
             """ Containerize """
-            transmuted_spell.set_item('ContainerSpells', "")
-            transmuted_spell.set_item('SpellContainerID', self.name)
+            if self.data.get('RootSpellID'):
+                transmuted_spell.set_item(
+                    'RootSpellID', f"{self.name}_{element}")
+            else:
+                transmuted_spell.set_item('ContainerSpells', "")
+                transmuted_spell.set_item('SpellContainerID', self.name)
 
             """ Transmuted variant cost and condition """
             if self.data['DamageType'] != element:
@@ -292,6 +303,7 @@ def get_options(args):
 def parse(source):
     spells = {}
     with open(source, "r") as f:
+        """ Parse source """
         for block in f.read().split('\n\n'):
             if len(block) == 0:
                 continue
@@ -331,13 +343,23 @@ def parse(source):
 
 def modify_spells(source):
     """ Adds transmuted spell variants """
+
+    """ Load and parse spell file """
     data = parse(source)
+
     for name, spell in data.items():
         meta_spells = []
         target = f"modded/Spell_{name}.txt"
 
         if spell.is_concentration():
             print(f"[C] {name}")
+
+            """ Register in index """
+            if re.match(r'.*_[0-9]', name):
+                """ Skip levelled spells """
+                continue
+            spell_index.add(name)
+
             """ Unmodified variant """
             base_spell = spell.base()
             spell.register_container_spell(base_spell)
@@ -346,16 +368,24 @@ def modify_spells(source):
             """ Detached variant """
             detached_spell = spell.detach()
             spell.register_container_spell(detached_spell)
+
             meta_spells.append(detached_spell)
 
         if spell.is_transmutable():
             print(f"[T] {name}")
-            """ Transmuted variant, one for each element """
-            for tspell in spell.transmute():
-                spell.register_container_spell(tspell)
-                meta_spells.append(tspell)
 
-        """ Write to file if feasible to meta """
+            """ Register in index """
+            if re.match(r'.*_[0-9]', name):
+                """ Skip levelled spells """
+                continue
+            spell_index.add(name)
+
+            """ Transmuted variant, one for each element """
+            for transmuted_spell in spell.transmute():
+                spell.register_container_spell(transmuted_spell)
+                meta_spells.append(transmuted_spell)
+
+        """ Write modified spells to file """
         if len(meta_spells) > 0:
             with open(target, "w") as f:
                 f.write("{}\n\n".format(spell))
@@ -365,4 +395,14 @@ def modify_spells(source):
 
 if __name__ == "__main__":
     source = get_options(sys.argv)
+    """ Read spell index """
+    with open("spells.idx", "r") as idx:
+        """ Read spell index """
+        spell_index = set(idx.read().split('\n'))
+        orig_size = len(spell_index)
+
     modify_spells(source)
+
+    if len(spell_index) != orig_size:
+        with open("spells.idx", "w") as idx:
+            idx.write('\n'.join(sorted(spell_index)))

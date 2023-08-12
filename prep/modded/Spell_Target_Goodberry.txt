@@ -18,7 +18,7 @@ data "CycleConditions" "Ally() and not Dead()"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1"
 data "SpellAnimation" "6f42f5f3-7a5a-4441-a02e-71b0450ac4b7,,;,,;29cc8ef2-e45e-4513-8f98-085d0dad7bc1,,;bb428832-db99-4236-8a81-a2737b81d0cc,,;42aaefdc-cf9b-4249-b159-285041851f69,,;,,;20e11c98-fff9-4417-88de-5bcc2368a1bd,,;8dd1cfd4-c954-46f0-bbcc-8d9431284f63,,;fcf4f367-691a-4adc-a2a8-f9ab7709c42b,,"
 data "VerbalIntent" "Summon"
-data "SpellFlags" "IsLinkedSpellContainer;HasVerbalComponent;IsMelee;IsSpell;HasSomaticComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsLinkedSpellContainer;IsMelee;IsSpell"
 data "RechargeValues" "4-6"
 data "HitAnimationType" "MagicalNonDamage"
 data "MemoryCost" "1"
@@ -40,7 +40,7 @@ data "SpellProperties" "SummonInInventory(de6b186e-839e-41d0-87af-a1a9d9327785,-
 data "SpellSuccess" "None"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_Goodberry"
-data "UseCosts" "ActionPoint:1;Transmutation_Charge:1;SpellSlotsGroup:1:1:1"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;Transmutation_Charge:1"
 
 new entry "Target_Goodberry_Cold"
 type "SpellData"
@@ -67,7 +67,7 @@ data "SpellProperties" "SummonInInventory(de6b186e-839e-41d0-87af-a1a9d9327785,-
 data "SpellSuccess" "None"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_Goodberry"
-data "UseCosts" "ActionPoint:1;Transmutation_Charge:1;SpellSlotsGroup:1:1:1"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;Transmutation_Charge:1"
 
 new entry "Target_Goodberry_Lightning"
 type "SpellData"
@@ -81,7 +81,7 @@ data "SpellProperties" "SummonInInventory(de6b186e-839e-41d0-87af-a1a9d9327785,-
 data "SpellSuccess" "None"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_Goodberry"
-data "UseCosts" "ActionPoint:1;Transmutation_Charge:1;SpellSlotsGroup:1:1:1"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;Transmutation_Charge:1"
 
 new entry "Target_Goodberry_Thunder"
 type "SpellData"
@@ -95,5 +95,5 @@ data "SpellProperties" "SummonInInventory(de6b186e-839e-41d0-87af-a1a9d9327785,-
 data "SpellSuccess" "None"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_Goodberry"
-data "UseCosts" "ActionPoint:1;Transmutation_Charge:1;SpellSlotsGroup:1:1:1"
+data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;Transmutation_Charge:1"
 

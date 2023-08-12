@@ -18,7 +18,7 @@ data "CastTextEvent" "Cast"
 data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:2"
 data "SpellAnimation" "3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;35b644cf-5c13-4407-9dc1-23bf4309216e,,;823e3ddf-c670-41ef-b7b4-9f4a4e38300b,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,,"
 data "VerbalIntent" "Damage"
-data "SpellFlags" "IsLinkedSpellContainer;IsSpell;HasVerbalComponent;HasSomaticComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsLinkedSpellContainer;IsSpell"
 data "SpellAnimationIntentType" "Aggressive"
 data "PrepareEffect" "e7acb4f3-8777-408a-90cb-e3dc5f1c14bb"
 data "CastEffect" "ec6002b5-fda9-4a78-a024-60e4a90563aa"
@@ -38,7 +38,7 @@ data "SpellProperties" "AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5b
 data "SpellSuccess" "None"
 data "ContainerSpells" ""
 data "SpellContainerID" "Shout_FlameBlade"
-data "UseCosts" "BonusActionPoint:1;Transmutation_Charge:1;SpellSlotsGroup:1:1:2"
+data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:2;Transmutation_Charge:1"
 
 new entry "Shout_FlameBlade_Cold"
 type "SpellData"
@@ -52,7 +52,7 @@ data "SpellProperties" "AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5b
 data "SpellSuccess" "None"
 data "ContainerSpells" ""
 data "SpellContainerID" "Shout_FlameBlade"
-data "UseCosts" "BonusActionPoint:1;Transmutation_Charge:1;SpellSlotsGroup:1:1:2"
+data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:2;Transmutation_Charge:1"
 
 new entry "Shout_FlameBlade_Fire"
 type "SpellData"
@@ -79,7 +79,7 @@ data "SpellProperties" "AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5b
 data "SpellSuccess" "None"
 data "ContainerSpells" ""
 data "SpellContainerID" "Shout_FlameBlade"
-data "UseCosts" "BonusActionPoint:1;Transmutation_Charge:1;SpellSlotsGroup:1:1:2"
+data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:2;Transmutation_Charge:1"
 
 new entry "Shout_FlameBlade_Thunder"
 type "SpellData"
@@ -93,5 +93,5 @@ data "SpellProperties" "AI_IGNORE:SummonInInventory(dfb5a6ef-baee-4c0e-9b9d-7f5b
 data "SpellSuccess" "None"
 data "ContainerSpells" ""
 data "SpellContainerID" "Shout_FlameBlade"
-data "UseCosts" "BonusActionPoint:1;Transmutation_Charge:1;SpellSlotsGroup:1:1:2"
+data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:2;Transmutation_Charge:1"
 
