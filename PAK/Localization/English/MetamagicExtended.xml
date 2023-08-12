@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
+    <content contentuid="69e9ee61-12b1-4bab-aabf-eca1b96dc268" version="1">Detachment Charge</content>
     <content contentuid="374dfb86-1e77-420b-a32c-1fd1ec49c852" version="1">Metamagic: Detached Spell</content>
     <content contentuid="d20581ce-251e-4a55-b257-827230aa563d" version="1">Removes concentration requirement.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
     <content contentuid="bfef4598-bd6d-4323-a650-3d4c080bde78" version="1">Metamagic: Empowered Spell</content>
@@ -24,6 +25,7 @@
     <content contentuid="b337bd0d-d116-40c3-80cf-709943a24366" version="1">Changes elemental damage type to Thunder.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
     <content contentuid="c7388b6c-7b7b-40aa-ab55-a8b2ed92339c" version="1">Metamagic: Transmuted Spell</content>
     <content contentuid="9ee7aa0d-4c68-4b71-9c95-43fadc5fa475" version="1">Enables changing the damage type of elemental Spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+    <content contentuid="267d2e1b-e471-491a-ad85-a790ae0e6751" version="1">Transmutation Charge</content>
     <content contentuid="b15e99d6-d7ce-456e-a02e-f20c0727d8c5" version="1">Exploit: Quickened Spell</content>
     <content contentuid="d18a0b55-dede-47dc-9b24-568b960bc55e" version="1">Exploited spells channel raw Weave through the body of the caster to quicken spells.&lt;br&gt;&lt;br&gt;The process consumes [1] Sorcery Point but hurt the invoker, causing [2] per Spell Level.</content>
 </contentList>

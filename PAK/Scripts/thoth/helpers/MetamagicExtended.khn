@@ -56,3 +56,26 @@ function SeekingSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll()
 end
 
+function TransmutedSpellCheck()
+    return SpellDamageTypeIs(DamageType.Acid) | SpellDamageTypeIs(DamageType.Cold) | SpellDamageTypeIs(DamageType.Fire) | SpellDamageTypeIs(DamageType.Poison) | SpellDamageTypeIs(DamageType.Lightning) | SpellDamageTypeIs(DamageType.Thunder)
+end
+
+function Transmuted(element, default)
+    default = default or false
+    
+    if (element == "Acid") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedAcid()
+    elseif (element == "Cold") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedCold()
+    elseif (element == "Fire") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedFire()
+    elseif (element == "Poison") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedPoison()
+    elseif (element == "Lightning") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedLightning()
+    elseif (element == "Thunder") then
+        return IsDefaultSpellDamageType(default) | IsSpellTransmutedThunder()
+    end
+
+    return false
+end
