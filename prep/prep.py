@@ -23,12 +23,15 @@ spells_ignored = [
     'Target_CallLightning.*',
     'Target_ConjureElemental.*',
     'Target_ElementalWeapon.*',
+    'Target_EnhanceAbility.*',
+    'Target_Enlarge.*',
     'Target_EnsnaringStrike.*',
     'Target_Eyebite_.*',
+    'Target_GlyphOfWarding.*',
     'Target_HeatMetal.*',
     'Target_Hex.*',
-    'Target_GlyphOfWarding.*',
     'Target_ProtectionFromEnergy.*',
+    'Target_Reduce.*',
     'Target_Smite.*',
     'Target_StaggeringSmite.*',
     'Shout_[A-Z]{3}_.*',
@@ -338,7 +341,7 @@ class Spell(object):
             values.remove(value)
             if len(values) == 0:
                 return
-            self.data[param] = ';'.join(values)
+            self.data[param] = ';'.join(sorted(values))
 
     def register_container_spell(self, spell):
         self.add_item('ContainerSpells', spell.name)
