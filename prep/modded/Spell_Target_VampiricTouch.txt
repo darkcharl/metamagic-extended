@@ -43,7 +43,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_VampiricTouch"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;IsHarmful;IsSpell;IsMelee;HasSomaticComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsHarmful;IsMelee;IsSpell"
 data "SpellContainerID" "Target_VampiricTouch"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:3"
 

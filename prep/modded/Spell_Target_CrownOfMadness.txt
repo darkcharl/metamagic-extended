@@ -36,7 +36,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_CrownOfMadness"
 data "ContainerSpells" ""
-data "SpellFlags" "HasHighGroundRangeExtension;HasVerbalComponent;IsSpell;HasSomaticComponent"
+data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Target_CrownOfMadness"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 

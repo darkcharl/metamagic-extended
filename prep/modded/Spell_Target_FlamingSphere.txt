@@ -33,7 +33,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_FlamingSphere"
 data "ContainerSpells" ""
-data "SpellFlags" "CannotTargetCharacter;HasHighGroundRangeExtension;HasVerbalComponent;IsSpell;HasSomaticComponent;CannotTargetItems"
+data "SpellFlags" "CannotTargetCharacter;CannotTargetItems;HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Target_FlamingSphere"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 

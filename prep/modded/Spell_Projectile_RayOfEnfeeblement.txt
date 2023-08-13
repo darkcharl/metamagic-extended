@@ -35,7 +35,7 @@ type "SpellData"
 data "SpellType" "Projectile"
 using "Projectile_RayOfEnfeeblement"
 data "ContainerSpells" ""
-data "SpellFlags" "IsHarmful;HasSomaticComponent;IsSpell;HasVerbalComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold"
+data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsHarmful;IsSpell;RangeIgnoreVerticalThreshold"
 data "SpellContainerID" "Projectile_RayOfEnfeeblement"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 

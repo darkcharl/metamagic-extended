@@ -33,7 +33,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_CloudOfDaggers"
 data "ContainerSpells" ""
-data "SpellFlags" "HasHighGroundRangeExtension;HasVerbalComponent;IsHarmful;IsSpell;HasSomaticComponent;CannotTargetItems"
+data "SpellFlags" "CannotTargetItems;HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsHarmful;IsSpell"
 data "SpellContainerID" "Target_CloudOfDaggers"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 

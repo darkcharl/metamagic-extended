@@ -34,7 +34,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Web"
 data "ContainerSpells" ""
-data "SpellFlags" "HasHighGroundRangeExtension;HasVerbalComponent;IsSpell;RangeIgnoreVerticalThreshold;HasSomaticComponent"
+data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsSpell;RangeIgnoreVerticalThreshold"
 data "SpellContainerID" "Target_Web"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 

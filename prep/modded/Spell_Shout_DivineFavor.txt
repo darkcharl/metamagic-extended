@@ -31,7 +31,7 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_DivineFavor"
 data "ContainerSpells" ""
-data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Shout_DivineFavor"
 data "UseCosts" "BonusActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:1"
 

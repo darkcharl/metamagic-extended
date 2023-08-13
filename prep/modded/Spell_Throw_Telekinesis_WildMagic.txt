@@ -12,7 +12,7 @@ type "SpellData"
 data "SpellType" "Throw"
 using "Throw_Telekinesis_WildMagic"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;AbortOnSecondarySpellRollFail;CombatLogSetSingleLineRoll;IgnoreVisionBlock;RangeIgnoreVerticalThreshold;HasHighGroundRangeExtension;AddFallDamageOnLand;HasSomaticComponent;InventorySelection;IsHarmful;AbortOnSpellRollFail;Temporary;IsSpell"
+data "SpellFlags" "AbortOnSecondarySpellRollFail;AbortOnSpellRollFail;AddFallDamageOnLand;CombatLogSetSingleLineRoll;HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IgnoreVisionBlock;InventorySelection;IsHarmful;IsSpell;RangeIgnoreVerticalThreshold;Temporary"
 data "SpellContainerID" "Throw_Telekinesis_WildMagic"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1"
 

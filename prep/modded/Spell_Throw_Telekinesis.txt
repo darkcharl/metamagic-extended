@@ -37,7 +37,7 @@ type "SpellData"
 data "SpellType" "Throw"
 using "Throw_Telekinesis"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;AbortOnSecondarySpellRollFail;CombatLogSetSingleLineRoll;IgnoreVisionBlock;RangeIgnoreVerticalThreshold;HasHighGroundRangeExtension;AddFallDamageOnLand;HasSomaticComponent;InventorySelection;IsHarmful;AbortOnSpellRollFail;IsSpell"
+data "SpellFlags" "AbortOnSecondarySpellRollFail;AbortOnSpellRollFail;AddFallDamageOnLand;CombatLogSetSingleLineRoll;HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IgnoreVisionBlock;InventorySelection;IsHarmful;IsSpell;RangeIgnoreVerticalThreshold"
 data "SpellContainerID" "Throw_Telekinesis"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:5"
 

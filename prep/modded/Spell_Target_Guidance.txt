@@ -32,7 +32,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Guidance"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;IsSpell;IsMelee;HasSomaticComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsMelee;IsSpell"
 data "SpellContainerID" "Target_Guidance"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1"
 

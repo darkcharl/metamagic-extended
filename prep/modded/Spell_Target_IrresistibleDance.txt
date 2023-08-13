@@ -31,7 +31,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_IrresistibleDance"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;CannotTargetItems;HasHighGroundRangeExtension;CannotTargetTerrain;IsHarmful;IsSpell"
+data "SpellFlags" "CannotTargetItems;CannotTargetTerrain;HasHighGroundRangeExtension;HasVerbalComponent;IsHarmful;IsSpell"
 data "SpellContainerID" "Target_IrresistibleDance"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:6"
 

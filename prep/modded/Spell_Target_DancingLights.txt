@@ -28,7 +28,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_DancingLights"
 data "ContainerSpells" ""
-data "SpellFlags" "HasHighGroundRangeExtension;HasVerbalComponent;IsSpell;HasSomaticComponent;CannotTargetItems"
+data "SpellFlags" "CannotTargetItems;HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Target_DancingLights"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1"
 

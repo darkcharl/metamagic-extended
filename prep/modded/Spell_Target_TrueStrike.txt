@@ -29,7 +29,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_TrueStrike"
 data "ContainerSpells" ""
-data "SpellFlags" "HasHighGroundRangeExtension;IsHarmful;IsSpell;HasSomaticComponent"
+data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;IsHarmful;IsSpell"
 data "SpellContainerID" "Target_TrueStrike"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1"
 

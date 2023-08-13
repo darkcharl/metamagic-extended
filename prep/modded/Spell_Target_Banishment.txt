@@ -35,7 +35,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Banishment"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsSpell"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsSpell;RangeIgnoreVerticalThreshold"
 data "SpellContainerID" "Target_Banishment"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
 

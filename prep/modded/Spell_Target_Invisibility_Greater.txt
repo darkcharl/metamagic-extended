@@ -33,7 +33,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Invisibility_Greater"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;IsMelee;HasSomaticComponent;IsSpell"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsMelee;IsSpell"
 data "SpellContainerID" "Target_Invisibility_Greater"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
 

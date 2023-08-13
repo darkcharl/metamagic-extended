@@ -35,7 +35,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_GaseousForm"
 data "ContainerSpells" ""
-data "SpellFlags" "UnavailableInDialogs;HasVerbalComponent;IsSpell;IsMelee;HasSomaticComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsMelee;IsSpell;UnavailableInDialogs"
 data "SpellContainerID" "Target_GaseousForm"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:3"
 

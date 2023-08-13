@@ -30,7 +30,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Darkness"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;IsSpell;Stealth;Invisible"
+data "SpellFlags" "HasVerbalComponent;Invisible;IsSpell;Stealth"
 data "SpellContainerID" "Target_Darkness"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 

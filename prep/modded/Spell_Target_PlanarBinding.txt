@@ -33,7 +33,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_PlanarBinding"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;HasHighGroundRangeExtension;IsHarmful;HasSomaticComponent;IsSpell"
+data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsHarmful;IsSpell"
 data "SpellContainerID" "Target_PlanarBinding"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:5"
 

@@ -39,7 +39,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Silence"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;IsSpell;HasSomaticComponent;CannotTargetItems"
+data "SpellFlags" "CannotTargetItems;HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Target_Silence"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 

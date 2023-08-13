@@ -29,7 +29,7 @@ type "SpellData"
 data "SpellType" "Wall"
 using "Wall_WallOfStone"
 data "ContainerSpells" ""
-data "SpellFlags" "HasSomaticComponent;IsSpell;HasVerbalComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Wall_WallOfStone"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:5"
 

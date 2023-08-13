@@ -32,7 +32,7 @@ type "SpellData"
 data "SpellType" "Teleportation"
 using "Teleportation_ArcaneGate"
 data "ContainerSpells" ""
-data "SpellFlags" "IsSpell;RangeIgnoreVerticalThreshold;HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;CannotTargetCharacter;CannotTargetItems"
+data "SpellFlags" "CannotTargetCharacter;CannotTargetItems;HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;IsSpell;RangeIgnoreVerticalThreshold"
 data "SpellContainerID" "Teleportation_ArcaneGate"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:6"
 

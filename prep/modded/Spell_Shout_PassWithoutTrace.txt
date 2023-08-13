@@ -27,7 +27,7 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_PassWithoutTrace"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;Invisible;IsSpell;HasSomaticComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;Invisible;IsSpell"
 data "SpellContainerID" "Shout_PassWithoutTrace"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 

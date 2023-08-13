@@ -31,7 +31,7 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_SpiritGuardians"
 data "ContainerSpells" ""
-data "SpellFlags" "IsLinkedSpellContainer;HasVerbalComponent;IsHarmful;IsSpell;HasSomaticComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsHarmful;IsLinkedSpellContainer;IsSpell"
 data "SpellContainerID" "Shout_SpiritGuardians"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:3"
 

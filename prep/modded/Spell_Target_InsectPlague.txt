@@ -41,7 +41,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_InsectPlague"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;CannotTargetItems;IsHarmful;HasSomaticComponent;IsSpell"
+data "SpellFlags" "CannotTargetItems;HasSomaticComponent;HasVerbalComponent;IsHarmful;IsSpell"
 data "SpellContainerID" "Target_InsectPlague"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:5"
 

@@ -28,7 +28,7 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_DispelEvilAndGood"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Shout_DispelEvilAndGood"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:5"
 

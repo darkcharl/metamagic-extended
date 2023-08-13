@@ -40,7 +40,7 @@ type "SpellData"
 data "SpellType" "Zone"
 using "Zone_Fear"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Zone_Fear"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:3"
 

@@ -33,7 +33,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Heroism"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;IsSpell;IsMelee;HasSomaticComponent;IgnorePreviouslyPickedEntities"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IgnorePreviouslyPickedEntities;IsMelee;IsSpell"
 data "SpellContainerID" "Target_Heroism"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:1"
 

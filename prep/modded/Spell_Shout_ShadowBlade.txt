@@ -32,7 +32,7 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_ShadowBlade"
 data "ContainerSpells" ""
-data "SpellFlags" "HasSomaticComponent;IsSpell;HasVerbalComponent"
+data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Shout_ShadowBlade"
 data "UseCosts" "BonusActionPoint:1;SorceryPoint:1;DetachmentCharge:1"
 

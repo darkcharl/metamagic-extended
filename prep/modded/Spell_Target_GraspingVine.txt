@@ -30,7 +30,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_GraspingVine"
 data "ContainerSpells" ""
-data "SpellFlags" "HasVerbalComponent;CannotTargetItems;HasSomaticComponent;IsSpell;CannotTargetCharacter"
+data "SpellFlags" "CannotTargetCharacter;CannotTargetItems;HasSomaticComponent;HasVerbalComponent;IsSpell"
 data "SpellContainerID" "Target_GraspingVine"
 data "UseCosts" "ActionPoint:1;SorceryPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
 
