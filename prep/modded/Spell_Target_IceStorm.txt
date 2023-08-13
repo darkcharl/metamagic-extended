@@ -47,7 +47,7 @@ data "SpellProperties" "GROUND:CreateSurface(6,2,WaterFrozen);GROUND:SurfaceChan
 data "SpellSuccess" "DealDamage(2d8,Bludgeoning,Magical);DealDamage(4d6,Acid,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_IceStorm"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:4"
 
 new entry "Target_IceStorm_Cold"
 type "SpellData"
@@ -60,7 +60,7 @@ data "SpellProperties" "GROUND:CreateSurface(6,2,WaterFrozen);GROUND:SurfaceChan
 data "SpellSuccess" "DealDamage(2d8,Bludgeoning,Magical);DealDamage(4d6,Cold,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_IceStorm"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:4"
 
 new entry "Target_IceStorm_Fire"
 type "SpellData"
@@ -73,7 +73,7 @@ data "SpellProperties" "GROUND:CreateSurface(6,2,WaterFrozen);GROUND:SurfaceChan
 data "SpellSuccess" "DealDamage(2d8,Bludgeoning,Magical);DealDamage(4d6,Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_IceStorm"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:4"
 
 new entry "Target_IceStorm_Lightning"
 type "SpellData"
@@ -86,7 +86,7 @@ data "SpellProperties" "GROUND:CreateSurface(6,2,WaterFrozen);GROUND:SurfaceChan
 data "SpellSuccess" "DealDamage(2d8,Bludgeoning,Magical);DealDamage(4d6,Lightning,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_IceStorm"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:4"
 
 new entry "Target_IceStorm_Thunder"
 type "SpellData"
@@ -99,7 +99,7 @@ data "SpellProperties" "GROUND:CreateSurface(6,2,WaterFrozen);GROUND:SurfaceChan
 data "SpellSuccess" "DealDamage(2d8,Bludgeoning,Magical);DealDamage(4d6,Thunder,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Target_IceStorm"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:4"
 
 new entry "Target_IceStorm_Base"
 type "SpellData"

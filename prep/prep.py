@@ -172,6 +172,7 @@ class Spell(object):
     def detach(self, postfix='Detached'):
         self._instrumented = True
         detached_spell = self.get_child(postfix)
+        sorcery_point_cost = 1
 
         """ Explicitly unset to avoid inheritance """
         detached_spell.set_item('ContainerSpells', "")
@@ -180,6 +181,7 @@ class Spell(object):
         """ Containerize """
         if self.is_leveled():
             """ Derivative, leveled spell """
+            sorcery_point_cost = self._level
             root_spell_id = f"{self._base_name}_{postfix}"
             detached_spell.set_item('RootSpellID', root_spell_id)
             detached_spell.set_item('SpellContainerID', self.name)
@@ -193,10 +195,11 @@ class Spell(object):
             detached_spell.set_item('SpellContainerID', self.name)
             detached_spell.using = self.name
 
-        """ Make conditional """
+        """ Set cost, make conditional """
+
         detached_spell.set_item('UseCosts', self.data.get('UseCosts', ''))
         detached_spell.add_item(
-            'UseCosts', f'DetachmentCharge:1'
+            'UseCosts', f'SorceryPoint:{sorcery_point_cost};DetachmentCharge:1'
         )
 
         return detached_spell
@@ -276,6 +279,7 @@ class Spell(object):
     def transmute(self):
         transmuted_spells = []
         self._instrumented = True
+        sorcery_point_cost = 1
 
         for element in self._supported_elements:
             transmuted_spell = self.get_child(element)
@@ -319,7 +323,7 @@ class Spell(object):
             """ Transmuted variant cost and condition """
             transmuted_spell.set_item('UseCosts', self.data['UseCosts'])
             transmuted_spell.add_item(
-                'UseCosts', 'TransmutationCharge:1'
+                'UseCosts', f'SorceryPoint:{sorcery_point_cost};TransmutationCharge:1'
             )
 
             transmuted_spells.append(transmuted_spell)

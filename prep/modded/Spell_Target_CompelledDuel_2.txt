@@ -15,7 +15,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Target_CompelledDuel_Detached"
 data "SpellContainerID" "Target_CompelledDuel_2"
 data "PowerLevel" "2"
-data "UseCosts" "BonusActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
+data "UseCosts" "BonusActionPoint:1;SorceryPoint:2;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 
 new entry "Target_CompelledDuel_Base_2"
 type "SpellData"

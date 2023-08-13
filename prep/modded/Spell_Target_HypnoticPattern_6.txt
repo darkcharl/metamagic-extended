@@ -16,7 +16,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Target_HypnoticPattern_Detached"
 data "SpellContainerID" "Target_HypnoticPattern_6"
 data "PowerLevel" "6"
-data "UseCosts" "ActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:6"
+data "UseCosts" "ActionPoint:1;SorceryPoint:6;DetachmentCharge:1;SpellSlotsGroup:1:1:6"
 
 new entry "Target_HypnoticPattern_Base_6"
 type "SpellData"

@@ -54,7 +54,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Zone_BurningHands_Cold"
 type "SpellData"
@@ -68,7 +68,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Zone_BurningHands_Fire"
 type "SpellData"
@@ -82,7 +82,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Zone_BurningHands_Lightning"
 type "SpellData"
@@ -96,7 +96,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Zone_BurningHands_Thunder"
 type "SpellData"
@@ -110,7 +110,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);
 data "SpellSuccess" "DealDamage(3d6, Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_BurningHands"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Zone_BurningHands_Base"
 type "SpellData"

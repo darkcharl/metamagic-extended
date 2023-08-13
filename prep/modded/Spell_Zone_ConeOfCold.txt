@@ -48,7 +48,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(8d8,Acid,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_ConeOfCold"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:5"
 
 new entry "Zone_ConeOfCold_Cold"
 type "SpellData"
@@ -62,7 +62,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(8d8,Cold,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_ConeOfCold"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:5"
 
 new entry "Zone_ConeOfCold_Fire"
 type "SpellData"
@@ -76,7 +76,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(8d8,Fire,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_ConeOfCold"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:5"
 
 new entry "Zone_ConeOfCold_Lightning"
 type "SpellData"
@@ -90,7 +90,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(8d8,Lightning,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_ConeOfCold"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:5"
 
 new entry "Zone_ConeOfCold_Thunder"
 type "SpellData"
@@ -104,7 +104,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(8d8,Thunder,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Zone_ConeOfCold"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:5"
 
 new entry "Zone_ConeOfCold_Base"
 type "SpellData"

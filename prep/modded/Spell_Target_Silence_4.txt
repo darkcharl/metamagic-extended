@@ -15,7 +15,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Target_Silence_Detached"
 data "SpellContainerID" "Target_Silence_4"
 data "PowerLevel" "4"
-data "UseCosts" "ActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
+data "UseCosts" "ActionPoint:1;SorceryPoint:4;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
 
 new entry "Target_Silence_Base_4"
 type "SpellData"

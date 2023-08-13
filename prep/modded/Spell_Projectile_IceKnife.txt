@@ -50,7 +50,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "TARGET:DealDamage(1d10,Piercing);TARGET:AOE:IF(not SavingThrow(Ability.Dexterity, SourceSpellDC())):DealDamage(2d6, Cold,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_IceKnife"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Projectile_IceKnife_Cold"
 type "SpellData"
@@ -64,7 +64,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "TARGET:DealDamage(1d10,Piercing);TARGET:AOE:IF(not SavingThrow(Ability.Dexterity, SourceSpellDC())):DealDamage(2d6, Cold,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_IceKnife"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Projectile_IceKnife_Fire"
 type "SpellData"
@@ -78,7 +78,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "TARGET:DealDamage(1d10,Piercing);TARGET:AOE:IF(not SavingThrow(Ability.Dexterity, SourceSpellDC())):DealDamage(2d6, Cold,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_IceKnife"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Projectile_IceKnife_Lightning"
 type "SpellData"
@@ -92,7 +92,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "TARGET:DealDamage(1d10,Piercing);TARGET:AOE:IF(not SavingThrow(Ability.Dexterity, SourceSpellDC())):DealDamage(2d6, Cold,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_IceKnife"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Projectile_IceKnife_Thunder"
 type "SpellData"
@@ -106,7 +106,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "TARGET:DealDamage(1d10,Piercing);TARGET:AOE:IF(not SavingThrow(Ability.Dexterity, SourceSpellDC())):DealDamage(2d6, Cold,Magical)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_IceKnife"
-data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1;SpellSlotsGroup:1:1:1"
 
 new entry "Projectile_IceKnife_Base"
 type "SpellData"

@@ -19,7 +19,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Target_FogCloud_Detached"
 data "SpellContainerID" "Target_FogCloud_2"
 data "PowerLevel" "2"
-data "UseCosts" "ActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
+data "UseCosts" "ActionPoint:1;SorceryPoint:2;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 
 new entry "Target_FogCloud_Base_2"
 type "SpellData"

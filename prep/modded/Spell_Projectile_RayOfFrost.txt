@@ -41,7 +41,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Acid,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "ActionPoint:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1"
 
 new entry "Projectile_RayOfFrost_Cold"
 type "SpellData"
@@ -54,7 +54,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Cold,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "ActionPoint:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1"
 
 new entry "Projectile_RayOfFrost_Fire"
 type "SpellData"
@@ -67,7 +67,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Fire,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "ActionPoint:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1"
 
 new entry "Projectile_RayOfFrost_Lightning"
 type "SpellData"
@@ -80,7 +80,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Lightning,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "ActionPoint:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1"
 
 new entry "Projectile_RayOfFrost_Thunder"
 type "SpellData"
@@ -93,7 +93,7 @@ data "SpellProperties" "GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)
 data "SpellSuccess" "DealDamage(LevelMapValue(D8Cantrip),Thunder,Magical);ApplyStatus(RAY_OF_FROST,100,1)"
 data "ContainerSpells" ""
 data "SpellContainerID" "Projectile_RayOfFrost"
-data "UseCosts" "ActionPoint:1;TransmutationCharge:1"
+data "UseCosts" "ActionPoint:1;SorceryPoint:1;TransmutationCharge:1"
 
 new entry "Projectile_RayOfFrost_Base"
 type "SpellData"

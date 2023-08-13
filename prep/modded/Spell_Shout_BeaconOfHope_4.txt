@@ -15,7 +15,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Shout_BeaconOfHope_Detached"
 data "SpellContainerID" "Shout_BeaconOfHope_4"
 data "PowerLevel" "4"
-data "UseCosts" "ActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
+data "UseCosts" "ActionPoint:1;SorceryPoint:4;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
 
 new entry "Shout_BeaconOfHope_Base_4"
 type "SpellData"

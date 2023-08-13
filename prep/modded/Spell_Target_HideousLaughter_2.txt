@@ -17,7 +17,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Target_HideousLaughter_Detached"
 data "SpellContainerID" "Target_HideousLaughter_2"
 data "PowerLevel" "2"
-data "UseCosts" "ActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
+data "UseCosts" "ActionPoint:1;SorceryPoint:2;DetachmentCharge:1;SpellSlotsGroup:1:1:2"
 
 new entry "Target_HideousLaughter_Base_2"
 type "SpellData"

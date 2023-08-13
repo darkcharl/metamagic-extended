@@ -18,7 +18,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Target_Invisibility_Detached"
 data "SpellContainerID" "Target_Invisibility_3"
 data "PowerLevel" "3"
-data "UseCosts" "ActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:3"
+data "UseCosts" "ActionPoint:1;SorceryPoint:3;DetachmentCharge:1;SpellSlotsGroup:1:1:3"
 
 new entry "Target_Invisibility_Base_3"
 type "SpellData"

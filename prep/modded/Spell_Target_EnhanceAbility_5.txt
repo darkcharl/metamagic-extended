@@ -16,7 +16,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Target_EnhanceAbility_Detached"
 data "SpellContainerID" "Target_EnhanceAbility_5"
 data "PowerLevel" "5"
-data "UseCosts" "ActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:5"
+data "UseCosts" "ActionPoint:1;SorceryPoint:5;DetachmentCharge:1;SpellSlotsGroup:1:1:5"
 
 new entry "Target_EnhanceAbility_Base_5"
 type "SpellData"

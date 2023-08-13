@@ -15,7 +15,7 @@ data "ContainerSpells" ""
 data "RootSpellID" "Shout_DivineFavor_Detached"
 data "SpellContainerID" "Shout_DivineFavor_4"
 data "PowerLevel" "4"
-data "UseCosts" "BonusActionPoint:1;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
+data "UseCosts" "BonusActionPoint:1;SorceryPoint:4;DetachmentCharge:1;SpellSlotsGroup:1:1:4"
 
 new entry "Shout_DivineFavor_Base_4"
 type "SpellData"
