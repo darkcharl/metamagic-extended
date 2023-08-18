@@ -28,6 +28,7 @@ spells_ignored = [
     'Target_Enlarge.*',
     'Target_EnsnaringStrike.*',
     'Target_Eyebite.*',
+    'Target_Goodberry.*',
     'Target_GlyphOfWarding.*',
     'Target_HeatMetal.*',
     'Target_Hex.*',
