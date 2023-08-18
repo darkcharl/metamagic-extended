@@ -54,6 +54,7 @@ spells_ignored = [
     '.*_HellishRebuke.*',
     '.*_Hurl',
     '.*_Mindflayer',
+    '.*_Monk',
     '.*_Recast',
     '.*_Red[Cc]ap',
     '.*_Skeletal',
