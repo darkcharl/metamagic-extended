@@ -35,6 +35,7 @@ spells_ignored = [
     'Target_Reduce.*',
     'Target_Smite.*',
     'Target_StaggeringSmite.*',
+    'Throw_*',
     'Shout_[A-Z]{3}_.*',
     'Shout_AlterSelf.*',
     'Shout_FireShield_Chill',
