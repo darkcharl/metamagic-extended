@@ -32,6 +32,7 @@ spells_ignored = [
     'Target_GlyphOfWarding.*',
     'Target_HeatMetal.*',
     'Target_Hex.*',
+    'Target_Moonbeam.*',
     'Target_ProtectionFromEnergy.*',
     'Target_Reduce.*',
     'Target_Smite.*',
