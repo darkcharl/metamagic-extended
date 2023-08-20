@@ -41,6 +41,7 @@ spells_ignored = [
     'Shout_[A-Z]{3}_.*',
     'Shout_AlterSelf.*',
     'Shout_FireShield_Chill',
+    'Shout_PassWithoutTrace.*',
     'Shout_SpiritGuardians.*',
     'Wall_[A-Z]{3}_.*',
     'Zone_[A-Z]{3}_.*',
