@@ -49,6 +49,7 @@ spells_ignored = [
     '.*_(LOW|MAG|SHA|WYR)_.*',
     '.*_Activate',
     '.*_AI',
+    '.*_Barbarian',
     '.*_Djinni',
     '.*_Dragon',
     '.*_Dryad',
