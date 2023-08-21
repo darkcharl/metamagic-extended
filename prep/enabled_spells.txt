@@ -1,0 +1,99 @@
+# List of enabled spells, using top level spell name
+Shout_Blur
+# Shout_DetectEvilAndGood
+Shout_DetectThoughts
+# Shout_DivineFavor
+Shout_ExpeditiousRetreat
+# Shout_BeaconOfHope
+# Shout_PassWithoutTrace
+Projectile_WitchBolt
+Projectile_RayOfEnfeeblement
+# Target_Barkskin
+Target_Fly
+Target_GaseousForm
+# Target_Guidance
+# Target_Heroism
+Target_Invisibility
+Target_MagicWeapon
+Target_ProtectionFromEvilAndGood
+# Target_Resistance
+Target_VampiricTouch
+# Target_Bane
+# Target_Bless
+# Target_CompelledDuel
+Target_CrownOfMadness
+Target_DancingLights
+Target_Friends
+Target_Haste
+# Target_HeatMetal
+Target_HideousLaughter
+Target_HoldPerson
+# Target_HuntersMark
+Target_Levitate
+Target_PhantasmalForce
+# Target_ShieldOfFaith
+Target_TrueStrike
+Target_FlamingSphere
+# Target_Moonbeam
+# Target_CallLightning
+# Target_CalmEmotions
+Target_CloudOfDaggers
+Target_Darkness
+Target_Entangle
+# Target_FaerieFire
+Target_FogCloud
+Target_HypnoticPattern
+# Target_HungerOfHadar
+# Target_Silence
+Target_SleetStorm
+# Target_SpikeGrowth
+Target_StinkingCloud
+Target_Web
+# Target_Curse_Gnoll
+Zone_Fear
+Shout_DispelEvilAndGood
+# Shout_CrusadersMantle
+Teleportation_ArcaneGate
+# Wall_BladeBarrier
+Wall_WallOfFire
+Wall_WallOfIce
+Wall_WallOfStone
+# Wall_WallOfThorns
+Target_Invisibility_Greater
+Target_Stoneskin
+Target_Banishment
+# Target_DominateBeast
+Target_DominatePerson
+Target_FleshToStone
+Target_HoldMonster
+Target_IrresistibleDance
+Target_PhantasmalKiller
+Target_PlanarBinding
+Target_Polymorph
+Target_ResilientSphere
+Target_Slow
+Target_ArcaneEye
+# Target_GraspingVine
+Target_BlackTentacles
+Target_Cloudkill
+Target_Confusion
+Target_GlobeOfInvulnerability
+# Target_InsectPlague
+Zone_Sunbeam
+# Target_LOW_OpenGate
+Projectile_AcidArrow
+# Projectile_ChromaticOrb_Acid
+Projectile_FireBolt
+Projectile_RayOfFrost
+Projectile_ScorchingRay
+Projectile_AcidSplash
+Projectile_Fireball
+Target_ShockingGrasp
+# Target_HellishRebuke
+Target_Shatter
+Zone_BurningHands
+Zone_Thunderwave
+Projectile_IceKnife
+Projectile_LightningArrow
+Zone_ConeOfCold
+Zone_LightningBolt
