@@ -30,7 +30,7 @@ data "PrepareEffect" "77241e8c-ae8d-4402-92d8-a871ce64d86f"
 data "CastEffect" "10fc784a-4312-47a8-a6b8-6b529c646ac4"
 data "TargetEffect" "a3e2368b-f486-4cfc-b04a-b02e23383280"
 data "DamageType" "Lightning"
-data "ContainerSpells" "Target_ShockingGrasp_Acid;Target_ShockingGrasp_Base;Target_ShockingGrasp_Cold;Target_ShockingGrasp_Fire;Target_ShockingGrasp_Lightning;Target_ShockingGrasp_Thunder"
+data "ContainerSpells" ""
 
 new entry "Target_ShockingGrasp_Acid"
 type "SpellData"

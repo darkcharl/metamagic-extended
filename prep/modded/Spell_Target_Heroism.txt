@@ -26,7 +26,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "33302a46-4a12-41dd-8845-6b7314d50022"
 data "CastEffect" "bcd66fb0-b0bc-41d0-abba-ad443d63dd72"
 data "TargetEffect" "44a187e4-7028-4326-bfbd-d773c6c1c5d6"
-data "ContainerSpells" "Target_Heroism_Base;Target_Heroism_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Heroism_Detached"
 type "SpellData"

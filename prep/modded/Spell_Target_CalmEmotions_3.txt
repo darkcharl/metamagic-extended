@@ -6,7 +6,7 @@ data "DisplayName" "h97fdbf04gb5ceg4e25gacfdg80d9265f01fb;1"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:3"
 data "RootSpellID" "Target_CalmEmotions"
 data "PowerLevel" "3"
-data "ContainerSpells" "Target_CalmEmotions_Base_3;Target_CalmEmotions_Detached_3"
+data "ContainerSpells" ""
 
 new entry "Target_CalmEmotions_Detached_3"
 type "SpellData"

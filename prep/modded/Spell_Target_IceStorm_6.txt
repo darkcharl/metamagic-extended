@@ -8,7 +8,7 @@ data "TooltipDamageList" "DealDamage(4d8, Bludgeoning);DealDamage(4d6, Cold)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_IceStorm"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_IceStorm_Acid_6;Target_IceStorm_Base_6;Target_IceStorm_Cold_6;Target_IceStorm_Fire_6;Target_IceStorm_Lightning_6;Target_IceStorm_Thunder_6"
+data "ContainerSpells" ""
 
 new entry "Target_IceStorm_Acid_6"
 type "SpellData"

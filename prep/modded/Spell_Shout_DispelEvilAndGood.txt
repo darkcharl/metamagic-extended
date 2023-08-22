@@ -21,7 +21,7 @@ data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsConcentration;IsLink
 data "MemoryCost" "1"
 data "PrepareEffect" "9a056bd7-3c73-4cf6-94c5-13ecc9952a77"
 data "CastEffect" "bca4c4d3-5125-44bb-b72e-8379541b1d1c"
-data "ContainerSpells" "Shout_DispelEvilAndGood_Base;Shout_DispelEvilAndGood_Detached"
+data "ContainerSpells" ""
 
 new entry "Shout_DispelEvilAndGood_Detached"
 type "SpellData"

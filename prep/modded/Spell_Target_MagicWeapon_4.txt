@@ -7,7 +7,7 @@ data "DescriptionParams" "2"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_MagicWeapon"
 data "PowerLevel" "4"
-data "ContainerSpells" "Target_MagicWeapon_Base_4;Target_MagicWeapon_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_MagicWeapon_Detached_4"
 type "SpellData"

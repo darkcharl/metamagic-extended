@@ -28,7 +28,7 @@ data "PrepareEffect" "b090825a-0728-4566-a02b-056a188cc347"
 data "CastEffect" "38776222-db33-4b53-9e23-ca3b47ab58cb"
 data "TargetEffect" "c6846cf3-6ea3-4551-b867-3554eaa6aeae"
 data "PositionEffect" "16d200bc-14f7-416d-ab7a-913bb450734c"
-data "ContainerSpells" "Target_Confusion_Base;Target_Confusion_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Confusion_Detached"
 type "SpellData"

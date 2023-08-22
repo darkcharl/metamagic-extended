@@ -10,7 +10,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Zone_Thunderwave"
 data "PowerLevel" "4"
 data "TargetEffect" "154802bd-3dae-4bdc-9889-4addfdc0ca57"
-data "ContainerSpells" "Zone_Thunderwave_Acid_4;Zone_Thunderwave_Base_4;Zone_Thunderwave_Cold_4;Zone_Thunderwave_Fire_4;Zone_Thunderwave_Lightning_4;Zone_Thunderwave_Thunder_4"
+data "ContainerSpells" ""
 
 new entry "Zone_Thunderwave_Acid_4"
 type "SpellData"

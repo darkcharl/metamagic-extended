@@ -9,7 +9,7 @@ data "Description" "hb463c60cg237cg4d5cga881g3ebcb12c271f;1"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:2"
 data "RootSpellID" "Target_FogCloud"
 data "PowerLevel" "2"
-data "ContainerSpells" "Target_FogCloud_Base_2;Target_FogCloud_Detached_2"
+data "ContainerSpells" ""
 
 new entry "Target_FogCloud_Detached_2"
 type "SpellData"

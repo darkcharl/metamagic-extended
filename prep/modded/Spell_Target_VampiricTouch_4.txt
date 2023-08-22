@@ -14,7 +14,7 @@ data "PrepareLoopSound" "Spell_Loop_Damage_Necrotic_ArmsOfHadar_L1to3"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_VampiricTouch"
 data "PowerLevel" "4"
-data "ContainerSpells" "Target_VampiricTouch_Base_4;Target_VampiricTouch_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_VampiricTouch_Detached_4"
 type "SpellData"

@@ -20,7 +20,7 @@ data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsConcentration;IsLink
 data "MemoryCost" "1"
 data "PrepareEffect" "33302a46-4a12-41dd-8845-6b7314d50022"
 data "CastEffect" "1a4b0423-005b-4577-b376-815a08809675"
-data "ContainerSpells" "Shout_ExpeditiousRetreat_Base;Shout_ExpeditiousRetreat_Detached"
+data "ContainerSpells" ""
 
 new entry "Shout_ExpeditiousRetreat_Detached"
 type "SpellData"

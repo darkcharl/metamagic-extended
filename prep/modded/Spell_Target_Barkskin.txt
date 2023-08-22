@@ -25,7 +25,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "59571222-bfc0-4e90-9636-514ac48485f8"
 data "CastEffect" "6fa15e05-79a0-466e-adbb-6d3ad9c3e6fc"
 data "TargetEffect" "c8c8a4be-6483-454c-815a-e24feed40e88"
-data "ContainerSpells" "Target_Barkskin_Base;Target_Barkskin_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Barkskin_Detached"
 type "SpellData"

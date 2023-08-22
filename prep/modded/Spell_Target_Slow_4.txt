@@ -10,7 +10,7 @@ data "VerbalIntent" "Control"
 data "RootSpellID" "Target_Slow"
 data "PowerLevel" "4"
 data "CombatAIOverrideSpell" "Target_Slow_4_AI"
-data "ContainerSpells" "Target_Slow_Base_4;Target_Slow_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_Slow_Detached_4"
 type "SpellData"

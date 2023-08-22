@@ -25,7 +25,7 @@ data "HitAnimationType" "MagicalNonDamage"
 data "PrepareEffect" "78b419eb-8ada-47f4-904a-5f335971a331"
 data "CastEffect" "5d7a0ad1-ac47-4f03-8c36-cce8184e1df0"
 data "TargetEffect" "5eccabb5-4b4f-4d3a-87ed-69a2c27b7f18"
-data "ContainerSpells" "Target_Guidance_Base;Target_Guidance_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Guidance_Detached"
 type "SpellData"

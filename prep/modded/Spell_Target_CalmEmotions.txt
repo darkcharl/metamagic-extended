@@ -26,7 +26,7 @@ data "PrepareEffect" "cd373f71-42d3-431a-9209-da2e4e91b19b"
 data "CastEffect" "88394cca-9fa4-4a03-a854-281213a3d376"
 data "TargetEffect" "6bc285b5-2fa7-4671-b099-4255b5380962"
 data "PositionEffect" "7f8b8ef2-3789-472b-8922-be27774864a7"
-data "ContainerSpells" "Target_CalmEmotions_Base;Target_CalmEmotions_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_CalmEmotions_Detached"
 type "SpellData"

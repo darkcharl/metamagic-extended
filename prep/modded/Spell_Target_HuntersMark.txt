@@ -29,7 +29,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "de6dddd8-8a32-4db1-a521-70706648a83b"
 data "CastEffect" "0340b957-f9eb-45bc-9c6f-d4def37f5249"
 data "TargetEffect" "7537e8f0-1897-4a66-83fe-7f58e9dbd12e"
-data "ContainerSpells" "Target_HuntersMark_Base;Target_HuntersMark_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_HuntersMark_Detached"
 type "SpellData"

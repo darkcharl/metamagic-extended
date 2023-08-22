@@ -8,7 +8,7 @@ data "TooltipDamageList" "DealDamage(7d8,Thunder)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_Shatter"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_Shatter_Acid_6;Target_Shatter_Base_6;Target_Shatter_Cold_6;Target_Shatter_Fire_6;Target_Shatter_Lightning_6;Target_Shatter_Thunder_6"
+data "ContainerSpells" ""
 
 new entry "Target_Shatter_Acid_6"
 type "SpellData"

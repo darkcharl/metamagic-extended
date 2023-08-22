@@ -34,7 +34,7 @@ data "PrepareEffect" "f4aab3ad-a4ad-48e1-9052-3808e2b65981"
 data "CastEffect" "043b39c7-a30a-4b81-bc37-404e2ccc8c66"
 data "TargetEffect" "7d30207d-4c3f-4f01-8e50-aaff803e1992"
 data "DamageType" "Cold"
-data "ContainerSpells" "Zone_ConeOfCold_Acid;Zone_ConeOfCold_Base;Zone_ConeOfCold_Cold;Zone_ConeOfCold_Fire;Zone_ConeOfCold_Lightning;Zone_ConeOfCold_Thunder"
+data "ContainerSpells" ""
 
 new entry "Zone_ConeOfCold_Acid"
 type "SpellData"

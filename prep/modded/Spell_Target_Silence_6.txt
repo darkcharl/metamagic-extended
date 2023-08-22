@@ -5,7 +5,7 @@ using "Target_Silence"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_Silence"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_Silence_Base_6;Target_Silence_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_Silence_Detached_6"
 type "SpellData"

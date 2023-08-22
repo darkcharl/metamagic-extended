@@ -5,7 +5,7 @@ using "Shout_Blur"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Shout_Blur"
 data "PowerLevel" "5"
-data "ContainerSpells" "Shout_Blur_Base_5;Shout_Blur_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Shout_Blur_Detached_5"
 type "SpellData"

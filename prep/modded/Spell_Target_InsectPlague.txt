@@ -34,7 +34,7 @@ data "PrepareEffect" "239d0263-eb26-4d7e-9683-4d7be6b6a1cf"
 data "CastEffect" "111a8b8c-b395-46d0-b2f0-a10ac6f9731f"
 data "PositionEffect" "a344b210-8c67-4cf9-8baf-360e6e692587"
 data "DamageType" "Poison"
-data "ContainerSpells" "Target_InsectPlague_Base;Target_InsectPlague_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_InsectPlague_Detached"
 type "SpellData"

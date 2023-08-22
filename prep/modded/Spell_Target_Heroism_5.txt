@@ -7,7 +7,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_Heroism"
 data "PowerLevel" "5"
 data "CombatAIOverrideSpell" "Target_Heroism_5_AI"
-data "ContainerSpells" "Target_Heroism_Base_5;Target_Heroism_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Target_Heroism_Detached_5"
 type "SpellData"

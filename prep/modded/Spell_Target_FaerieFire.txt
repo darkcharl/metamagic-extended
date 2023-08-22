@@ -28,7 +28,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "f8e1f2b3-7539-49f4-b9e8-4f76c0f3bcf5"
 data "CastEffect" "8fe961a7-510b-45b7-a913-3690327b4551"
 data "PositionEffect" "0028fb0c-87d4-4abc-8d5e-f85a777181f1"
-data "ContainerSpells" "Target_FaerieFire_Base;Target_FaerieFire_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_FaerieFire_Detached"
 type "SpellData"

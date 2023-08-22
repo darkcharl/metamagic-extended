@@ -7,7 +7,7 @@ data "Description" "h2d405928g60a1g4d1bg8a9cg4af27c95b734;1"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:2"
 data "RootSpellID" "Target_Entangle"
 data "PowerLevel" "2"
-data "ContainerSpells" "Target_Entangle_Base_2;Target_Entangle_Detached_2"
+data "ContainerSpells" ""
 
 new entry "Target_Entangle_Detached_2"
 type "SpellData"

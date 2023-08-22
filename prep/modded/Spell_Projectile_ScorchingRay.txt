@@ -35,7 +35,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "c88e9cfa-df92-477a-ae75-cbfb932350b4"
 data "CastEffect" "4481fb37-77c2-4b70-8675-01638932c01b"
 data "DamageType" "Fire"
-data "ContainerSpells" "Projectile_ScorchingRay_Acid;Projectile_ScorchingRay_Base;Projectile_ScorchingRay_Cold;Projectile_ScorchingRay_Fire;Projectile_ScorchingRay_Lightning;Projectile_ScorchingRay_Thunder"
+data "ContainerSpells" ""
 
 new entry "Projectile_ScorchingRay_Acid"
 type "SpellData"

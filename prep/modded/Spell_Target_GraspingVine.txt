@@ -23,7 +23,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "239d0263-eb26-4d7e-9683-4d7be6b6a1cf"
 data "CastEffect" "111a8b8c-b395-46d0-b2f0-a10ac6f9731f"
 data "DamageType" "Acid"
-data "ContainerSpells" "Target_GraspingVine_Acid;Target_GraspingVine_Base;Target_GraspingVine_Cold;Target_GraspingVine_Detached;Target_GraspingVine_Fire;Target_GraspingVine_Lightning;Target_GraspingVine_Thunder"
+data "ContainerSpells" ""
 
 new entry "Target_GraspingVine_Detached"
 type "SpellData"

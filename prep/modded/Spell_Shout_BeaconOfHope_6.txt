@@ -5,7 +5,7 @@ using "Shout_BeaconOfHope"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Shout_BeaconOfHope"
 data "PowerLevel" "6"
-data "ContainerSpells" "Shout_BeaconOfHope_Base_6;Shout_BeaconOfHope_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Shout_BeaconOfHope_Detached_6"
 type "SpellData"

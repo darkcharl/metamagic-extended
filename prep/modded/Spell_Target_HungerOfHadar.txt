@@ -28,7 +28,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "2ddd6fab-589b-46fc-8fc0-899d8af698ff"
 data "CastEffect" "66fe76c3-b68e-44b2-8f0a-9b6e00e4482c"
 data "PositionEffect" "9723eb8f-4eed-434a-b802-6e7e732b2ff4"
-data "ContainerSpells" "Target_HungerOfHadar_Base;Target_HungerOfHadar_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_HungerOfHadar_Detached"
 type "SpellData"

@@ -5,7 +5,7 @@ using "Target_HideousLaughter"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_HideousLaughter"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_HideousLaughter_Base_6;Target_HideousLaughter_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_HideousLaughter_Detached_6"
 type "SpellData"

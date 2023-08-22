@@ -6,7 +6,7 @@ data "SpellProperties" "AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_CloudOfDaggers"
 data "PowerLevel" "4"
-data "ContainerSpells" "Target_CloudOfDaggers_Base_4;Target_CloudOfDaggers_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_CloudOfDaggers_Detached_4"
 type "SpellData"

@@ -30,7 +30,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "2fa6b127-6f8a-4150-8be6-6f62b7a85911"
 data "CastEffect" "d2ef6b50-243f-478d-85c6-892086a1477e"
 data "TargetEffect" "f1de27ab-8104-462b-8acd-12df0124db28"
-data "ContainerSpells" "Target_HideousLaughter_Base;Target_HideousLaughter_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_HideousLaughter_Detached"
 type "SpellData"

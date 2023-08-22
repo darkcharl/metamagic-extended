@@ -29,7 +29,7 @@ data "PrepareEffect" "752219e2-351d-46ea-9448-3a714b3d3acc"
 data "CastEffect" "1a5ca92c-005d-4d53-97a1-49391977c947"
 data "TargetEffect" "78579eed-b150-4122-ae41-db9fdefb2e69"
 data "DamageType" "Psychic"
-data "ContainerSpells" "Target_PhantasmalForce_Base;Target_PhantasmalForce_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_PhantasmalForce_Detached"
 type "SpellData"

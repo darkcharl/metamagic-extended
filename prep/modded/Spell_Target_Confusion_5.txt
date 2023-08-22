@@ -7,7 +7,7 @@ data "TooltipUpcastDescription" "fcc00846-6526-4d5d-9933-7f3e0bd7e2ef"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_Confusion"
 data "PowerLevel" "5"
-data "ContainerSpells" "Target_Confusion_Base_5;Target_Confusion_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Target_Confusion_Detached_5"
 type "SpellData"

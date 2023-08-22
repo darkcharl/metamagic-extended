@@ -5,7 +5,7 @@ using "Target_MagicWeapon"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:3"
 data "RootSpellID" "Target_MagicWeapon"
 data "PowerLevel" "3"
-data "ContainerSpells" "Target_MagicWeapon_Base_3;Target_MagicWeapon_Detached_3"
+data "ContainerSpells" ""
 
 new entry "Target_MagicWeapon_Detached_3"
 type "SpellData"

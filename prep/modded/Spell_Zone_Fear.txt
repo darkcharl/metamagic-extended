@@ -33,7 +33,7 @@ data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsConcentration;IsLink
 data "MemoryCost" "1"
 data "PrepareEffect" "23e86239-d81d-4bad-b618-8d12a2a9258a"
 data "CastEffect" "aa5926e1-4f85-4ef3-ac32-ae524d17ebd4"
-data "ContainerSpells" "Zone_Fear_Base;Zone_Fear_Detached"
+data "ContainerSpells" ""
 
 new entry "Zone_Fear_Detached"
 type "SpellData"

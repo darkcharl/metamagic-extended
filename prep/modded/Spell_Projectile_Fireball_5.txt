@@ -11,7 +11,7 @@ data "TooltipUpcastDescriptionParams" "DealDamage(1d6,Fire)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Projectile_Fireball"
 data "PowerLevel" "5"
-data "ContainerSpells" "Projectile_Fireball_Acid_5;Projectile_Fireball_Base_5;Projectile_Fireball_Cold_5;Projectile_Fireball_Fire_5;Projectile_Fireball_Lightning_5;Projectile_Fireball_Thunder_5"
+data "ContainerSpells" ""
 
 new entry "Projectile_Fireball_Acid_5"
 type "SpellData"

@@ -30,7 +30,7 @@ data "HitAnimationType" "MagicalDamage_External"
 data "PrepareEffect" "c88e9cfa-df92-477a-ae75-cbfb932350b4"
 data "CastEffect" "e235ca47-1bf5-4587-9475-cf191b6005f9"
 data "DamageType" "Fire"
-data "ContainerSpells" "Projectile_FireBolt_Acid;Projectile_FireBolt_Base;Projectile_FireBolt_Cold;Projectile_FireBolt_Fire;Projectile_FireBolt_Lightning;Projectile_FireBolt_Thunder"
+data "ContainerSpells" ""
 
 new entry "Projectile_FireBolt_Acid"
 type "SpellData"

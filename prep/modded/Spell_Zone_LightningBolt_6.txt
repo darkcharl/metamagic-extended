@@ -9,7 +9,7 @@ data "TooltipDamageList" "DealDamage(11d6,Lightning)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Zone_LightningBolt"
 data "PowerLevel" "6"
-data "ContainerSpells" "Zone_LightningBolt_Acid_6;Zone_LightningBolt_Base_6;Zone_LightningBolt_Cold_6;Zone_LightningBolt_Fire_6;Zone_LightningBolt_Lightning_6;Zone_LightningBolt_Thunder_6"
+data "ContainerSpells" ""
 
 new entry "Zone_LightningBolt_Acid_6"
 type "SpellData"

@@ -26,7 +26,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "33302a46-4a12-41dd-8845-6b7314d50022"
 data "CastEffect" "bcd66fb0-b0bc-41d0-abba-ad443d63dd72"
 data "TargetEffect" "32d71967-b080-4ac9-a1cf-c2829839bd90"
-data "ContainerSpells" "Target_Haste_Base;Target_Haste_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Haste_Detached"
 type "SpellData"

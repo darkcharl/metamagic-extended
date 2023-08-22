@@ -8,7 +8,7 @@ data "DescriptionParams" "DealDamage(6d8,Poison)"
 data "TooltipDamageList" "DealDamage(6d8,Poison)"
 data "RootSpellID" "Target_Cloudkill"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_Cloudkill_Base_6;Target_Cloudkill_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_Cloudkill_Detached_6"
 type "SpellData"

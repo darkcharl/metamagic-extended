@@ -26,7 +26,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "69415545-9d36-46f4-a1cd-2402179723aa"
 data "CastEffect" "4f8e353e-c04e-45c3-880b-d10885fd091f"
 data "TargetEffect" "aab47e6c-59a5-44c4-830d-15fdde7348b8"
-data "ContainerSpells" "Target_Invisibility_Greater_Base;Target_Invisibility_Greater_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Invisibility_Greater_Detached"
 type "SpellData"

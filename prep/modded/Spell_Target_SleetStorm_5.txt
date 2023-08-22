@@ -4,7 +4,7 @@ data "SpellType" "Target"
 using "Target_SleetStorm_4"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "PowerLevel" "5"
-data "ContainerSpells" "Target_SleetStorm_Base_5;Target_SleetStorm_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Target_SleetStorm_Detached_5"
 type "SpellData"

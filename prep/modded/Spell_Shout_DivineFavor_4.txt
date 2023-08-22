@@ -5,7 +5,7 @@ using "Shout_DivineFavor"
 data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Shout_DivineFavor"
 data "PowerLevel" "4"
-data "ContainerSpells" "Shout_DivineFavor_Base_4;Shout_DivineFavor_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Shout_DivineFavor_Detached_4"
 type "SpellData"

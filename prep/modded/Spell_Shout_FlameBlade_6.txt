@@ -7,7 +7,7 @@ data "DescriptionParams" "DealDamage(5d6,Fire);Distance(3);Distance(6)"
 data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Shout_FlameBlade"
 data "PowerLevel" "6"
-data "ContainerSpells" "Shout_FlameBlade_Acid_6;Shout_FlameBlade_Base_6;Shout_FlameBlade_Cold_6;Shout_FlameBlade_Fire_6;Shout_FlameBlade_Lightning_6;Shout_FlameBlade_Thunder_6"
+data "ContainerSpells" ""
 
 new entry "Shout_FlameBlade_Acid_6"
 type "SpellData"

@@ -29,7 +29,7 @@ data "PrepareEffect" "2fa6b127-6f8a-4150-8be6-6f62b7a85911"
 data "CastEffect" "b4221f40-bcc3-4703-acc5-1afaee284839"
 data "PositionEffect" "ad77e27f-f91d-4bf0-9756-b576ddc92fad"
 data "CombatAIOverrideSpell" "Target_Slow_AI"
-data "ContainerSpells" "Target_Slow_Base;Target_Slow_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Slow_Detached"
 type "SpellData"

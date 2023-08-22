@@ -13,7 +13,7 @@ data "TooltipDamageList" "DealDamage(1d10,Piercing);DealDamage(5d6,Cold)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Projectile_IceKnife"
 data "PowerLevel" "4"
-data "ContainerSpells" "Projectile_IceKnife_Acid_4;Projectile_IceKnife_Base_4;Projectile_IceKnife_Cold_4;Projectile_IceKnife_Fire_4;Projectile_IceKnife_Lightning_4;Projectile_IceKnife_Thunder_4"
+data "ContainerSpells" ""
 
 new entry "Projectile_IceKnife_Acid_4"
 type "SpellData"

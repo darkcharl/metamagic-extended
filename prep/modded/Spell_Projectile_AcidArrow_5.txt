@@ -8,7 +8,7 @@ data "TooltipDamageList" "DealDamage(7d4,Acid);DealDamage(5d4,Acid,,,,1575c661-c
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Projectile_AcidArrow"
 data "PowerLevel" "5"
-data "ContainerSpells" "Projectile_AcidArrow_Acid_5;Projectile_AcidArrow_Base_5;Projectile_AcidArrow_Cold_5;Projectile_AcidArrow_Fire_5;Projectile_AcidArrow_Lightning_5;Projectile_AcidArrow_Thunder_5"
+data "ContainerSpells" ""
 
 new entry "Projectile_AcidArrow_Acid_5"
 type "SpellData"

@@ -24,7 +24,7 @@ data "SpellFlags" "HasSomaticComponent;IsConcentration;IsLinkedSpellContainer;Is
 data "PrepareEffect" "2fa6b127-6f8a-4150-8be6-6f62b7a85911"
 data "CastEffect" "d2ef6b50-243f-478d-85c6-892086a1477e"
 data "TargetEffect" "e1b340b6-78a9-413a-bb7e-8299848238ae"
-data "ContainerSpells" "Target_Friends_Base;Target_Friends_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Friends_Detached"
 type "SpellData"

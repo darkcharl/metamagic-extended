@@ -24,7 +24,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "f4aab3ad-a4ad-48e1-9052-3808e2b65981"
 data "CastEffect" "36718a29-73d8-457c-af7a-229c821bc1a2"
 data "PositionEffect" "6294e84c-e600-4dce-ba57-2b1916318c8e"
-data "ContainerSpells" "Target_SleetStorm_Base;Target_SleetStorm_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_SleetStorm_Detached"
 type "SpellData"

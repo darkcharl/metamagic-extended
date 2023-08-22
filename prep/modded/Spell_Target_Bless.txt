@@ -32,7 +32,7 @@ data "CastEffect" "6d072523-11f5-4b1b-a2d8-24ade34a315d"
 data "TargetEffect" "4df0bae6-fccf-48a0-804c-3edc40264d07"
 data "PositionEffect" "2832c7dd-14bd-4c51-9d2a-599c2c19005f"
 data "CombatAIOverrideSpell" "Target_Bless_AI"
-data "ContainerSpells" "Target_Bless_Base;Target_Bless_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Bless_Detached"
 type "SpellData"

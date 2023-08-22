@@ -22,7 +22,7 @@ data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;IsConcentrati
 data "PrepareEffect" "556fd141-698d-4c08-9322-ad155821260a"
 data "CastEffect" "0340b957-f9eb-45bc-9c6f-d4def37f5249"
 data "TargetEffect" "de333436-aa42-45cc-a3da-14277ca1df60"
-data "ContainerSpells" "Target_TrueStrike_Base;Target_TrueStrike_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_TrueStrike_Detached"
 type "SpellData"

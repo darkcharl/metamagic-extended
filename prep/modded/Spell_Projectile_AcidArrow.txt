@@ -36,7 +36,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "41193b01-e0c2-4945-ba40-7c3464b71bc0"
 data "CastEffect" "53ceb907-6389-4e52-a459-7536665f7e2b"
 data "DamageType" "Acid"
-data "ContainerSpells" "Projectile_AcidArrow_Acid;Projectile_AcidArrow_Base;Projectile_AcidArrow_Cold;Projectile_AcidArrow_Fire;Projectile_AcidArrow_Lightning;Projectile_AcidArrow_Thunder"
+data "ContainerSpells" ""
 
 new entry "Projectile_AcidArrow_Acid"
 type "SpellData"

@@ -28,7 +28,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "d39761b2-330d-455b-9225-b54dedc8c1c6"
 data "CastEffect" "29777e84-b2f5-4c56-b3d2-08f35cb78451"
 data "SpellSoundMagnitude" "Big"
-data "ContainerSpells" "Wall_WallOfIce_Base;Wall_WallOfIce_Detached"
+data "ContainerSpells" ""
 
 new entry "Wall_WallOfIce_Detached"
 type "SpellData"

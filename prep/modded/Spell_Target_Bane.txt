@@ -32,7 +32,7 @@ data "CastEffect" "38776222-db33-4b53-9e23-ca3b47ab58cb"
 data "TargetEffect" "c6846cf3-6ea3-4551-b867-3554eaa6aeae"
 data "PositionEffect" "7db045f9-83ac-4768-88c8-48563b685a9d"
 data "CombatAIOverrideSpell" "Target_Bane_AI"
-data "ContainerSpells" "Target_Bane_Base;Target_Bane_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Bane_Detached"
 type "SpellData"

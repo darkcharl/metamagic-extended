@@ -5,7 +5,7 @@ using "Shout_DetectThoughts"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Shout_DetectThoughts"
 data "PowerLevel" "5"
-data "ContainerSpells" "Shout_DetectThoughts_Base_5;Shout_DetectThoughts_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Shout_DetectThoughts_Detached_5"
 type "SpellData"

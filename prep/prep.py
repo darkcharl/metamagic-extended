@@ -267,6 +267,9 @@ class Spell(object):
 
         return False
 
+    def is_variant(self):
+        return '' == self.data.get('SpellContainerID', '')
+
     def get_child(self, postfix):
         spell_name = f"{self.name}_{postfix}"
         if self.is_leveled():
@@ -331,7 +334,8 @@ class Spell(object):
                 transmuted_spell.using = self.name
 
             """ Transmuted variant cost and condition """
-            transmuted_spell.set_item('UseCosts', self.data['UseCosts'])
+            transmuted_spell.set_item(
+                'UseCosts', self.data.get('UseCosts', ''))
             transmuted_spell.add_item(
                 'UseCosts', f'SorceryPoint:{sorcery_point_cost};TransmutationCharge:1'
             )
@@ -468,6 +472,8 @@ def modify_spells(source):
             with open(target, "w") as f:
                 if spell.is_leveled():
                     spell.data.pop('SpellFlags', '')
+                if spell.is_variant():
+                    spell.set_item('ContainerSpells', "")
                 f.write("{}\n\n".format(spell))
                 for meta_spell in meta_spells:
                     f.write("{}\n\n".format(meta_spell))

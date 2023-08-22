@@ -18,7 +18,7 @@ data "HitAnimationType" "None"
 data "PrepareEffect" "7121a488-7c9a-4ba1-a585-f79aaa77e97c"
 data "CastEffect" "a32e391e-05f3-45d1-9575-dfb99a0ca4d2"
 data "TargetEffect" "3660074d-d0ca-44c6-aaa3-803d892c1757"
-data "ContainerSpells" "Shout_DetectEvilAndGood_Base;Shout_DetectEvilAndGood_Detached"
+data "ContainerSpells" ""
 
 new entry "Shout_DetectEvilAndGood_Detached"
 type "SpellData"

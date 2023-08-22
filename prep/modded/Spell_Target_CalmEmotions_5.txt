@@ -5,7 +5,7 @@ using "Target_CalmEmotions"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_CalmEmotions"
 data "PowerLevel" "5"
-data "ContainerSpells" "Target_CalmEmotions_Base_5;Target_CalmEmotions_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Target_CalmEmotions_Detached_5"
 type "SpellData"

@@ -32,7 +32,7 @@ data "CastEffect" "38776222-db33-4b53-9e23-ca3b47ab58cb"
 data "TargetEffect" "b5b72f72-297b-4a96-b215-b5611359555a"
 data "PositionEffect" "7db045f9-83ac-4768-88c8-48563b685a9d"
 data "HighlightConditions" "Character() and not Dead()"
-data "ContainerSpells" "Target_Silence_Base;Target_Silence_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Silence_Detached"
 type "SpellData"

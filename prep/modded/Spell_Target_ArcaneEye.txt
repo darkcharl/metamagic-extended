@@ -23,7 +23,7 @@ data "PrepareEffect" "be762a33-c7ea-418a-b565-dc122f7d87aa"
 data "CastEffect" "518bc78f-c169-43ba-b951-977d75429199"
 data "PositionEffect" "303b6851-33e8-488e-8d35-a3b73b732faf"
 data "DamageType" "Psychic"
-data "ContainerSpells" "Target_ArcaneEye_Base;Target_ArcaneEye_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_ArcaneEye_Detached"
 type "SpellData"

@@ -32,7 +32,7 @@ data "HitAnimationType" "MagicalDamage_External"
 data "PrepareEffect" "41193b01-e0c2-4945-ba40-7c3464b71bc0"
 data "CastEffect" "3d48b43d-1f17-4947-aa43-c142288d3f29"
 data "DamageType" "Acid"
-data "ContainerSpells" "Projectile_AcidSplash_Acid;Projectile_AcidSplash_Base;Projectile_AcidSplash_Cold;Projectile_AcidSplash_Fire;Projectile_AcidSplash_Lightning;Projectile_AcidSplash_Thunder"
+data "ContainerSpells" ""
 
 new entry "Projectile_AcidSplash_Acid"
 type "SpellData"

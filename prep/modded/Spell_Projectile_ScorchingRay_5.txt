@@ -8,7 +8,7 @@ data "TooltipDamageList" "DealDamage(12d6,Fire)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Projectile_ScorchingRay"
 data "PowerLevel" "5"
-data "ContainerSpells" "Projectile_ScorchingRay_Acid_5;Projectile_ScorchingRay_Base_5;Projectile_ScorchingRay_Cold_5;Projectile_ScorchingRay_Fire_5;Projectile_ScorchingRay_Lightning_5;Projectile_ScorchingRay_Thunder_5"
+data "ContainerSpells" ""
 
 new entry "Projectile_ScorchingRay_Acid_5"
 type "SpellData"

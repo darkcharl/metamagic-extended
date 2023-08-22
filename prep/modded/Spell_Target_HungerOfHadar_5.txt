@@ -7,7 +7,7 @@ data "TargetSound" "Spell_Impact_Warlock_HungerofHadar_L1to3"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_HungerOfHadar"
 data "PowerLevel" "5"
-data "ContainerSpells" "Target_HungerOfHadar_Base_5;Target_HungerOfHadar_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Target_HungerOfHadar_Detached_5"
 type "SpellData"

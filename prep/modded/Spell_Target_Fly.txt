@@ -25,7 +25,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "f1ba15e1-93c4-4c94-a6d4-2b1b3934ce44"
 data "CastEffect" "bcd66fb0-b0bc-41d0-abba-ad443d63dd72"
 data "TargetEffect" "8cd6c669-ded1-476a-aa5e-d7dd055381d7"
-data "ContainerSpells" "Target_Fly_Base;Target_Fly_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Fly_Detached"
 type "SpellData"

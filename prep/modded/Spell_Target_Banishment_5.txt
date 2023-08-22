@@ -8,7 +8,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_Banishment"
 data "PowerLevel" "5"
 data "CombatAIOverrideSpell" "Target_Banishment_5_AI"
-data "ContainerSpells" "Target_Banishment_Base_5;Target_Banishment_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Target_Banishment_Detached_5"
 type "SpellData"

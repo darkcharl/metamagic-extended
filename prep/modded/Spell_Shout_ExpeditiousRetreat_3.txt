@@ -6,7 +6,7 @@ data "DisplayName" "hded2c9ccgba89g42e8g870ag655303cd326b;1"
 data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:3"
 data "RootSpellID" "Shout_ExpeditiousRetreat"
 data "PowerLevel" "3"
-data "ContainerSpells" "Shout_ExpeditiousRetreat_Base_3;Shout_ExpeditiousRetreat_Detached_3"
+data "ContainerSpells" ""
 
 new entry "Shout_ExpeditiousRetreat_Detached_3"
 type "SpellData"

@@ -5,7 +5,7 @@ using "Zone_Fear"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Zone_Fear"
 data "PowerLevel" "4"
-data "ContainerSpells" "Zone_Fear_Base_4;Zone_Fear_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Zone_Fear_Detached_4"
 type "SpellData"

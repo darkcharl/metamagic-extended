@@ -34,7 +34,7 @@ data "PrepareEffect" "fdbf8e88-c3a5-4151-a81d-429985de422c"
 data "CastEffect" "69aaec35-fb5f-489e-a4cc-47310f4377e9"
 data "HitEffect" "41de42e1-56d0-4336-8b44-99fc38281525"
 data "DamageType" "Fire"
-data "ContainerSpells" "Projectile_Fireball_Acid;Projectile_Fireball_Base;Projectile_Fireball_Cold;Projectile_Fireball_Fire;Projectile_Fireball_Lightning;Projectile_Fireball_Thunder"
+data "ContainerSpells" ""
 
 new entry "Projectile_Fireball_Acid"
 type "SpellData"

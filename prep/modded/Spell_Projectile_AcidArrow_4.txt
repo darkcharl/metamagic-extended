@@ -11,7 +11,7 @@ data "PrepareLoopSound" "Spell_Prepare_Damage_Acid_Gen_L1to3_Loop"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Projectile_AcidArrow"
 data "PowerLevel" "4"
-data "ContainerSpells" "Projectile_AcidArrow_Acid_4;Projectile_AcidArrow_Base_4;Projectile_AcidArrow_Cold_4;Projectile_AcidArrow_Fire_4;Projectile_AcidArrow_Lightning_4;Projectile_AcidArrow_Thunder_4"
+data "ContainerSpells" ""
 
 new entry "Projectile_AcidArrow_Acid_4"
 type "SpellData"

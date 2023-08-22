@@ -28,7 +28,7 @@ data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComp
 data "MemoryCost" "1"
 data "PrepareEffect" "556fd141-698d-4c08-9322-ad155821260a"
 data "CastEffect" "ccc5dbad-ad6d-4439-821a-844d4c9df9b9"
-data "ContainerSpells" "Projectile_RayOfEnfeeblement_Base;Projectile_RayOfEnfeeblement_Detached"
+data "ContainerSpells" ""
 
 new entry "Projectile_RayOfEnfeeblement_Detached"
 type "SpellData"

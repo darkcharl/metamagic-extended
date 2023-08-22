@@ -26,7 +26,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "a0873af6-c6ae-4004-8298-216d831f7f15"
 data "CastEffect" "a7ffe334-15bc-4515-976c-932e6d45b9d9"
 data "TargetEffect" "8f1fb9ce-eede-42b0-b4c7-6b2e9e667a05"
-data "ContainerSpells" "Target_PlanarBinding_Base;Target_PlanarBinding_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_PlanarBinding_Detached"
 type "SpellData"

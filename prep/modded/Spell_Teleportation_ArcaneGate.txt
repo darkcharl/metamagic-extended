@@ -25,7 +25,7 @@ data "VerbalIntent" "Utility"
 data "PrepareEffect" "7121a488-7c9a-4ba1-a585-f79aaa77e97c"
 data "CastEffect" "518bc78f-c169-43ba-b951-977d75429199"
 data "IgnoreTeleport" "Yes"
-data "ContainerSpells" "Teleportation_ArcaneGate_Base;Teleportation_ArcaneGate_Detached"
+data "ContainerSpells" ""
 
 new entry "Teleportation_ArcaneGate_Detached"
 type "SpellData"

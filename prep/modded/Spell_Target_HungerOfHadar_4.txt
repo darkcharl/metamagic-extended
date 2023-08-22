@@ -9,7 +9,7 @@ data "MemoryCost" "1"
 data "RootSpellID" "Target_HungerOfHadar"
 data "PowerLevel" "4"
 data "DamageType" "Cold"
-data "ContainerSpells" "Target_HungerOfHadar_Acid_4;Target_HungerOfHadar_Base_4;Target_HungerOfHadar_Cold_4;Target_HungerOfHadar_Detached_4;Target_HungerOfHadar_Fire_4;Target_HungerOfHadar_Lightning_4;Target_HungerOfHadar_Thunder_4"
+data "ContainerSpells" ""
 
 new entry "Target_HungerOfHadar_Detached_4"
 type "SpellData"

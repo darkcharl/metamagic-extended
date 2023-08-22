@@ -25,7 +25,7 @@ data "PrepareEffect" "e8109f4b-2439-4424-9bc8-743270220f47"
 data "CastEffect" "31e60ea0-1592-4e14-a1b5-5d32a9b36b76"
 data "PositionEffect" "da921a23-90aa-4b41-a6ee-a965c80986c1"
 data "DamageType" "Piercing"
-data "ContainerSpells" "Target_SpikeGrowth_Base;Target_SpikeGrowth_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_SpikeGrowth_Detached"
 type "SpellData"

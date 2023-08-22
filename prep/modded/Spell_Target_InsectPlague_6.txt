@@ -9,7 +9,7 @@ data "TooltipDamageList" "DealDamage(5d10,Piercing)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_InsectPlague"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_InsectPlague_Base_6;Target_InsectPlague_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_InsectPlague_Detached_6"
 type "SpellData"

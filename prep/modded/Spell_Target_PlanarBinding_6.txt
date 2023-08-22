@@ -5,7 +5,7 @@ using "Target_PlanarBinding"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_PlanarBinding"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_PlanarBinding_Base_6;Target_PlanarBinding_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_PlanarBinding_Detached_6"
 type "SpellData"

@@ -26,7 +26,7 @@ data "HitAnimationType" "MagicalNonDamage"
 data "PrepareEffect" "c238f860-37c1-47b1-8030-14fa6a1bdfa1"
 data "CastEffect" "bcd66fb0-b0bc-41d0-abba-ad443d63dd72"
 data "TargetEffect" "fb919edf-4dce-45d8-9338-91f26bccec31"
-data "ContainerSpells" "Target_Resistance_Base;Target_Resistance_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Resistance_Detached"
 type "SpellData"

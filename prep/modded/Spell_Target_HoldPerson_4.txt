@@ -7,7 +7,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_HoldPerson"
 data "PowerLevel" "4"
 data "CombatAIOverrideSpell" "Target_HoldPerson_4_AI"
-data "ContainerSpells" "Target_HoldPerson_Base_4;Target_HoldPerson_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_HoldPerson_Detached_4"
 type "SpellData"

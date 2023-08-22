@@ -28,7 +28,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "7e42016a-29f9-4922-908b-dbf010dff168"
 data "CastEffect" "5b4258fa-dd70-47b4-940d-8492b802ecd6"
 data "SpellSoundMagnitude" "Big"
-data "ContainerSpells" "Wall_BladeBarrier_Base;Wall_BladeBarrier_Detached"
+data "ContainerSpells" ""
 
 new entry "Wall_BladeBarrier_Detached"
 type "SpellData"

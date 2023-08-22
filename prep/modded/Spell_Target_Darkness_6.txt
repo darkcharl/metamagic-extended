@@ -5,7 +5,7 @@ using "Target_Darkness"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_Darkness"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_Darkness_Base_6;Target_Darkness_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_Darkness_Detached_6"
 type "SpellData"

@@ -8,7 +8,7 @@ data "TooltipDamageList" "DealDamage(6d8,Thunder)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Zone_Thunderwave"
 data "PowerLevel" "5"
-data "ContainerSpells" "Zone_Thunderwave_Acid_5;Zone_Thunderwave_Base_5;Zone_Thunderwave_Cold_5;Zone_Thunderwave_Fire_5;Zone_Thunderwave_Lightning_5;Zone_Thunderwave_Thunder_5"
+data "ContainerSpells" ""
 
 new entry "Zone_Thunderwave_Acid_5"
 type "SpellData"

@@ -11,7 +11,7 @@ data "TooltipUpcastDescriptionParams" "DealDamage(1d10,Psychic)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_PhantasmalKiller"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_PhantasmalKiller_Base_6;Target_PhantasmalKiller_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_PhantasmalKiller_Detached_6"
 type "SpellData"

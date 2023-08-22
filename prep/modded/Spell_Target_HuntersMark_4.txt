@@ -5,7 +5,7 @@ using "Target_HuntersMark"
 data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_HuntersMark"
 data "PowerLevel" "4"
-data "ContainerSpells" "Target_HuntersMark_Base_4;Target_HuntersMark_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_HuntersMark_Detached_4"
 type "SpellData"

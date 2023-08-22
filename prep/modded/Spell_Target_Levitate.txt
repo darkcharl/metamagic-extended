@@ -21,7 +21,7 @@ data "HitAnimationType" "MagicalNonDamage"
 data "MemoryCost" "1"
 data "CastEffect" "6dc4bf38-5a2e-4097-b52d-92849da976b1"
 data "PositionEffect" "9754dfec-cfe2-4127-b862-910652ccad8f"
-data "ContainerSpells" "Target_Levitate_Base;Target_Levitate_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Levitate_Detached"
 type "SpellData"

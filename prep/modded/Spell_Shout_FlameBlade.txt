@@ -24,7 +24,7 @@ data "PrepareEffect" "e7acb4f3-8777-408a-90cb-e3dc5f1c14bb"
 data "CastEffect" "ec6002b5-fda9-4a78-a024-60e4a90563aa"
 data "DamageType" "Fire"
 data "Sheathing" "Somatic"
-data "ContainerSpells" "Shout_FlameBlade_Acid;Shout_FlameBlade_Base;Shout_FlameBlade_Cold;Shout_FlameBlade_Fire;Shout_FlameBlade_Lightning;Shout_FlameBlade_Thunder"
+data "ContainerSpells" ""
 
 new entry "Shout_FlameBlade_Acid"
 type "SpellData"

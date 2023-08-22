@@ -5,7 +5,7 @@ using "Target_FaerieFire"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_FaerieFire"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_FaerieFire_Base_6;Target_FaerieFire_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_FaerieFire_Detached_6"
 type "SpellData"

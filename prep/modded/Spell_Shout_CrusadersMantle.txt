@@ -21,7 +21,7 @@ data "SpellFlags" "HasVerbalComponent;IsConcentration;IsLinkedSpellContainer;IsS
 data "HitAnimationType" "MagicalNonDamage"
 data "PrepareEffect" "c218f05b-1e12-4298-beff-e4d33a5fa5a5"
 data "CastEffect" "ab2f9793-28a8-4cd1-a519-dc00947d8f58"
-data "ContainerSpells" "Shout_CrusadersMantle_Base;Shout_CrusadersMantle_Detached"
+data "ContainerSpells" ""
 
 new entry "Shout_CrusadersMantle_Detached"
 type "SpellData"

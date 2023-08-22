@@ -8,7 +8,7 @@ data "ExtraDescription" "h7cc6c9baga406g4badga843gab9e21146310;1"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:2"
 data "RootSpellID" "Target_ProtectionFromEvilAndGood"
 data "PowerLevel" "2"
-data "ContainerSpells" "Target_ProtectionFromEvilAndGood_Base_2;Target_ProtectionFromEvilAndGood_Detached_2"
+data "ContainerSpells" ""
 
 new entry "Target_ProtectionFromEvilAndGood_Detached_2"
 type "SpellData"

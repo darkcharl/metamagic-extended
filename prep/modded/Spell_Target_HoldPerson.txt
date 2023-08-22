@@ -31,7 +31,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "bcdca947-b1ba-475f-8e3b-9ac850da90fa"
 data "CastEffect" "d2ef6b50-243f-478d-85c6-892086a1477e"
 data "TargetEffect" "e1b340b6-78a9-413a-bb7e-8299848238ae"
-data "ContainerSpells" "Target_HoldPerson_Base;Target_HoldPerson_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_HoldPerson_Detached"
 type "SpellData"

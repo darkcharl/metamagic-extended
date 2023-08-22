@@ -33,7 +33,7 @@ data "PrepareEffect" "caa1e7a2-b8de-4585-b46b-51488cecf495"
 data "CastEffect" "b4286edf-799b-461c-8f56-0bb6b816512b"
 data "DamageType" "Lightning"
 data "Sheathing" "Ranged"
-data "ContainerSpells" "Projectile_LightningArrow_Acid;Projectile_LightningArrow_Base;Projectile_LightningArrow_Cold;Projectile_LightningArrow_Fire;Projectile_LightningArrow_Lightning;Projectile_LightningArrow_Thunder"
+data "ContainerSpells" ""
 
 new entry "Projectile_LightningArrow_Acid"
 type "SpellData"

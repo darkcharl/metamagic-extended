@@ -5,7 +5,7 @@ using "Target_CrownOfMadness"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_CrownOfMadness"
 data "PowerLevel" "5"
-data "ContainerSpells" "Target_CrownOfMadness_Base_5;Target_CrownOfMadness_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Target_CrownOfMadness_Detached_5"
 type "SpellData"

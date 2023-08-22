@@ -9,7 +9,7 @@ data "TargetSound" "Spell_Impact_Damage_LightningBolt_L5"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Zone_LightningBolt"
 data "PowerLevel" "4"
-data "ContainerSpells" "Zone_LightningBolt_Acid_4;Zone_LightningBolt_Base_4;Zone_LightningBolt_Cold_4;Zone_LightningBolt_Fire_4;Zone_LightningBolt_Lightning_4;Zone_LightningBolt_Thunder_4"
+data "ContainerSpells" ""
 
 new entry "Zone_LightningBolt_Acid_4"
 type "SpellData"

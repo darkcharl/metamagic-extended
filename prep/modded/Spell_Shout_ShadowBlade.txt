@@ -25,7 +25,7 @@ data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsConcentration;IsLink
 data "SpellAnimationIntentType" "Aggressive"
 data "PrepareEffect" "3998daf3-8dd5-4b10-b33a-5ab51bb97860"
 data "CastEffect" "514ecdc7-87b3-43f8-bd8a-69fb3b46f8da"
-data "ContainerSpells" "Shout_ShadowBlade_Base;Shout_ShadowBlade_Detached"
+data "ContainerSpells" ""
 
 new entry "Shout_ShadowBlade_Detached"
 type "SpellData"

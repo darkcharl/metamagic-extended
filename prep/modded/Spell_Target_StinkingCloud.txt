@@ -22,7 +22,7 @@ data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsConcentration;IsLink
 data "PrepareEffect" "ca447fe8-5207-4828-bb28-a3374fdb7063"
 data "CastEffect" "223c3bda-247a-46fd-984f-a8d78e3828da"
 data "PositionEffect" "d2428171-752d-4fab-877c-6e23e977ced8"
-data "ContainerSpells" "Target_StinkingCloud_Base;Target_StinkingCloud_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_StinkingCloud_Detached"
 type "SpellData"

@@ -34,7 +34,7 @@ data "CastEffect" "5600d296-764d-43f8-b781-2bfcd6cf7312"
 data "HitEffect" "20891751-3bd8-40f4-93f4-fc0650fe0183"
 data "PositionEffect" "19a834a8-a378-4d0f-90e0-b8b9de1dc36c"
 data "DamageType" "Cold"
-data "ContainerSpells" "Target_IceStorm_Acid;Target_IceStorm_Base;Target_IceStorm_Cold;Target_IceStorm_Fire;Target_IceStorm_Lightning;Target_IceStorm_Thunder"
+data "ContainerSpells" ""
 
 new entry "Target_IceStorm_Acid"
 type "SpellData"

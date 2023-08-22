@@ -29,7 +29,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "2fa6b127-6f8a-4150-8be6-6f62b7a85911"
 data "CastEffect" "4ca6a918-a46b-4269-b11b-d98fb6694677"
 data "TargetEffect" "4b5dc428-d623-4203-a7f0-a86c47bf9aa8"
-data "ContainerSpells" "Target_CrownOfMadness_Base;Target_CrownOfMadness_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_CrownOfMadness_Detached"
 type "SpellData"

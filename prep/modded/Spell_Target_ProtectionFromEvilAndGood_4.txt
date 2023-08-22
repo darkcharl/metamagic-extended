@@ -5,7 +5,7 @@ using "Target_ProtectionFromEvilAndGood"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_ProtectionFromEvilAndGood"
 data "PowerLevel" "4"
-data "ContainerSpells" "Target_ProtectionFromEvilAndGood_Base_4;Target_ProtectionFromEvilAndGood_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_ProtectionFromEvilAndGood_Detached_4"
 type "SpellData"

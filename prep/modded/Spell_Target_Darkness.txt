@@ -23,7 +23,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "7121a488-7c9a-4ba1-a585-f79aaa77e97c"
 data "CastEffect" "e61d2266-f041-4bd5-a488-7b66e76d781c"
 data "PositionEffect" "0afcbe13-7593-4bb7-8dfd-b7147a3f416c"
-data "ContainerSpells" "Target_Darkness_Base;Target_Darkness_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Darkness_Detached"
 type "SpellData"

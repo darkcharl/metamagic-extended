@@ -28,7 +28,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "60ec0a2d-1b72-4fb2-9eaf-571638aca25d"
 data "CastEffect" "1c5d1c5b-d8ff-42b5-8586-99aeaf901192"
 data "TargetEffect" "b76f528c-3b42-4283-a10d-d0217baf3c7c"
-data "ContainerSpells" "Target_ShieldOfFaith_Base;Target_ShieldOfFaith_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_ShieldOfFaith_Detached"
 type "SpellData"

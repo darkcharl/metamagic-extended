@@ -41,7 +41,7 @@ data "CastEffect" "a6aab94c-e0b5-4cbe-81cb-53ff6b1a662a"
 data "HitEffect" "f2ca2970-0882-412b-9c84-033ac7160ed7"
 data "BeamEffect" "6a1dbffa-77da-4362-bcad-a035db12aeec"
 data "DamageType" "Lightning"
-data "ContainerSpells" "Zone_LightningBolt_Acid;Zone_LightningBolt_Base;Zone_LightningBolt_Cold;Zone_LightningBolt_Fire;Zone_LightningBolt_Lightning;Zone_LightningBolt_Thunder"
+data "ContainerSpells" ""
 
 new entry "Zone_LightningBolt_Acid"
 type "SpellData"

@@ -8,7 +8,7 @@ data "TooltipStatusApply" "ApplyStatus(CLOUD_OF_DAGGERS_AURA_3,100,10)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:3"
 data "RootSpellID" "Target_CloudOfDaggers"
 data "PowerLevel" "3"
-data "ContainerSpells" "Target_CloudOfDaggers_Base_3;Target_CloudOfDaggers_Detached_3"
+data "ContainerSpells" ""
 
 new entry "Target_CloudOfDaggers_Detached_3"
 type "SpellData"

@@ -5,7 +5,7 @@ using "Target_ShieldOfFaith"
 data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_ShieldOfFaith"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_ShieldOfFaith_Base_6;Target_ShieldOfFaith_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_ShieldOfFaith_Detached_6"
 type "SpellData"

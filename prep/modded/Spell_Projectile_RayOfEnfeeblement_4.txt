@@ -7,7 +7,7 @@ data "PrepareLoopSound" "Spell_Prepare_Debuff_Gen_L1to3_01_Loop"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Projectile_RayOfEnfeeblement"
 data "PowerLevel" "4"
-data "ContainerSpells" "Projectile_RayOfEnfeeblement_Base_4;Projectile_RayOfEnfeeblement_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Projectile_RayOfEnfeeblement_Detached_4"
 type "SpellData"

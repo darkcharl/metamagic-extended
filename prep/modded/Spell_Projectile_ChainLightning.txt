@@ -34,7 +34,7 @@ data "PrepareEffect" "abf8542a-6c39-49ad-bc94-86c4585a5948"
 data "CastEffect" "abf8542a-6c39-49ad-bc94-86c4585a5948"
 data "HitEffect" "ca431b9f-3f96-4dd8-b84f-682a733035cc"
 data "DamageType" "Lightning"
-data "ContainerSpells" "Projectile_ChainLightning_Acid;Projectile_ChainLightning_Base;Projectile_ChainLightning_Cold;Projectile_ChainLightning_Fire;Projectile_ChainLightning_Lightning;Projectile_ChainLightning_Thunder"
+data "ContainerSpells" ""
 
 new entry "Projectile_ChainLightning_Acid"
 type "SpellData"

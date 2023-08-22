@@ -25,7 +25,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "2fa6b127-6f8a-4150-8be6-6f62b7a85911"
 data "CastEffect" "b4221f40-bcc3-4703-acc5-1afaee284839"
 data "PositionEffect" "2de1821f-02b9-454d-8436-382c9879becd"
-data "ContainerSpells" "Target_FogCloud_Base;Target_FogCloud_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_FogCloud_Detached"
 type "SpellData"

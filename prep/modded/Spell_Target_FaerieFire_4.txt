@@ -6,7 +6,7 @@ data "TargetSound" "Spell_Impact_Debuff_FaerieFire_L1to3"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_FaerieFire"
 data "PowerLevel" "4"
-data "ContainerSpells" "Target_FaerieFire_Base_4;Target_FaerieFire_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_FaerieFire_Detached_4"
 type "SpellData"

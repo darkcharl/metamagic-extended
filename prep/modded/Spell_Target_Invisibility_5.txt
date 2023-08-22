@@ -7,7 +7,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_Invisibility"
 data "PowerLevel" "5"
 data "CombatAIOverrideSpell" "Target_Invisibility_5_AI"
-data "ContainerSpells" "Target_Invisibility_Base_5;Target_Invisibility_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Target_Invisibility_Detached_5"
 type "SpellData"

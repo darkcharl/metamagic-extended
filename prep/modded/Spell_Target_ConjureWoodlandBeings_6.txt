@@ -6,7 +6,7 @@ data "TooltipUpcastDescription" "6ff1780a-855a-414c-a8bf-811251537206"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_ConjureWoodlandBeings"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_ConjureWoodlandBeings_Acid_6;Target_ConjureWoodlandBeings_Base_6;Target_ConjureWoodlandBeings_Cold_6;Target_ConjureWoodlandBeings_Fire_6;Target_ConjureWoodlandBeings_Lightning_6;Target_ConjureWoodlandBeings_Thunder_6"
+data "ContainerSpells" ""
 
 new entry "Target_ConjureWoodlandBeings_Acid_6"
 type "SpellData"

@@ -12,7 +12,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_Fly"
 data "PowerLevel" "4"
 data "CombatAIOverrideSpell" "Target_Fly_4_AI"
-data "ContainerSpells" "Target_Fly_Base_4;Target_Fly_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_Fly_Detached_4"
 type "SpellData"

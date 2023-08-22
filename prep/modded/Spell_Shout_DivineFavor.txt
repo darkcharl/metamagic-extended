@@ -24,7 +24,7 @@ data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsConcentration;IsLink
 data "PrepareEffect" "747ac7e5-c52e-4e5a-be78-1f9de85b55ea"
 data "CastEffect" "1516f4b2-5a53-4adf-bf85-d6e46826cffe"
 data "Sheathing" "Melee"
-data "ContainerSpells" "Shout_DivineFavor_Base;Shout_DivineFavor_Detached"
+data "ContainerSpells" ""
 
 new entry "Shout_DivineFavor_Detached"
 type "SpellData"

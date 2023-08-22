@@ -5,7 +5,7 @@ using "Target_SpikeGrowth"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_SpikeGrowth"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_SpikeGrowth_Base_6;Target_SpikeGrowth_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_SpikeGrowth_Detached_6"
 type "SpellData"

@@ -24,7 +24,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "baeeab90-9251-4b2c-ae3e-fbb4626e4d71"
 data "CastEffect" "9f030a2a-ec3d-448c-8198-bd9a59a1a61d"
 data "TargetEffect" "d894cf3d-890e-492d-a678-7b72653c00aa"
-data "ContainerSpells" "Target_IrresistibleDance_Base;Target_IrresistibleDance_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_IrresistibleDance_Detached"
 type "SpellData"

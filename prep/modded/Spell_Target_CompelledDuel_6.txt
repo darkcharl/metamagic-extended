@@ -5,7 +5,7 @@ using "Target_CompelledDuel"
 data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_CompelledDuel"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_CompelledDuel_Base_6;Target_CompelledDuel_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_CompelledDuel_Detached_6"
 type "SpellData"

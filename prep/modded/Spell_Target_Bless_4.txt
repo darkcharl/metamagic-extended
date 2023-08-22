@@ -8,7 +8,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Target_Bless"
 data "PowerLevel" "4"
 data "CombatAIOverrideSpell" "Target_Bless_4_AI"
-data "ContainerSpells" "Target_Bless_Base_4;Target_Bless_Detached_4"
+data "ContainerSpells" ""
 
 new entry "Target_Bless_Detached_4"
 type "SpellData"

@@ -11,7 +11,7 @@ data "TooltipUpcastDescriptionParams" "DealDamage(1d8,Lightning)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Projectile_LightningArrow"
 data "PowerLevel" "6"
-data "ContainerSpells" "Projectile_LightningArrow_Acid_6;Projectile_LightningArrow_Base_6;Projectile_LightningArrow_Cold_6;Projectile_LightningArrow_Fire_6;Projectile_LightningArrow_Lightning_6;Projectile_LightningArrow_Thunder_6"
+data "ContainerSpells" ""
 
 new entry "Projectile_LightningArrow_Acid_6"
 type "SpellData"

@@ -28,7 +28,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "33302a46-4a12-41dd-8845-6b7314d50022"
 data "CastEffect" "bcd66fb0-b0bc-41d0-abba-ad443d63dd72"
 data "TargetEffect" "f2519a63-63bf-46c6-821a-c52a55815cd0"
-data "ContainerSpells" "Target_GaseousForm_Base;Target_GaseousForm_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_GaseousForm_Detached"
 type "SpellData"

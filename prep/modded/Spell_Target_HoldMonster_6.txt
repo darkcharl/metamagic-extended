@@ -8,7 +8,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_HoldMonster"
 data "PowerLevel" "6"
 data "CombatAIOverrideSpell" "Target_HoldMonster_6_AI"
-data "ContainerSpells" "Target_HoldMonster_Base_6;Target_HoldMonster_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_HoldMonster_Detached_6"
 type "SpellData"

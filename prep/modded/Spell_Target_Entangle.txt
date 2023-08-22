@@ -26,7 +26,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "e8109f4b-2439-4424-9bc8-743270220f47"
 data "CastEffect" "31e60ea0-1592-4e14-a1b5-5d32a9b36b76"
 data "PositionEffect" "0295bd38-d6e5-48cb-9544-8f38e10a1532"
-data "ContainerSpells" "Target_Entangle_Base;Target_Entangle_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Entangle_Detached"
 type "SpellData"

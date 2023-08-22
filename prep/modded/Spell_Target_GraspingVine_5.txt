@@ -6,7 +6,7 @@ data "TooltipUpcastDescription" "6ff1780a-855a-414c-a8bf-811251537206"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_GraspingVine"
 data "PowerLevel" "5"
-data "ContainerSpells" "Target_GraspingVine_Acid_5;Target_GraspingVine_Base_5;Target_GraspingVine_Cold_5;Target_GraspingVine_Detached_5;Target_GraspingVine_Fire_5;Target_GraspingVine_Lightning_5;Target_GraspingVine_Thunder_5"
+data "ContainerSpells" ""
 
 new entry "Target_GraspingVine_Detached_5"
 type "SpellData"

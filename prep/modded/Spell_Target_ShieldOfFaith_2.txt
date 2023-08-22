@@ -6,7 +6,7 @@ data "DisplayName" "h88f43824g1cafg4b98g9950gfb11e4ac4762;1"
 data "UseCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:2"
 data "RootSpellID" "Target_ShieldOfFaith"
 data "PowerLevel" "2"
-data "ContainerSpells" "Target_ShieldOfFaith_Base_2;Target_ShieldOfFaith_Detached_2"
+data "ContainerSpells" ""
 
 new entry "Target_ShieldOfFaith_Detached_2"
 type "SpellData"

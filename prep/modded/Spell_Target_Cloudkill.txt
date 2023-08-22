@@ -27,7 +27,7 @@ data "PrepareEffect" "4a67e51d-c18e-4a7f-a8ad-416963b3aa85"
 data "CastEffect" "5dbf4a62-917e-41bd-8518-f62f5c364e22"
 data "PositionEffect" "f4453abc-165c-4370-ba77-88217f070456"
 data "DamageType" "Poison"
-data "ContainerSpells" "Target_Cloudkill_Base;Target_Cloudkill_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Cloudkill_Detached"
 type "SpellData"

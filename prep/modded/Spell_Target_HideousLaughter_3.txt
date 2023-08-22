@@ -7,7 +7,7 @@ data "Description" "h9bcc88bbgc26fg49a1g9ca3g17d10db0de40;1"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:3"
 data "RootSpellID" "Target_HideousLaughter"
 data "PowerLevel" "3"
-data "ContainerSpells" "Target_HideousLaughter_Base_3;Target_HideousLaughter_Detached_3"
+data "ContainerSpells" ""
 
 new entry "Target_HideousLaughter_Detached_3"
 type "SpellData"

@@ -8,7 +8,7 @@ data "TooltipDamageList" "DealDamage(8d6,Fire)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Zone_BurningHands"
 data "PowerLevel" "6"
-data "ContainerSpells" "Zone_BurningHands_Acid_6;Zone_BurningHands_Base_6;Zone_BurningHands_Cold_6;Zone_BurningHands_Fire_6;Zone_BurningHands_Lightning_6;Zone_BurningHands_Thunder_6"
+data "ContainerSpells" ""
 
 new entry "Zone_BurningHands_Acid_6"
 type "SpellData"

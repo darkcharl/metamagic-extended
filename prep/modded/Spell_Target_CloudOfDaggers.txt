@@ -26,7 +26,7 @@ data "PrepareEffect" "7121a488-7c9a-4ba1-a585-f79aaa77e97c"
 data "CastEffect" "e61d2266-f041-4bd5-a488-7b66e76d781c"
 data "PositionEffect" "1a3a7ca5-2072-43fe-b07e-cd52e1bbf3e6"
 data "DamageType" "Slashing"
-data "ContainerSpells" "Target_CloudOfDaggers_Base;Target_CloudOfDaggers_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_CloudOfDaggers_Detached"
 type "SpellData"

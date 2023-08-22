@@ -10,7 +10,7 @@ data "TooltipUpcastDescriptionParams" "DealDamage(1d8,Cold)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Zone_ConeOfCold"
 data "PowerLevel" "6"
-data "ContainerSpells" "Zone_ConeOfCold_Acid_6;Zone_ConeOfCold_Base_6;Zone_ConeOfCold_Cold_6;Zone_ConeOfCold_Fire_6;Zone_ConeOfCold_Lightning_6;Zone_ConeOfCold_Thunder_6"
+data "ContainerSpells" ""
 
 new entry "Zone_ConeOfCold_Acid_6"
 type "SpellData"

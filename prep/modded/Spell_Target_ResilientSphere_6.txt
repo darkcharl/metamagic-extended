@@ -6,7 +6,7 @@ data "TooltipUpcastDescription" "6ff1780a-855a-414c-a8bf-811251537206"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_ResilientSphere"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_ResilientSphere_Base_6;Target_ResilientSphere_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_ResilientSphere_Detached_6"
 type "SpellData"

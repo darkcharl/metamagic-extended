@@ -8,7 +8,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_Bane"
 data "PowerLevel" "6"
 data "CombatAIOverrideSpell" "Target_Bane_6_AI"
-data "ContainerSpells" "Target_Bane_Base_6;Target_Bane_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_Bane_Detached_6"
 type "SpellData"

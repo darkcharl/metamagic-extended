@@ -12,7 +12,7 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:4"
 data "RootSpellID" "Zone_BurningHands"
 data "PowerLevel" "4"
 data "TargetEffect" "53412dd1-8066-4860-a2ae-b27e77bfdab5"
-data "ContainerSpells" "Zone_BurningHands_Acid_4;Zone_BurningHands_Base_4;Zone_BurningHands_Cold_4;Zone_BurningHands_Fire_4;Zone_BurningHands_Lightning_4;Zone_BurningHands_Thunder_4"
+data "ContainerSpells" ""
 
 new entry "Zone_BurningHands_Acid_4"
 type "SpellData"

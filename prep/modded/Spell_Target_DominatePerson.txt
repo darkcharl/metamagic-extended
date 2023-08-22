@@ -26,7 +26,7 @@ data "SpellFlags" "HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComp
 data "PrepareEffect" "2fa6b127-6f8a-4150-8be6-6f62b7a85911"
 data "CastEffect" "a7ffe334-15bc-4515-976c-932e6d45b9d9"
 data "TargetEffect" "fdf323a9-8912-4dcd-b55e-e268f7f45170"
-data "ContainerSpells" "Target_DominatePerson_Base;Target_DominatePerson_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_DominatePerson_Detached"
 type "SpellData"

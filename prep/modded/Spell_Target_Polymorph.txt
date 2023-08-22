@@ -29,7 +29,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "2fa6b127-6f8a-4150-8be6-6f62b7a85911"
 data "CastEffect" "d2ef6b50-243f-478d-85c6-892086a1477e"
 data "TargetEffect" "0f5002c7-3571-4dbc-a7e8-9a8c1e43d91e"
-data "ContainerSpells" "Target_Polymorph_Base;Target_Polymorph_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_Polymorph_Detached"
 type "SpellData"

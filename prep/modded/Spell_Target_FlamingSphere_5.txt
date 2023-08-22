@@ -8,7 +8,7 @@ data "TooltipStatusApply" "ApplyStatus(FLAMING_SPHERE_5,100,10,)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Target_FlamingSphere"
 data "PowerLevel" "5"
-data "ContainerSpells" "Target_FlamingSphere_Acid_5;Target_FlamingSphere_Base_5;Target_FlamingSphere_Cold_5;Target_FlamingSphere_Detached_5;Target_FlamingSphere_Fire_5;Target_FlamingSphere_Lightning_5;Target_FlamingSphere_Thunder_5"
+data "ContainerSpells" ""
 
 new entry "Target_FlamingSphere_Detached_5"
 type "SpellData"

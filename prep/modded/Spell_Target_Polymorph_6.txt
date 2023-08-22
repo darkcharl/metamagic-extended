@@ -5,7 +5,7 @@ using "Target_Polymorph"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_Polymorph"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_Polymorph_Base_6;Target_Polymorph_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_Polymorph_Detached_6"
 type "SpellData"

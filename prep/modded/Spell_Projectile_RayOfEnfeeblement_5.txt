@@ -5,7 +5,7 @@ using "Projectile_RayOfEnfeeblement"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:5"
 data "RootSpellID" "Projectile_RayOfEnfeeblement"
 data "PowerLevel" "5"
-data "ContainerSpells" "Projectile_RayOfEnfeeblement_Base_5;Projectile_RayOfEnfeeblement_Detached_5"
+data "ContainerSpells" ""
 
 new entry "Projectile_RayOfEnfeeblement_Detached_5"
 type "SpellData"

@@ -6,7 +6,7 @@ data "DisplayName" "h13219dedgeb5fg43acgb277g9549d761df6d;1"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_Invisibility_Greater"
 data "PowerLevel" "6"
-data "ContainerSpells" "Target_Invisibility_Greater_Base_6;Target_Invisibility_Greater_Detached_6"
+data "ContainerSpells" ""
 
 new entry "Target_Invisibility_Greater_Detached_6"
 type "SpellData"

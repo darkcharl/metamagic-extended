@@ -26,7 +26,7 @@ data "MemoryCost" "1"
 data "PrepareEffect" "af787096-8656-4495-a6ce-cbd376578069"
 data "CastEffect" "c32a08dc-ebfa-4d8c-bd4b-e21cd1f5f256"
 data "TargetEffect" "4075547d-197f-4cb3-94ff-b40a7fd113d4"
-data "ContainerSpells" "Target_ResilientSphere_Base;Target_ResilientSphere_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_ResilientSphere_Detached"
 type "SpellData"

@@ -33,7 +33,7 @@ data "PrepareEffect" "2af907e1-127c-4c83-a117-af18f211c59d"
 data "CastEffect" "ee3c85ae-0078-4223-9345-c2594535d1f2"
 data "PositionEffect" "326e77b8-3951-4507-b42a-838533b274e2"
 data "DamageType" "Thunder"
-data "ContainerSpells" "Target_Shatter_Acid;Target_Shatter_Base;Target_Shatter_Cold;Target_Shatter_Fire;Target_Shatter_Lightning;Target_Shatter_Thunder"
+data "ContainerSpells" ""
 
 new entry "Target_Shatter_Acid"
 type "SpellData"

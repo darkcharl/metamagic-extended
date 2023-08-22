@@ -22,7 +22,7 @@ data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;IsConcentration;IsLink
 data "PrepareEffect" "778b183a-7a50-4670-bb55-3be8f8ff57f5"
 data "CastEffect" "18196a59-d476-4bfd-96e6-89d55ed2acf4"
 data "PositionEffect" "f04158f5-b8f5-4b4b-a149-ee835b93edc0"
-data "ContainerSpells" "Target_BlackTentacles_Base;Target_BlackTentacles_Detached"
+data "ContainerSpells" ""
 
 new entry "Target_BlackTentacles_Detached"
 type "SpellData"

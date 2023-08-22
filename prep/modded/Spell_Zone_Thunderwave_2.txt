@@ -9,7 +9,7 @@ data "TooltipAttackSave" "Constitution"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:2"
 data "RootSpellID" "Zone_Thunderwave"
 data "PowerLevel" "2"
-data "ContainerSpells" "Zone_Thunderwave_Acid_2;Zone_Thunderwave_Base_2;Zone_Thunderwave_Cold_2;Zone_Thunderwave_Fire_2;Zone_Thunderwave_Lightning_2;Zone_Thunderwave_Thunder_2"
+data "ContainerSpells" ""
 
 new entry "Zone_Thunderwave_Acid_2"
 type "SpellData"
