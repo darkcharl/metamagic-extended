@@ -4,6 +4,8 @@
     <content contentuid="18f6a18a-086e-492f-8ba7-f8fc342ecc6a" version="1">Boosts damage by rolling each spell damage die twice and keeping the larger.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
     <content contentuid="h13be03aagfbfdg40b5g94c8g792f43b18f9d" version="2">Metamagic: Empowered Spell</content>
     <content contentuid="h579a28c1gd57ag4fddga371g4f4f852fb089" version="8">Increase the cost of spells that deal direct damage by [1] Sorcery Point to roll their damage with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;You can use Empowered Spell in combination with other Metamagic.</content>
+    <content contentuid="0287fd8d-84da-4799-a59f-a6b5d75aa7f0" version="1">Metamagic: Maximized Spell</content>
+    <content contentuid="f29e1f76-9c88-4dee-9923-81e924388937" version="1">Maximizes the damage done by spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
     <content contentuid="e29c98b4-2cdd-4cf4-8025-fc4e74ed108c" version="1">Metamagic: Seeking Spell</content>
     <content contentuid="a18df986-9ac8-4974-97b9-d1cf872daa08" version="1">Gives &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
     <content contentuid="b15e99d6-d7ce-456e-a02e-f20c0727d8c5" version="1">Exploit: Quickened Spell</content>
