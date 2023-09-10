@@ -1,1 +1,2 @@
 release/*.zip
+**/__pycache__
