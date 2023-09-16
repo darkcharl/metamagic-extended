@@ -10,6 +10,10 @@ function EmpoweredSpellCheck2()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) | IsChromaticOrbSpells()
 end
 
+function PiercingSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage)
+end
+
 function SeekingSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll()
 end
