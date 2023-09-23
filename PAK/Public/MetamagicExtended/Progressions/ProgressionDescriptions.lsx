@@ -4,6 +4,15 @@
     <region id="ProgressionDescriptions">
         <node id="root">
             <children>
+                <!-- Exploits -->
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Exploit_Quickened"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="e550e298-42e7-4023-a7b5-337399e8791b"/>
+                </node>
+
+                <!-- Metas -->
                 <node id="ProgressionDescription">
                     <attribute id="Hidden" type="bool" value="true"/>
                     <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Empowered"/>
@@ -12,16 +21,23 @@
                 </node>
                 <node id="ProgressionDescription">
                     <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Maximized"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="edab3ca9-cc2d-47dd-9f6c-a230cad68df0"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Piercing"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="5e1d107d-9fb4-4dba-b67f-24dc1717dd73"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
                     <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Seeking"/>
                     <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
                     <attribute id="UUID" type="guid" value="470cc458-7e2b-4c59-a19b-cc24e700a03e"/>
                 </node>
-                <node id="ProgressionDescription">
-                    <attribute id="Hidden" type="bool" value="true"/>
-                    <attribute id="PassivePrototype" type="FixedString" value="Exploit_Quickened"/>
-                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
-                    <attribute id="UUID" type="guid" value="e550e298-42e7-4023-a7b5-337399e8791b"/>
-                </node>
+                
             </children>
         </node>
     </region>
