@@ -10,6 +10,10 @@
     <content contentuid="259166d2-1d55-416e-82f8-20a96e4d4467" version="1">Makes damaging spells ignore resistance. Costs [1] Sorcery Point.</content>
     <content contentuid="e29c98b4-2cdd-4cf4-8025-fc4e74ed108c" version="1">Metamagic: Seeking Spell</content>
     <content contentuid="a18df986-9ac8-4974-97b9-d1cf872daa08" version="1">Gives &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+    <content contentuid="e38654de-fd40-4f34-96c6-25a5886af1a9" version="1">Metamagic: Tripled Spell</content>
+    <content contentuid="1468eac4-3b98-4861-9a24-579a9a78235e" version="1">Spells that only target 1 creature can target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Points per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used. &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; cost [1] Sorcery Points.</content>
+    <content contentuid="f483cb4e-5023-44a7-808e-9873d0e18cbe" version="1">Exploit: Tripled Spell</content>
+    <content contentuid="22df217f-83a3-4eb1-8c7d-ec0cd575906f" version="1">Spells that only target 1 creature can target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used but drains health from the invoker. &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; also cost [1] Sorcery Point.</content>
     <content contentuid="b15e99d6-d7ce-456e-a02e-f20c0727d8c5" version="1">Exploit: Quickened Spell</content>
     <content contentuid="d18a0b55-dede-47dc-9b24-568b960bc55e" version="1">Exploited spells channel raw Weave through the body of the caster to quicken spells.&lt;br&gt;&lt;br&gt;The process consumes [1] Sorcery Point but hurts the invoker, causing [2] per Spell Level.</content>
 </contentList>
