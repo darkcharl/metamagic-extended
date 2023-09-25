@@ -11,6 +11,12 @@
                     <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
                     <attribute id="UUID" type="guid" value="e550e298-42e7-4023-a7b5-337399e8791b"/>
                 </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Exploit_Tripled"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="1468eac4-3b98-4861-9a24-579a9a78235e"/>
+                </node>
 
                 <!-- Metas -->
                 <node id="ProgressionDescription">
@@ -36,6 +42,12 @@
                     <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Seeking"/>
                     <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
                     <attribute id="UUID" type="guid" value="470cc458-7e2b-4c59-a19b-cc24e700a03e"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Metamagic_Tripled"/>
+                    <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+                    <attribute id="UUID" type="guid" value="3958ae75-ebe8-4069-8ac9-7eb53e210f29"/>
                 </node>
                 
             </children>
