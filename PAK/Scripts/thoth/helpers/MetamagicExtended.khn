@@ -6,12 +6,28 @@ function IsChromaticOrbSpells()
     | SpellId('Projectile_ChromaticOrb_Thunder')
 end
 
+function DreadfulSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasStringInSpellRoll('SavingThrow')
+end
+
 function EmpoweredSpellCheck2()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) | IsChromaticOrbSpells()
 end
 
+function FavoredSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells()
+end
+
+function TempestuousSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells()
+end
+
 function PiercingSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage)
+end
+
+function RestorativeSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & ~NumberOfTargetsGreaterThan(1) & ~AreaRadiusGreaterThan(0)
 end
 
 function SeekingSpellCheck()
