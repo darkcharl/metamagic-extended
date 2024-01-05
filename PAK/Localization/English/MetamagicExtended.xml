@@ -17,7 +17,7 @@
     <content contentuid="e29c98b4-2cdd-4cf4-8025-fc4e74ed108c" version="1">Metamagic: Seeking Spell</content>
     <content contentuid="a18df986-9ac8-4974-97b9-d1cf872daa08" version="1">Gives &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
     <content contentuid="0c593a86-7a4a-4b72-b4a0-c3a1e191211e" version="1">Metamagic: Tempestuous Spell</content>
-    <content contentuid="b0bc6550-9678-4d3d-8530-fce9d32f77b6" version="1">A swirl of tempest follows your spells, knocking back targets. Targets are pushed by [1] and additionally, may fall prone when failing a Strength Saving Throw. &lt;br&gt;&lt;br&gt;Costs [2] Sorcery Points per spell.</content>
+    <content contentuid="b0bc6550-9678-4d3d-8530-fce9d32f77b6" version="1">A swirl of tempest follows your spells, knocking back targets. Targets are pushed by [1] and additionally, may fall prone if they fail a Strength Saving Throw. &lt;br&gt;&lt;br&gt;Costs [2] Sorcery Points per spell.</content>
     <content contentuid="e38654de-fd40-4f34-96c6-25a5886af1a9" version="1">Metamagic: Tripled Spell</content>
     <content contentuid="1468eac4-3b98-4861-9a24-579a9a78235e" version="1">Spells that only target 1 creature can target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Points per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used. &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; cost [1] Sorcery Points.</content>
     <content contentuid="f483cb4e-5023-44a7-808e-9873d0e18cbe" version="1">Exploit: Tripled Spell</content>
