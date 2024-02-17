@@ -6,6 +6,10 @@ function IsChromaticOrbSpells()
     | SpellId('Projectile_ChromaticOrb_Thunder')
 end
 
+function IsEldritchBlast()
+    return SpellId('Projectile_EldritchBlast')
+end
+
 function DreadfulSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasStringInSpellRoll('SavingThrow')
 end
@@ -16,6 +20,10 @@ end
 
 function FavoredSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells()
+end
+
+function MaximizedSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsEldritchBlast() | IsChromaticOrbSpells()
 end
 
 function TempestuousSpellCheck()

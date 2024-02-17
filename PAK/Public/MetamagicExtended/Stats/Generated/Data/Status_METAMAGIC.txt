@@ -26,7 +26,7 @@ data "Description" "f29e1f76-9c88-4dee-9923-81e924388937;1"
 data "Icon" "Skill_Sorcerer_Passive_Metamagic_MaximizedSpell"
 data "StackId" "METAMAGIC"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator"
-data "Boosts" "IF(IsCantrip() or IsSpell()):MinimumRollResult(Damage,20)"
+data "Boosts" "IF((IsCantrip() or IsSpell()) and not IsEldritchBlast()):MinimumRollResult(Damage,20)"
 
 new entry "METAMAGIC_PIERCING"
 type "StatusData"
