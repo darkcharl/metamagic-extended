@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
     <content contentuid="99c1e12b-c42a-4f5e-8f54-93a872203eff" version="1">Metamagic: Dreadful Spell</content>
-    <content contentuid="b658d6c8-84a4-4a7a-9052-0031bb1a1e2c" version="1">Causes the target to become frightened. &lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+    <content contentuid="b658d6c8-84a4-4a7a-9052-0031bb1a1e2c" version="1">Causes the target to become fearful of the caster. &lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
     <content contentuid="bfef4598-bd6d-4323-a650-3d4c080bde78" version="1">Metamagic: Empowered Spell</content>
     <content contentuid="18f6a18a-086e-492f-8ba7-f8fc342ecc6a" version="1">Boosts damage by rolling each spell damage die twice and keeping the larger.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
     <content contentuid="h13be03aagfbfdg40b5g94c8g792f43b18f9d" version="2">Metamagic: Empowered Spell</content>
