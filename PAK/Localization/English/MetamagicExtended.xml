@@ -20,6 +20,7 @@
     <content contentuid="b0bc6550-9678-4d3d-8530-fce9d32f77b6" version="1">A swirl of tempest follows your spells, knocking back targets. Targets are pushed by [1] and additionally, may fall prone if they fail a Strength Saving Throw. &lt;br&gt;&lt;br&gt;Costs [2] Sorcery Points per spell.</content>
     <content contentuid="e38654de-fd40-4f34-96c6-25a5886af1a9" version="1">Metamagic: Tripled Spell</content>
     <content contentuid="1468eac4-3b98-4861-9a24-579a9a78235e" version="1">Spells that only target 1 creature can target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Points per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used. &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; cost [1] Sorcery Points.</content>
+    <content contentuid="abf47b5d-81df-4814-b1f5-2345f6252ac3" version="1">For spells that don't shoot a projectile, the targets need to be close enough together.</content>
     <content contentuid="f483cb4e-5023-44a7-808e-9873d0e18cbe" version="1">Exploit: Tripled Spell</content>
     <content contentuid="22df217f-83a3-4eb1-8c7d-ec0cd575906f" version="1">Spells that only target 1 creature can target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used but drains health from the invoker. &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; also cost [1] Sorcery Point.</content>
     <content contentuid="b15e99d6-d7ce-456e-a02e-f20c0727d8c5" version="1">Exploit: Quickened Spell</content>
