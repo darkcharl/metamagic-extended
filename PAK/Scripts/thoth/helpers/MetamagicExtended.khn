@@ -23,7 +23,7 @@ function FavoredSpellCheck()
 end
 
 function MaximizedSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsEldritchBlast() | IsChromaticOrbSpells()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsCantrip() | IsChromaticOrbSpells()
 end
 
 function TempestuousSpellCheck()
