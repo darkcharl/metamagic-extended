@@ -1,5 +1,14 @@
 local __util = require 'larian.util'
 
+function IsChaosBoltSpells()
+    return SpellId('Target_ChaosBolt') | SpellId('Projectile_ChaosBolt_2') | SpellId('Projectile_ChaosBolt_3')
+    | SpellId('Target_ChaosBolt_4') | SpellId('Projectile_ChaosBolt_5') | SpellId('Projectile_ChaosBolt_6')
+    | SpellId('Target_ChaosBolt_7') | SpellId('Projectile_ChaosBolt_8') | SpellId('Projectile_ChaosBolt_9')
+    | SpellId('Projectile_ChaosBolt') | SpellId('Projectile_ChaosBolt_Acid') | SpellId('Projectile_ChaosBolt_Cold')
+    | SpellId('Projectile_ChaosBolt_Fire') | SpellId('Projectile_ChaosBolt_Force')| SpellId('Projectile_ChaosBolt_Lightning') 
+    | SpellId('Projectile_ChaosBolt_Poison') | SpellId('Projectile_ChaosBolt_Psychic') | SpellId('Projectile_ChaosBolt_Thunder')
+end
+
 function IsChromaticOrbSpells()
     return SpellId('Projectile_ChromaticOrb') | SpellId('Projectile_ChromaticOrb_Acid') | SpellId('Projectile_ChromaticOrb_Cold')
     | SpellId('Projectile_ChromaticOrb_Fire') | SpellId('Projectile_ChromaticOrb_Lightning') | SpellId('Projectile_ChromaticOrb_Poison')
@@ -15,19 +24,19 @@ function DreadfulSpellCheck()
 end
 
 function EmpoweredSpellCheck2()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) | IsChromaticOrbSpells()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) | IsChromaticOrbSpells() | IsChaosBoltSpells()
 end
 
 function FavoredSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells() | IsChaosBoltSpells()
 end
 
 function MaximizedSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsCantrip() | IsChromaticOrbSpells()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsCantrip() | IsChromaticOrbSpells() | IsChaosBoltSpells()
 end
 
 function TempestuousSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells() | IsChaosBoltSpells()
 end
 
 function PiercingSpellCheck()
