@@ -7,7 +7,7 @@
     <content contentuid="h13be03aagfbfdg40b5g94c8g792f43b18f9d" version="2">Metamagic: Empowered Spell</content>
     <content contentuid="h579a28c1gd57ag4fddga371g4f4f852fb089" version="8">Increase the cost of spells that deal direct damage by [1] Sorcery Point to roll their damage with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;You can use Empowered Spell in combination with other Metamagic.</content>
     <content contentuid="b67943af-2d75-4195-a419-0663f5d3d86d" version="1">Metamagic: Favored Spell</content>
-    <content contentuid="bd0082d0-8e05-4d59-8ff4-44ab10487803" version="1">Spells that have &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; gain 2d4 bonus. &lt;br&gt;&lt;br&gt;Costs [1] Sorcery Points per spell.</content>
+    <content contentuid="bd0082d0-8e05-4d59-8ff4-44ab10487803" version="1">Spells that have &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; gain [1] bonus. &lt;br&gt;&lt;br&gt;Costs [2] Sorcery Points per spell.</content>
     <content contentuid="0287fd8d-84da-4799-a59f-a6b5d75aa7f0" version="1">Metamagic: Maximized Spell</content>
     <content contentuid="f29e1f76-9c88-4dee-9923-81e924388937" version="1">Maximizes the damage done by spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
     <content contentuid="689cae2f-e4ff-44cc-84ce-180aa6727a03" version="1">Metamagic: Piercing Spell</content>
