@@ -10,6 +10,7 @@
     <content contentuid="bd0082d0-8e05-4d59-8ff4-44ab10487803" version="1">Spells that have &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; gain [1] bonus. &lt;br&gt;&lt;br&gt;Costs [2] Sorcery Points per spell.</content>
     <content contentuid="0287fd8d-84da-4799-a59f-a6b5d75aa7f0" version="1">Metamagic: Maximized Spell</content>
     <content contentuid="f29e1f76-9c88-4dee-9923-81e924388937" version="1">Maximizes the damage done by spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
+    <content contentuid="99519c8c-0611-47eb-936c-3e4f0c97a4e5" version="1">Maximize damage.</content>
     <content contentuid="689cae2f-e4ff-44cc-84ce-180aa6727a03" version="1">Metamagic: Piercing Spell</content>
     <content contentuid="259166d2-1d55-416e-82f8-20a96e4d4467" version="1">Makes damaging spells ignore resistance. Costs [1] Sorcery Point.</content>
     <content contentuid="e04344f9-0869-41d5-9d20-f24436328a4d" version="1">Metamagic: Restorative Spell</content>
@@ -23,6 +24,7 @@
     <content contentuid="abf47b5d-81df-4814-b1f5-2345f6252ac3" version="1">For spells that don't shoot a projectile, the targets need to be close enough together.</content>
     <content contentuid="f483cb4e-5023-44a7-808e-9873d0e18cbe" version="1">Exploit: Tripled Spell</content>
     <content contentuid="22df217f-83a3-4eb1-8c7d-ec0cd575906f" version="1">Spells that only target 1 creature can target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used but drains health from the invoker. &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; also cost [1] Sorcery Point.</content>
+    <content contentuid="961ab996-debe-488d-af38-dff37f2c29bb" version="1">Target two more creatures.</content>
     <content contentuid="b15e99d6-d7ce-456e-a02e-f20c0727d8c5" version="1">Exploit: Quickened Spell</content>
     <content contentuid="d18a0b55-dede-47dc-9b24-568b960bc55e" version="1">Exploited spells channel raw Weave through the body of the caster to quicken spells.&lt;br&gt;&lt;br&gt;The process consumes [1] Sorcery Point but hurts the invoker, causing [2] per Spell Level.</content>
     <content contentuid="500659dc-d664-43f2-9e44-cb9e9f99d1b4" version="1">Metamagic: Debug Spell</content>
