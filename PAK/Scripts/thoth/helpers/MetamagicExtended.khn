@@ -19,12 +19,16 @@ function IsEldritchBlast()
     return SpellId('Projectile_EldritchBlast')
 end
 
+function IsSurfaceEffectSpell()
+    return SpellId('Target_CloudOfDaggers')
+end
+
 function DreadfulSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasStringInSpellRoll('SavingThrow')
 end
 
 function EmpoweredSpellCheck2()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) | IsChromaticOrbSpells() | IsChaosBoltSpells()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsSurfaceEffectSpell() | IsChromaticOrbSpells() | IsChaosBoltSpells()
 end
 
 function FavoredSpellCheck()
@@ -32,7 +36,7 @@ function FavoredSpellCheck()
 end
 
 function MaximizedSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsCantrip() | IsChromaticOrbSpells() | IsChaosBoltSpells()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsCantrip() & ~IsSurfaceEffectSpell() | IsChromaticOrbSpells() | IsChaosBoltSpells()
 end
 
 function TempestuousSpellCheck()
