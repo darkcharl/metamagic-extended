@@ -22,354 +22,354 @@
     <region id="IconUVList">
         <node id="root">
             <children>
-                <!-- Metamagic -->
+                <!-- 1st Row -->
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_CarefulSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedSpell"/>
                     <attribute id="U1" type="float" value="0.0"/>
                     <attribute id="U2" type="float" value="0.03125"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_DistantSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedAcidSpell"/>
                     <attribute id="U1" type="float" value="0.03125"/>
                     <attribute id="U2" type="float" value="0.0625"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_ExtendedSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedColdSpell"/>
                     <attribute id="U1" type="float" value="0.0625"/>
                     <attribute id="U2" type="float" value="0.09375"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_HeightenedSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedFireSpell"/>
                     <attribute id="U1" type="float" value="0.09375"/>
                     <attribute id="U2" type="float" value="0.125"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_QuickenedSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedLightningSpell"/>
                     <attribute id="U1" type="float" value="0.125"/>
                     <attribute id="U2" type="float" value="0.15625"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_SubtleSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedPoisonSpell"/>
                     <attribute id="U1" type="float" value="0.15625"/>
                     <attribute id="U2" type="float" value="0.1875"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_TwinnedSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedThunderSpell"/>
                     <attribute id="U1" type="float" value="0.1875"/>
                     <attribute id="U2" type="float" value="0.21875"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_ExpandedSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.21875"/>
                     <attribute id="U2" type="float" value="0.25"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_SeekingSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.25"/>
                     <attribute id="U2" type="float" value="0.28125"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedAcidSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.28125"/>
                     <attribute id="U2" type="float" value="0.3125"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedColdSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.3125"/>
                     <attribute id="U2" type="float" value="0.34375"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedFireSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.34375"/>
                     <attribute id="U2" type="float" value="0.375"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedLightningSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.375"/>
                     <attribute id="U2" type="float" value="0.40625"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedPoisonSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.40625"/>
                     <attribute id="U2" type="float" value="0.4375"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedThunderSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.4375"/>
                     <attribute id="U2" type="float" value="0.46875"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.46875"/>
                     <attribute id="U2" type="float" value="0.5"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_EmpoweredSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.5"/>
                     <attribute id="U2" type="float" value="0.53125"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_DetachedSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.53125"/>
                     <attribute id="U2" type="float" value="0.5625"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_MaximizedSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.5625"/>
                     <attribute id="U2" type="float" value="0.59375"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TripledSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.59375"/>
                     <attribute id="U2" type="float" value="0.625"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_PiercingSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.625"/>
                     <attribute id="U2" type="float" value="0.65625"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_FavoredSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.65625"/>
                     <attribute id="U2" type="float" value="0.6875"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_RestorativeSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.6875"/>
                     <attribute id="U2" type="float" value="0.71875"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_DreadfulSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.71875"/>
                     <attribute id="U2" type="float" value="0.75"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TempestuousSpell"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.75"/>
                     <attribute id="U2" type="float" value="0.78125"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
 
-                <!-- Exploits -->
+                <!-- 2nd Row -->
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_CarefulExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.0"/>
                     <attribute id="U2" type="float" value="0.03125"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_DistantExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.03125"/>
                     <attribute id="U2" type="float" value="0.0625"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_ExtendedExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.0625"/>
                     <attribute id="U2" type="float" value="0.09375"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_HeightenedExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.09375"/>
                     <attribute id="U2" type="float" value="0.125"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_QuickenedExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.125"/>
                     <attribute id="U2" type="float" value="0.15625"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_SubtleExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.15625"/>
                     <attribute id="U2" type="float" value="0.1875"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TwinnedExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.1875"/>
                     <attribute id="U2" type="float" value="0.21875"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_ExpandedExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.21875"/>
                     <attribute id="U2" type="float" value="0.25"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_SeekingExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.25"/>
                     <attribute id="U2" type="float" value="0.28125"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedAcidExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.28125"/>
                     <attribute id="U2" type="float" value="0.3125"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedColdExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.3125"/>
                     <attribute id="U2" type="float" value="0.34375"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedFireExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.34375"/>
                     <attribute id="U2" type="float" value="0.375"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedLightningExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.375"/>
                     <attribute id="U2" type="float" value="0.40625"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedPoisonExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.40625"/>
                     <attribute id="U2" type="float" value="0.4375"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedThunderExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.4375"/>
                     <attribute id="U2" type="float" value="0.46875"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TransmutedExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.46875"/>
                     <attribute id="U2" type="float" value="0.5"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_EmpoweredExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.5"/>
                     <attribute id="U2" type="float" value="0.53125"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="_Skill_Sorcerer_Passive_Metamagic_DetachedExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.53125"/>
                     <attribute id="U2" type="float" value="0.5625"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_MaximizedExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.5625"/>
                     <attribute id="U2" type="float" value="0.59375"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TripledExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.59375"/>
                     <attribute id="U2" type="float" value="0.625"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_PiercingExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.625"/>
                     <attribute id="U2" type="float" value="0.65625"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_FavoredExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.65625"/>
                     <attribute id="U2" type="float" value="0.6875"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_RestorativeExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.6875"/>
                     <attribute id="U2" type="float" value="0.71875"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_DreadfulExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.71875"/>
                     <attribute id="U2" type="float" value="0.75"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Sorcerer_Passive_Metamagic_TempestuousExploit"/>
+                    <attribute id="MapKey" type="FixedString" value="_MetamagicExtended"/>
                     <attribute id="U1" type="float" value="0.75"/>
                     <attribute id="U2" type="float" value="0.78125"/>
                     <attribute id="V1" type="float" value="0.03125"/>
