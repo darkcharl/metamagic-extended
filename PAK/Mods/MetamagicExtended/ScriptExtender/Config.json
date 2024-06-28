@@ -1,0 +1,5 @@
+{
+  "RequiredVersion": 11,
+  "ModTable": "MetamagicExtendedTransmutedSpell",
+  "FeatureFlags": ["Osiris", "Lua"]
+}

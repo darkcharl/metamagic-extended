@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
-    <content contentuid="99c1e12b-c42a-4f5e-8f54-93a872203eff" version="1">Metamagic: Dreadful Spell</content>
-    <content contentuid="b658d6c8-84a4-4a7a-9052-0031bb1a1e2c" version="1">Causes the target to become fearful of the caster. &lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
     <content contentuid="bfef4598-bd6d-4323-a650-3d4c080bde78" version="1">Metamagic: Empowered Spell</content>
     <content contentuid="18f6a18a-086e-492f-8ba7-f8fc342ecc6a" version="1">Boosts damage by rolling each spell damage die twice and keeping the larger.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
-    <content contentuid="h13be03aagfbfdg40b5g94c8g792f43b18f9d" version="2">Metamagic: Empowered Spell</content>
-    <content contentuid="h579a28c1gd57ag4fddga371g4f4f852fb089" version="8">Increase the cost of spells that deal direct damage by [1] Sorcery Point to roll their damage with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;You can use Empowered Spell in combination with other Metamagic.</content>
-    <content contentuid="b67943af-2d75-4195-a419-0663f5d3d86d" version="1">Metamagic: Favored Spell</content>
-    <content contentuid="bd0082d0-8e05-4d59-8ff4-44ab10487803" version="1">Spells that have &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; gain [1] bonus. &lt;br&gt;&lt;br&gt;Costs [2] Sorcery Points per spell.</content>
-    <content contentuid="0287fd8d-84da-4799-a59f-a6b5d75aa7f0" version="1">Metamagic: Maximized Spell</content>
-    <content contentuid="f29e1f76-9c88-4dee-9923-81e924388937" version="1">Maximizes the damage done by spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used.</content>
-    <content contentuid="99519c8c-0611-47eb-936c-3e4f0c97a4e5" version="1">Maximize damage.</content>
-    <content contentuid="689cae2f-e4ff-44cc-84ce-180aa6727a03" version="1">Metamagic: Piercing Spell</content>
-    <content contentuid="259166d2-1d55-416e-82f8-20a96e4d4467" version="1">Makes damaging spells ignore resistance. Costs [1] Sorcery Point.</content>
-    <content contentuid="e04344f9-0869-41d5-9d20-f24436328a4d" version="1">Metamagic: Restorative Spell</content>
-    <content contentuid="7c5a2258-ad8c-45b2-84d3-e14a32f06425" version="1">Spells that target a single creature remove the &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralyzed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt; condition. Costs [1] Sorcery Points per spell.</content>
+    
     <content contentuid="e29c98b4-2cdd-4cf4-8025-fc4e74ed108c" version="1">Metamagic: Seeking Spell</content>
     <content contentuid="a18df986-9ac8-4974-97b9-d1cf872daa08" version="1">Gives &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
-    <content contentuid="0c593a86-7a4a-4b72-b4a0-c3a1e191211e" version="1">Metamagic: Tempestuous Spell</content>
-    <content contentuid="b0bc6550-9678-4d3d-8530-fce9d32f77b6" version="1">A swirl of tempest follows your spells, knocking back targets. Targets are pushed by [1] and additionally, may fall prone if they fail a Strength Saving Throw. &lt;br&gt;&lt;br&gt;Costs [2] Sorcery Points per spell.</content>
-    <content contentuid="e38654de-fd40-4f34-96c6-25a5886af1a9" version="1">Metamagic: Tripled Spell</content>
-    <content contentuid="1468eac4-3b98-4861-9a24-579a9a78235e" version="1">Spells that only target 1 creature can target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Points per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used. &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; cost [1] Sorcery Points.</content>
-    <content contentuid="abf47b5d-81df-4814-b1f5-2345f6252ac3" version="1">For spells that don't shoot a projectile, the targets need to be close enough together.</content>
-    <content contentuid="f483cb4e-5023-44a7-808e-9873d0e18cbe" version="1">Exploit: Tripled Spell</content>
-    <content contentuid="22df217f-83a3-4eb1-8c7d-ec0cd575906f" version="1">Spells that only target 1 creature can target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; level used but drains health from the invoker. &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; also cost [1] Sorcery Point.</content>
-    <content contentuid="961ab996-debe-488d-af38-dff37f2c29bb" version="1">Target two more creatures.</content>
-    <content contentuid="b15e99d6-d7ce-456e-a02e-f20c0727d8c5" version="1">Exploit: Quickened Spell</content>
-    <content contentuid="d18a0b55-dede-47dc-9b24-568b960bc55e" version="1">Exploited spells channel raw Weave through the body of the caster to quicken spells.&lt;br&gt;&lt;br&gt;The process consumes [1] Sorcery Point but hurts the invoker, causing [2] per Spell Level.</content>
-    <content contentuid="500659dc-d664-43f2-9e44-cb9e9f99d1b4" version="1">Metamagic: Debug Spell</content>
-    <content contentuid="d70fd724-0215-4c70-bfd9-215f3b82262c" version="1">Helps Sorcerers determine if a Sussur bloom is actively blocking their effort. &lt;br&gt;&lt;br&gt; The Sorcery Point cost depends on the use case.</content>
+
+    <content contentuid="c7388b6c-7b7b-40aa-ab55-a8b2ed92339c" version="1">Metamagic: Transmuted Spell</content>
+	<content contentuid="9ee7aa0d-4c68-4b71-9c95-43fadc5fa475" version="1">Enables changing the damage type of elemental Spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+	<content contentuid="8e49e811-bdea-43a4-8403-5de1c2b0b472" version="1">Metamagic: Transmuted Spell (Acid)</content>
+	<content contentuid="83d90ed6-d47b-4147-9db8-a82ec01139e4" version="1">Changes elemental damage type to Acid.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+	<content contentuid="0b1d1b16-47b7-4566-b88c-a9c5ef6cfb8b" version="1">Metamagic: Transmuted Spell (Cold)</content>
+	<content contentuid="c756f128-9fdd-47f5-a382-bc0fdd852812" version="1">Changes elemental damage type to Cold.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+	<content contentuid="84e6b92b-685b-4a5b-a470-02bbea6be1ee" version="1">Metamagic: Transmuted Spell (Fire)</content>
+	<content contentuid="d5bdcd71-ae65-4112-84fe-77591f36b975" version="1">Changes elemental damage type to Fire.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+	<content contentuid="c8fac092-54ca-4c84-8d06-13fd79840be4" version="1">Metamagic: Transmuted Spell (Lightning)</content>
+	<content contentuid="f859c45b-d00a-4961-a506-ac6d40716115" version="1">Changes elemental damage type to Lightning.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+	<content contentuid="6076ae0a-0a98-47b9-8c00-a4e9d5ab879b" version="1">Metamagic: Transmuted Spell (Poison)</content>
+	<content contentuid="216eb9f4-2bdd-438f-b827-3713bd9c06a9" version="1">Changes elemental damage type to Poison.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
+	<content contentuid="e6ddfccb-af42-4a74-8a51-3ce8ab7cd09b" version="1">Metamagic: Transmuted Spell (Thunder)</content>
+	<content contentuid="b337bd0d-d116-40c3-80cf-709943a24366" version="1">Changes elemental damage type to Thunder.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
 </contentList>

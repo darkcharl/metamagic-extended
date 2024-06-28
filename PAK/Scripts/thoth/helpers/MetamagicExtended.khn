@@ -23,34 +23,14 @@ function IsSurfaceEffectSpell()
     return SpellId('Target_CloudOfDaggers')
 end
 
-function DreadfulSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasStringInSpellRoll('SavingThrow')
-end
-
-function EmpoweredSpellCheck2()
+function EmpoweredSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsSurfaceEffectSpell() | IsChromaticOrbSpells() | IsChaosBoltSpells()
-end
-
-function FavoredSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells() | IsChaosBoltSpells()
-end
-
-function MaximizedSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsCantrip() & ~IsSurfaceEffectSpell() | IsChromaticOrbSpells() | IsChaosBoltSpells()
-end
-
-function TempestuousSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll() | IsChromaticOrbSpells() | IsChaosBoltSpells()
-end
-
-function PiercingSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage)
-end
-
-function RestorativeSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & ~NumberOfTargetsGreaterThan(1) & ~AreaRadiusGreaterThan(0)
 end
 
 function SeekingSpellCheck()
     return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll()
+end
+
+function TransmutedSpellCheck()
+    return SpellDamageTypeIs(DamageType.Acid) | SpellDamageTypeIs(DamageType.Cold) | SpellDamageTypeIs(DamageType.Fire) | SpellDamageTypeIs(DamageType.Poison) | SpellDamageTypeIs(DamageType.Lightning) | SpellDamageTypeIs(DamageType.Thunder)
 end

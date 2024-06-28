@@ -5,14 +5,14 @@
         <node id="root">
             <children>
                 <node id="PassiveList">
-                    <attribute id="Comment" type="LSString" value="Original Level 2 Metamagic"/>
-                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Dreadful,Metamagic_Empowered,Metamagic_Extended,Metamagic_Favored,Metamagic_Heightened,Metamagic_Maximized,Metamagic_Quickened,Metamagic_Piercing,Metamagic_Restorative,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Tempestuous,Metamagic_Tripled,Metamagic_Twinned"/>
+                    <attribute id="Comment" type="LSString" value="Level 2 Metamagic Selection"/>
+                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Empowered,Metamagic_Extended,Metamagic_Heightened,Metamagic_Quickened,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Transmuted,Metamagic_Twinned"/>
                     <attribute id="UUID" type="guid" value="49704931-e47b-4ce6-abc6-dfa7ba640752"/>
                 </node>
 
                 <node id="PassiveList">
-                    <attribute id="Comment" type="LSString" value="Original Level 3+ Metamagic"/>
-                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Dreadful,Metamagic_Empowered,Metamagic_Extended,Metamagic_Favored,Metamagic_Heightened,Metamagic_Maximized,Metamagic_Quickened,Metamagic_Piercing,Metamagic_Restorative,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Tempestuous,Metamagic_Tripled,Metamagic_Twinned"/>
+                    <attribute id="Comment" type="LSString" value="Level 3+ Metamagic Selection"/>
+                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Empowered,Metamagic_Extended,Metamagic_Heightened,Metamagic_Quickened,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Transmuted,Metamagic_Twinned"/>
                     <attribute id="UUID" type="guid" value="c3506532-36eb-4d18-823e-497a537a9619"/>
                 </node>
             </children>
