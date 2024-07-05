@@ -39,7 +39,9 @@ local function HandleDealDamage(e)
 			elseif (isTransmutedToPoison) then
 				e.Functor.DamageType = "Poison"
 			elseif (isTransmutedToThunder) then
-				e.Functor.DamageType = "Thunder"	
+				e.Functor.DamageType = "Thunder"
+			else
+				e.Functor.DamageType = e.SpellId.SpellProto.DamageType
 			end
 		end
 	end
