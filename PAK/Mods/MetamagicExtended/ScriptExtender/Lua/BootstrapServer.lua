@@ -1,5 +1,32 @@
 debugMode = false
 
+TransmutedSpells = {}
+
+local function has_spell(t, spellName)
+    for sName, dType in pairs(t) do
+        if sName == spellName then
+            return true
+        end
+    end
+
+    return false
+end
+
+local function SetDamageType(e, damageType)
+	originalDamageType = e.Functor.DamageType
+	e.Functor.DamageType = damageType
+
+	if (debugMode) then
+		print('--- SetDamageType')
+		print('original damage type:', originalDamageType)
+		print('set damage type:', damageType)
+	end
+
+	if not(has_spell(TransmutedSpells, e.SpellId.Prototype)) then
+		TransmutedSpells[e.SpellId.Prototype] = originalDamageType
+	end
+end
+
 --- Converts damage type to to corresponding element if the Player has one of the METAMAGIC_TRANSMUTED_* status set
 local function HandleDealDamage(e)
 	local caster = e.Caster
@@ -19,7 +46,7 @@ local function HandleDealDamage(e)
 				print('-- HandleDealDamage')
 				print('caster:', casterUuid)
 				print('damage type:', damageType)
-				_D(e)
+				-- _D(e)
 				print('isTransmutedToAcid:', isTransmutedToAcid)
 				print('isTransmutedToCold', isTransmutedToCold)
 				print('isTransmutedToFire', isTransmutedToFire)
@@ -29,19 +56,29 @@ local function HandleDealDamage(e)
 			end
 			
 			if (isTransmutedToAcid) then
-				e.Functor.DamageType = "Acid"
+				SetDamageType(e, "Acid")
 			elseif (isTransmutedToCold) then
-				e.Functor.DamageType = "Cold"
+				SetDamageType(e, "Cold")
 			elseif (isTransmutedToFire) then
-				e.Functor.DamageType = "Fire"
+				SetDamageType(e, "Fire")
 			elseif (isTransmutedToLightning) then
-				e.Functor.DamageType = "Lightning"
+				SetDamageType(e, "Lightning")
 			elseif (isTransmutedToPoison) then
-				e.Functor.DamageType = "Poison"
+				SetDamageType(e, "Poison")
 			elseif (isTransmutedToThunder) then
-				e.Functor.DamageType = "Thunder"
-			else
-				e.Functor.DamageType = e.SpellId.SpellProto.DamageType
+				SetDamageType(e, "Thunder")
+			elseif has_spell(TransmutedSpells, e.SpellId.Prototype) then
+				if (debugMode) then
+					print('resetting damage back')
+					print('original damage:', TransmutedSpells[e.SpellId.Prototype])
+				end
+				e.Functor.DamageType = TransmutedSpells[e.SpellId.Prototype]
+				TransmutedSpells[e.SpellId.Prototype] = nil
+			end
+
+			if (debugMode) then
+				print('List of transmuted spells:')
+				_D(TransmutedSpells)
 			end
 		end
 	end
