@@ -1,6 +1,16 @@
-debugMode = false
+debugMode = true
 
 TransmutedSpells = {}
+
+local function has_spell_flag(t)
+	for _, flag in ipairs(t) do
+		if flag == 'IsSpell' then
+			return true
+		end
+	end
+
+	return false
+end
 
 local function has_spell(t, spellName)
     for sName, dType in pairs(t) do
@@ -31,10 +41,12 @@ end
 local function HandleDealDamage(e)
 	local caster = e.Caster
 	local damageType = e.Functor.DamageType
+	local spellName = e.SpellId.Prototype
 
-	if (caster ~= nil) then
+	if (caster ~= nil and damageType ~= "None") then
 		local casterUuid = caster.Uuid.EntityUuid
-		if Osi.IsPlayer(casterUuid) then
+		local spellFlags = e.SpellId.SpellProto.SpellFlags
+		if Osi.IsPlayer(casterUuid) and has_spell_flag(spellFlags) then
 			local isTransmutedToAcid = HasActiveStatus(casterUuid, "METAMAGIC_TRANSMUTED_ACID") == 1
 			local isTransmutedToCold = HasActiveStatus(casterUuid, "METAMAGIC_TRANSMUTED_COLD") == 1
 			local isTransmutedToFire = HasActiveStatus(casterUuid, "METAMAGIC_TRANSMUTED_FIRE") == 1
@@ -45,7 +57,11 @@ local function HandleDealDamage(e)
 			if (debugMode) then
 				print('-- HandleDealDamage')
 				print('caster:', casterUuid)
+				print('spell name:', spellName)
 				print('damage type:', damageType)
+				print('spell flags:')
+				_D(spellFlags)
+				print('has spell flag:', has_spell_flag(spellFlags))
 				-- _D(e)
 				print('isTransmutedToAcid:', isTransmutedToAcid)
 				print('isTransmutedToCold', isTransmutedToCold)
@@ -67,13 +83,13 @@ local function HandleDealDamage(e)
 				SetDamageType(e, "Poison")
 			elseif (isTransmutedToThunder) then
 				SetDamageType(e, "Thunder")
-			elseif has_spell(TransmutedSpells, e.SpellId.Prototype) then
+			elseif has_spell(TransmutedSpells, spellName) then
 				if (debugMode) then
 					print('resetting damage back')
-					print('original damage:', TransmutedSpells[e.SpellId.Prototype])
+					print('original damage:', TransmutedSpells[spellName])
 				end
-				e.Functor.DamageType = TransmutedSpells[e.SpellId.Prototype]
-				TransmutedSpells[e.SpellId.Prototype] = nil
+				e.Functor.DamageType = TransmutedSpells[spellName]
+				TransmutedSpells[spellName] = nil
 			end
 
 			if (debugMode) then
