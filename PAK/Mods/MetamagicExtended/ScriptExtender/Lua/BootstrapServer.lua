@@ -41,10 +41,10 @@ end
 local function HandleDealDamage(e)
 	local caster = e.Caster
 	local damageType = e.Functor.DamageType
-	local spellName = e.SpellId.Prototype
-
+	
 	if (caster ~= nil and damageType ~= "None") then
 		local casterUuid = caster.Uuid.EntityUuid
+		local spellName = e.SpellId.Prototype
 		local spellFlags = e.SpellId.SpellProto.SpellFlags
 		if Osi.IsPlayer(casterUuid) and has_spell_flag(spellFlags) then
 			local isTransmutedToAcid = HasActiveStatus(casterUuid, "METAMAGIC_TRANSMUTED_ACID") == 1
