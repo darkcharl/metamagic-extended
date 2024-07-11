@@ -44,7 +44,13 @@ local function HandleDealDamage(e)
 	
 	if (caster ~= nil and damageType ~= "None") then
 		local casterUuid = caster.Uuid.EntityUuid
-		_D(e)
+		if (e.SpellId.Prototype == "" or e.SpellId.SpellProto == nil) then
+			if (debugMode) then
+				_D(e)
+			end
+			return
+		end
+		
 		local spellName = e.SpellId.Prototype
 		local spellFlags = e.SpellId.SpellProto.SpellFlags
 		if Osi.IsPlayer(casterUuid) and has_spell_flag(spellFlags) then
