@@ -37,6 +37,32 @@ local function SetDamageType(e, damageType)
 	end
 end
 
+local function ResetDamageType(spellName)
+	local spell = Ext.Stats.Get(spellName)
+
+	for _, property in pairs({spell.SpellFail, spell.SpellSuccess, spell.SpellProperties}) do
+		for _, offset in pairs(property) do
+			if property ~= nil then
+				for _, functor in pairs(offset.Functors) do
+					if functor.TypeId == 'DealDamage' then
+						functor.DamageType = spell.DamageType
+					end
+				end
+			end
+		end
+	end
+end
+
+local function ResetDamageTypes()
+	for spellName, damageType in pairs(TransmutedSpells) do
+		local spell = Ext.Stats.Get(spellName)
+		local spellFlags = spell.SpellFlags
+
+		ResetDamageType(spellName)
+		TransmutedSpells[spellName] = nil
+	end
+end
+
 --- Converts damage type to to corresponding element if the Player has one of the METAMAGIC_TRANSMUTED_* status set
 local function HandleDealDamage(e)
 	local caster = e.Caster
@@ -95,8 +121,8 @@ local function HandleDealDamage(e)
 					print('resetting damage back')
 					print('original damage:', TransmutedSpells[spellName])
 				end
-				e.Functor.DamageType = TransmutedSpells[spellName]
-				TransmutedSpells[spellName] = nil
+
+				ResetDamageTypes()
 			end
 
 			if (debugMode) then
@@ -108,3 +134,4 @@ local function HandleDealDamage(e)
 end
 
 Ext.Events.DealDamage:Subscribe(HandleDealDamage)
+Ext.Events.GameStateChanged:Subscribe(ResetDamageTypes)
