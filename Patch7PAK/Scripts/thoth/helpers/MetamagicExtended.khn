@@ -1,0 +1,36 @@
+local __util = require 'larian.util'
+
+function IsChaosBoltSpells()
+    return SpellId('Target_ChaosBolt') | SpellId('Projectile_ChaosBolt_2') | SpellId('Projectile_ChaosBolt_3')
+    | SpellId('Target_ChaosBolt_4') | SpellId('Projectile_ChaosBolt_5') | SpellId('Projectile_ChaosBolt_6')
+    | SpellId('Target_ChaosBolt_7') | SpellId('Projectile_ChaosBolt_8') | SpellId('Projectile_ChaosBolt_9')
+    | SpellId('Projectile_ChaosBolt') | SpellId('Projectile_ChaosBolt_Acid') | SpellId('Projectile_ChaosBolt_Cold')
+    | SpellId('Projectile_ChaosBolt_Fire') | SpellId('Projectile_ChaosBolt_Force')| SpellId('Projectile_ChaosBolt_Lightning') 
+    | SpellId('Projectile_ChaosBolt_Poison') | SpellId('Projectile_ChaosBolt_Psychic') | SpellId('Projectile_ChaosBolt_Thunder')
+end
+
+function IsChromaticOrbSpells()
+    return SpellId('Projectile_ChromaticOrb') | SpellId('Projectile_ChromaticOrb_Acid') | SpellId('Projectile_ChromaticOrb_Cold')
+    | SpellId('Projectile_ChromaticOrb_Fire') | SpellId('Projectile_ChromaticOrb_Lightning') | SpellId('Projectile_ChromaticOrb_Poison')
+    | SpellId('Projectile_ChromaticOrb_Thunder')
+end
+
+function IsEldritchBlast()
+    return SpellId('Projectile_EldritchBlast')
+end
+
+function IsSurfaceEffectSpell()
+    return SpellId('Target_CloudOfDaggers')
+end
+
+function EmpoweredSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & ~IsSurfaceEffectSpell() | IsChromaticOrbSpells() | IsChaosBoltSpells()
+end
+
+function SeekingSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll()
+end
+
+function TransmutedSpellCheck()
+    return SpellDamageTypeIs(DamageType.Acid) | SpellDamageTypeIs(DamageType.Cold) | SpellDamageTypeIs(DamageType.Fire) | SpellDamageTypeIs(DamageType.Poison) | SpellDamageTypeIs(DamageType.Lightning) | SpellDamageTypeIs(DamageType.Thunder)
+end

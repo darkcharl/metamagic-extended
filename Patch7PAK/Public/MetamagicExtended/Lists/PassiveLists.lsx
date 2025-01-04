@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="307"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Level 2 Metamagic Selection"/>
+                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Empowered,Metamagic_Extended,Metamagic_Heightened,Metamagic_Quickened,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Transmuted,Metamagic_Twinned"/>
+                    <attribute id="UUID" type="guid" value="49704931-e47b-4ce6-abc6-dfa7ba640752"/>
+                </node>
+
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Level 3+ Metamagic Selection"/>
+                    <attribute id="Passives" type="LSString" value="Metamagic_Careful,Metamagic_Distant,Metamagic_Empowered,Metamagic_Extended,Metamagic_Heightened,Metamagic_Quickened,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Transmuted,Metamagic_Twinned"/>
+                    <attribute id="UUID" type="guid" value="c3506532-36eb-4d18-823e-497a537a9619"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
