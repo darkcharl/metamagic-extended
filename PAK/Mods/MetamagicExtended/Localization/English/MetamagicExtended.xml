@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
     <content contentuid="bfef4598-bd6d-4323-a650-3d4c080bde78" version="1">Metamagic: Empowered Spell</content>
-    <content contentuid="18f6a18a-086e-492f-8ba7-f8fc342ecc6a" version="1">Boosts damage by rolling each spell damage die twice and keeping the larger.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
-    
+    <content contentuid="18f6a18a-086e-492f-8ba7-f8fc342ecc6a" version="1">Boosts damage by rolling each spell damage die twice and keeping the larger.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>    
     <content contentuid="e29c98b4-2cdd-4cf4-8025-fc4e74ed108c" version="1">Metamagic: Seeking Spell</content>
     <content contentuid="a18df986-9ac8-4974-97b9-d1cf872daa08" version="1">Gives &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
-
     <content contentuid="c7388b6c-7b7b-40aa-ab55-a8b2ed92339c" version="1">Metamagic: Transmuted Spell</content>
 	<content contentuid="9ee7aa0d-4c68-4b71-9c95-43fadc5fa475" version="1">Enables changing the damage type of elemental Spells.&lt;br&gt;&lt;br&gt;Costs [1] Sorcery Point per spell.</content>
 	<content contentuid="8e49e811-bdea-43a4-8403-5de1c2b0b472" version="1">Metamagic: Transmuted Spell (Acid)</content>
