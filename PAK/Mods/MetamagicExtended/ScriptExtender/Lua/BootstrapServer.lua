@@ -1,4 +1,4 @@
-debugMode = false
+debugMode = true
 
 TransmutedSpells = {}
 
