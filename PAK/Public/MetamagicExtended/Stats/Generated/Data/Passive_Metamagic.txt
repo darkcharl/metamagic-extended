@@ -15,7 +15,7 @@ data "ToggleOffFunctors" "RemoveStatus(METAMAGIC_EMPOWERED)"
 
 new entry "Metamagic_Seeking"
 type "PassiveData"
-using "MAG_Sorcerer_MM_SeekingSpell"
+using "Metamagic_Twinned"
 data "DisplayName" "e29c98b4-2cdd-4cf4-8025-fc4e74ed108c;1"
 data "Description" "a18df986-9ac8-4974-97b9-d1cf872daa08;1"
 data "DescriptionParams" "2"
