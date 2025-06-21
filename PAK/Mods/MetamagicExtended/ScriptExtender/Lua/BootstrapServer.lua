@@ -1,6 +1,7 @@
 debugMode = false
 
 TransmutedSpells = {}
+elements = {'Acid', 'Cold', 'Fire', 'Lightning', 'Poison', 'Thunder'}
 
 local function has_spell_flag(t)
     for _, flag in ipairs(t) do
@@ -69,6 +70,17 @@ local function HandleDealDamage(e)
     local damageType = e.Functor.DamageType
     
     if (caster ~= nil and damageType ~= "None") then
+        found = false
+        for _, element in ipairs(elements) do
+            if damageType == element then
+                found = true
+            end
+        end
+        
+        if not found then
+            return
+        end
+
         local casterUuid = caster.Uuid.EntityUuid
         if (e.SpellId.Prototype == "" or e.SpellId.SpellProto == nil) then
             if (debugMode) then
